@@ -18,7 +18,8 @@
     <!-- Open Graph / Facebook / LinkedIn Tags (Points to this page as the central hub) -->
     <meta property="og:title" content="Charles Paris Music | The World of Brother OTG">
     <meta property="og:description" content="From a #1 debut theme song and 6.3 million TikTok plays to pioneering the urban podcasting wave with Beanie Sigel, explore the multifaceted career of Charles A. Paris (Brother OTG). Discover his music, community work, and the Supply The Work philosophy.">
-    <meta property="og:image" content="https://github.com/365otg/365CP/blob/main/Charles_Paris_bio.jpg?raw=true">
+    <meta property="og:image" content="https://github.com/365otg/PicturesandVids/blob/main/CharlesParisMusicSuit.png?raw=true">
+    <meta property="og:image:alt" content="A photo of Charles A. Paris (Brother OTG), music producer and developer.">
     <meta property="og:url" content="https://365otg.github.io/365CP/">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Charles Paris Music | Official Biography">
@@ -29,7 +30,7 @@
     <meta name="twitter:creator" content="@365otg">
     <meta name="twitter:title" content="Charles Paris Music - The Official Hub for Brother OTG">
     <meta name="twitter:description" content="Discover the official site for music producer and developer Charles A. Paris, known as Brother OTG. Access exclusive content, producer tools, and the Supply The Work philosophy.">
-    <meta name="twitter:image" content="https://github.com/365otg/365CP/blob/main/Charles_Paris_bio.jpg?raw=true">
+    <meta name="twitter:image" content="https://github.com/365otg/PicturesandVids/blob/main/CharlesParisMusicSuit.png?raw=true">
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -47,7 +48,20 @@
         "@type": "Person",
         "@id": "https://365otg.github.io/365CP/#person",
         "name": "Charles A. Paris",
-        "alternateName": ["Brother OTG", "365otg", "Charles Paris Music", "O.T.G", "I Double L", "Supplythework", "Rich Rising", "Over Time Grind", "@365charlesparis", "OTG daily"],
+        "alternateName": [
+            "Charles Anthony Paris",
+            "Brother OTG", 
+            "365otg", 
+            "Charles Paris Music", 
+            "O.T.G", 
+            "Charles O.T.G Paris",
+            "I Double L", 
+            "Supplythework", 
+            "Rich Rising", 
+            "Over Time Grind", 
+            "@365charlesparis", 
+            "OTG daily"
+        ],
         "url": "https://365otg.github.io/365CP/",
         "image": "https://github.com/365otg/365CP/blob/main/Charles_Paris_bio.jpg?raw=true",
         "description": "Charles A. Paris, widely known as Brother OTG, is the visionary founder of CHARLES PARIS MUSIC and the 'Supply The Work' movement. As an American music producer, self-taught software developer, author, and community activist, his influence spans from producing tracks for major artists like Beanie Sigel to creating indispensable web applications for the music community.",
@@ -62,10 +76,16 @@
           "@type": "Organization",
           "name": "Over Time Grind Productions LLC"
         },
-        "affiliation": {
-          "@type": "Organization",
-          "name": "Nation of Islam"
-        },
+        "memberOf": [
+            {
+                "@type": "Organization",
+                "name": "Nation of Islam"
+            },
+            {
+                "@type": "Organization",
+                "name": "Midwest Muzik Group"
+            }
+        ],
         "knowsAbout": ["Music Production", "Web Application Development", "Brand Consulting", "Akai MPC", "Roland SP-404", "Music Licensing", "Hip Hop Production", "SEO for Creatives", "Urban Podcasting"],
         "sameAs": [
           "https://www.instagram.com/charlesparismusic",
@@ -191,12 +211,19 @@
 <body class="bg-gray-100">
 
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="fixed top-0 left-0 h-full w-64 bg-[#f8f9fa] border-r border-gray-300 p-4 text-sm z-50 md:hidden">
+    <div id="mobile-menu" class="fixed top-0 left-0 h-full w-64 bg-[#f8f9fa] border-r border-gray-300 p-4 text-sm z-50 md:hidden overflow-y-auto">
          <button id="close-menu-button" class="absolute top-4 right-4 text-2xl">&times;</button>
          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/1200px-Wikipedia-logo-v2.svg.png" alt="Wikipedia Logo" class="w-24 mx-auto mb-4 mt-8">
          <h2 class="font-bold mb-2 sans-serif">Navigation</h2>
          <nav id="mobile-nav">
             <!-- Mobile nav links will be cloned here by JS -->
+         </nav>
+         <hr class="my-4">
+         <h2 class="font-bold mb-2 sans-serif">Tools</h2>
+         <nav>
+            <ul>
+                <li class="mb-1"><a href="https://share.google/kcJTScrUgEbQKJKIp" target="_blank" rel="noopener noreferrer" class="link-blue hover:underline">Google My Business</a></li>
+            </ul>
          </nav>
     </div>
 
@@ -223,10 +250,7 @@
             <h2 class="font-bold mb-2 sans-serif">Tools</h2>
             <nav>
                 <ul>
-                    <li class="mb-1"><a href="#" class="link-blue hover:underline">What links here</a></li>
-                    <li class="mb-1"><a href="#" class="link-blue hover:underline">Related changes</a></li>
-                    <li class="mb-1"><a href="#" class="link-blue hover:underline">Permanent link</a></li>
-                    <li class="mb-1"><a href="#" class="link-blue hover:underline">Cite this page</a></li>
+                    <li class="mb-1"><a href="https://share.google/kcJTScrUgEbQKJKIp" target="_blank" rel="noopener noreferrer" class="link-blue hover:underline">Google My Business</a></li>
                 </ul>
             </nav>
         </aside>
@@ -439,6 +463,9 @@
                 title: "Discography",
                 html: `
                     <p class="text-sm -mt-1 mb-4 text-gray-500">From Wikipedia, the free encyclopedia</p>
+                    <h2 class="section-title">Latest Album (Bandcamp)</h2>
+                    <iframe style="border: 0; width: 100%; max-width: 350px; height: 786px;" src="https://bandcamp.com/EmbeddedPlayer/album=1781558929/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://charlesparismusic.bandcamp.com/album/charles-paris-music">Charles Paris Music by Charles Paris Music</a></iframe>
+                    <h2 class="section-title">Streaming Discography (YouTube)</h2>
                     <div id="discography-list" class="space-y-6">
                         <!-- Discography will be populated by JavaScript -->
                     </div>
@@ -517,37 +544,50 @@
                         <li><a href="https://www.reddit.com/user/supplythework/" target="_blank" rel="noopener noreferrer" class="link-blue">Reddit Profile</a></li>
                     </ul>
 
-                    <h2 class="section-title">Digital Storefront (Gumroad)</h2>
-                    <ul class="list-disc list-inside space-y-2 mt-4">
-                        <li><a href="https://brotherotg.gumroad.com/l/jkvtk" target="_blank" rel="noopener noreferrer" class="link-blue">O.T.G MPC Stimulus Pack</a></li>
+                    <h2 class="section-title">Producer Stores & All-Access Passes</h2>
+                     <ul class="list-disc list-inside space-y-2 mt-4">
+                        <li><a href="https://brotherotg.gumroad.com/" target="_blank" rel="noopener noreferrer" class="link-blue">Main Gumroad Store (All Products)</a></li>
+                        <li><a href="https://brotherotg.gumroad.com/l/gtfzpq" target="_blank" rel="noopener noreferrer" class="link-blue">Producer All-Access Pass</a></li>
+                     </ul>
+
+                    <h2 class="section-title">Masterclasses & Guides</h2>
+                     <ul class="list-disc list-inside space-y-2 mt-4">
+                        <li><a href="https://brotherotg.gumroad.com/l/igtio" target="_blank" rel="noopener noreferrer" class="link-blue">Masterclass of all Masterclasses</a></li>
                         <li><a href="https://brotherotg.gumroad.com/l/MPCMasterclass" target="_blank" rel="noopener noreferrer" class="link-blue">$5 Akai MPC ONE & Live 2 Masterclass</a></li>
-                        <li><a href="https://brotherotg.gumroad.com/l/cjkeak" target="_blank" rel="noopener noreferrer" class="link-blue">400+ MPC Chord Progressions</a></li>
-                        <li><a href="https://brotherotg.gumroad.com/l/fayaz" target="_blank" rel="noopener noreferrer" class="link-blue">O.T.G Smackers DrumKit</a></li>
-                        <li><a href="https://brotherotg.gumroad.com/l/dchte" target="_blank" rel="noopener noreferrer" class="link-blue">15GB - 45 Expansions</a></li>
-                        <li><a href="https://brotherotg.gumroad.com/l/cxozj" target="_blank" rel="noopener noreferrer" class="link-blue">O.T.G Roland Stimulus Pack</a></li>
-                        <li><a href="https://brotherotg.gumroad.com/l/eccpqg" target="_blank" rel="noopener noreferrer" class="link-blue">Roland Stash</a></li>
+                        <li><a href="https://brotherotg.gumroad.com/l/iuglqh" target="_blank" rel="noopener noreferrer" class="link-blue">The Akai Force Masterclass</a></li>
                         <li><a href="https://brotherotg.gumroad.com/l/oayds" target="_blank" rel="noopener noreferrer" class="link-blue">$5 Roland SP-404 MK2 Masterclass</a></li>
                         <li><a href="https://brotherotg.gumroad.com/l/xsxltf" target="_blank" rel="noopener noreferrer" class="link-blue">Roland SP-404 MK2 CheatSheet</a></li>
-                        <li><a href="https://brotherotg.gumroad.com/l/zrhjl" target="_blank" rel="noopener noreferrer" class="link-blue">Roland SP-404 MK2 Soundbank</a></li>
-                        <li><a href="https://brotherotg.gumroad.com/l/crvbw" target="_blank" rel="noopener noreferrer" class="link-blue">Roland SP-404 MK2 Free Screensaver</a></li>
-                    </ul>
-
-                    <h2 class="section-title">Producer Guides & Web Apps</h2>
-                    <ul class="list-disc list-inside space-y-2 mt-4">
-                        <li><a href="https://365otg.github.io/ProducerTools/" target="_blank" rel="noopener noreferrer" class="link-blue">Charles Paris Producer Tools</a></li>
                         <li><a href="https://365otg.github.io/AkaiMPCGuide/" target="_blank" rel="noopener noreferrer" class="link-blue">Charles Paris Akai MPC Guide</a></li>
                         <li><a href="https://365otg.github.io/seqtrak/" target="_blank" rel="noopener noreferrer" class="link-blue">Charles Paris Yamaha SeqTrak Guide</a></li>
                         <li><a href="https://365otg.github.io/sp404-mk2-guide/" target="_blank" rel="noopener noreferrer" class="link-blue">Charles Paris SP-404 MK2 Guide</a></li>
-                        <li><a href="https://365otg.github.io/drumapp/" target="_blank" rel="noopener noreferrer" class="link-blue">Charles Paris Drum App</a></li>
-                        <li><a href="https://365otg.github.io/akaiforceapp/" target="_blank" rel="noopener noreferrer" class="link-blue">Charles Paris Akai Force App</a></li>
                         <li><a href="https://365otg.github.io/RolandVerselabMV1/" target="_blank" rel="noopener noreferrer" class="link-blue">Charles Paris Roland Verselab MV-1 Guide</a></li>
-                        <li><a href="https://365otg.github.io/aetherflow-app/" target="_blank" rel="noopener noreferrer" class="link-blue">Charles Paris Aetherflow App</a></li>
-                        <li><a href="https://365otg.github.io/OTGQuotes/" target="_blank" rel="noopener noreferrer" class="link-blue">Charles Paris Quote Maker</a></li>
-                        <li><a href="https://365otg.github.io/CPUKnife/" target="_blank" rel="noopener noreferrer" class="link-blue">Charles Paris CPU Knife</a></li>
-                        <li><a href="https://365otg.github.io/metronome/" target="_blank" rel="noopener noreferrer" class="link-blue">Charles Paris Metronome</a></li>
-                        <li><a href="https://365otg.github.io/ChordExplorer/" target="_blank" rel="noopener noreferrer" class="link-blue">Charles Paris Chord Explorer</a></li>
-                        <li><a href="https://365otg.github.io/SampleOrganizer/" target="_blank" rel="noopener noreferrer" class="link-blue">Charles Paris Sample Organizer</a></li>
-                        <li><a href="https://365otg.github.io/producertutorials/" target="_blank" rel="noopener noreferrer" class="link-blue">Charles Paris Producer Tutorials</a></li>
+                     </ul>
+                    
+                    <h2 class="section-title">Sound Packs & Drum Kits</h2>
+                     <ul class="list-disc list-inside space-y-2 mt-4">
+                        <li><a href="https://brotherotg.gumroad.com/l/jkvtk" target="_blank" rel="noopener noreferrer" class="link-blue">O.T.G MPC Stimulus Pack</a></li>
+                        <li><a href="https://brotherotg.gumroad.com/l/cxozj" target="_blank" rel="noopener noreferrer" class="link-blue">O.T.G Roland Stimulus Pack</a></li>
+                        <li><a href="https://brotherotg.gumroad.com/l/fayaz" target="_blank" rel="noopener noreferrer" class="link-blue">O.T.G Smackers DrumKit</a></li>
+                        <li><a href="https://brotherotg.gumroad.com/l/deemn" target="_blank" rel="noopener noreferrer" class="link-blue">Akai Arsenal</a></li>
+                        <li><a href="https://brotherotg.gumroad.com/l/ximwy" target="_blank" rel="noopener noreferrer" class="link-blue">The Akai MPC Genesis</a></li>
+                        <li><a href="https://brotherotg.gumroad.com/l/ssropf" target="_blank" rel="noopener noreferrer" class="link-blue">The O.T.G Akai MPC Files</a></li>
+                        <li><a href="https://brotherotg.gumroad.com/l/ijmxwl" target="_blank" rel="noopener noreferrer" class="link-blue">Producer Sample Kit</a></li>
+                        <li><a href="https://brotherotg.gumroad.com/l/rcuccq" target="_blank" rel="noopener noreferrer" class="link-blue">The Lofi Vibe Kit</a></li>
+                        <li><a href="https://brotherotg.gumroad.com/l/dooleb" target="_blank" rel="noopener noreferrer" class="link-blue">The Universal Drum Fortress</a></li>
+                        <li><a href="https://brotherotg.gumroad.com/l/tiebp" target="_blank" rel="noopener noreferrer" class="link-blue">SP404 Field Manual & Ammo Kit</a></li>
+                        <li><a href="https://brotherotg.gumroad.com/l/yqbzdh" target="_blank" rel="noopener noreferrer" class="link-blue">The Westcoast Started Kit</a></li>
+                        <li><a href="https://brotherotg.gumroad.com/l/uupjn" target="_blank" rel="noopener noreferrer" class="link-blue">The Boom Bap Ignition Kit</a></li>
+                        <li><a href="https://brotherotg.gumroad.com/l/duadj" target="_blank" rel="noopener noreferrer" class="link-blue">The Dynamic Duo</a></li>
+                        <li><a href="https://brotherotg.gumroad.com/l/dchte" target="_blank" rel="noopener noreferrer" class="link-blue">15GB - 45 Expansions</a></li>
+                        <li><a href="https://brotherotg.gumroad.com/l/cjkeak" target="_blank" rel="noopener noreferrer" class="link-blue">400+ MPC Chord Progressions</a></li>
+                        <li><a href="https://brotherotg.gumroad.com/l/zrhjl" target="_blank" rel="noopener noreferrer" class="link-blue">Roland SP-404 MK2 Soundbank</a></li>
+                     </ul>
+
+                    <h2 class="section-title">Free Producer Tools & Apps</h2>
+                    <ul class="list-disc list-inside space-y-2 mt-4">
+                        <li><a href="https://brotherotg.gumroad.com/l/siojbx" target="_blank" rel="noopener noreferrer" class="link-blue">Charles Paris Producer Tools</a></li>
+                        <li><a href="https://brotherotg.gumroad.com/l/yovcy" target="_blank" rel="noopener noreferrer" class="link-blue">Charles Paris Drum App</a></li>
+                        <li><a href="https://brotherotg.gumroad.com/l/crvbw" target="_blank" rel="noopener noreferrer" class="link-blue">Roland SP-404 MK2 Free Screensaver</a></li>
                     </ul>
                     
                     <h2 class="section-title">Support & Financial</h2>
