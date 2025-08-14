@@ -9,10 +9,13 @@
     <meta name="description" content="The official legacy site of Charles A. Paris, the visionary producer known as Brother OTG, I Double L, and founder of the Supply The Work movement. Explore his #1 hits, pioneering work with Beanie Sigel & Bernard Hopkins, innovative web apps, and community activism.">
     <meta name="keywords" content="Charles Paris Music, Brother OTG, Supply The Work, 365OTG, I Double L, Beanie Sigel podcast, Bernard Hopkins, Taxstone interview producer, Tiny and Toya theme song, Freeway Kidney Walk, Bruce Hawes mentee, Ad:tech speaker, Clubhouse innovator, Philly Hip Hop Awards, DJ Damage, Tone Trump, Chairman Fred Hampton Jr interview, Tariq Nasheed, Black consciousness author, music producer, software developer, brand consultant, Jahlil Beats, Eness, Chris Schwartz, Ruffhouse Records, Stalley, Jak Brown, 2 Chainz engineer, Freddie Gray, DJ Kay Slay, WEFT FM, Howard Cohen, 8-Ball Jacket, Philadelphia Protests 2020, Hands Up Dont Shoot Philadelphia, MC Lyte, Dubose Music Group, Thelma B Wright, Phillybassd Records, Chaz Williams, Black Hand Entertainment, Helen Bruner, Terry Bruner, Dr. Wilmer Leon">
     
+    <!-- Canonical URL: This tells search engines that this is the main, authoritative page for this content. -->
+    <link rel="canonical" href="https://365otg.github.io/365CP/" />
+
     <!-- Pinterest Verification -->
     <meta name="p:domain_verify" content="e34f010d8707447a986be3662caee327"/>
 
-    <!-- Open Graph / Facebook / LinkedIn / General Social Media Tags -->
+    <!-- Open Graph / Facebook / LinkedIn Tags (Points to this page as the central hub) -->
     <meta property="og:title" content="Charles Paris Music | The World of Brother OTG">
     <meta property="og:description" content="From a #1 debut theme song and 6.3 million TikTok plays to pioneering the urban podcasting wave with Beanie Sigel, explore the multifaceted career of Charles A. Paris (Brother OTG). Discover his music, community work, and the Supply The Work philosophy.">
     <meta property="og:image" content="https://github.com/365otg/365CP/blob/main/Charles_Paris_bio.jpg?raw=true">
@@ -27,7 +30,6 @@
     <meta name="twitter:title" content="Charles Paris Music - The Official Hub for Brother OTG">
     <meta name="twitter:description" content="Discover the official site for music producer and developer Charles A. Paris, known as Brother OTG. Access exclusive content, producer tools, and the Supply The Work philosophy.">
     <meta name="twitter:image" content="https://github.com/365otg/365CP/blob/main/Charles_Paris_bio.jpg?raw=true">
-
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -86,16 +88,16 @@
 
     <style>
         /* Custom Wikipedia Styles */
-        body { background-color: #f8f9fa; color: #202122; font-family: 'Linux Libertine', 'Lora', serif; }
-        main { background-color: #ffffff; border: 1px solid #a7d7f9; padding: 1rem 2rem; }
+        body { background-color: #f6f6f6; color: #202122; font-family: 'Linux Libertine', 'Lora', serif; }
+        #main-content { background-color: #ffffff; border-left: 1px solid #a2a9b1; border-right: 1px solid #a2a9b1; border-bottom: 1px solid #a2a9b1; }
         h1, h2, h3, h4, h5, h6, .sans-serif { font-family: 'Arimo', sans-serif; }
-        h1.page-title { font-family: 'Linux Libertine', 'Lora', serif; font-size: 1.8em; border-bottom: 1px solid #a2a9b1; padding-bottom: 0.25em; margin-bottom: 0.1em; font-weight: 400; }
-        h2.section-title { font-family: 'Linux Libertine', 'Lora', serif; font-size: 1.5em; border-bottom: 1px solid #a2a9b1; padding-bottom: 0.25em; margin-top: 1em; margin-bottom: 0.5em; font-weight: 400; }
+        #main-content h1.page-title { font-family: 'Linux Libertine', 'Lora', serif; font-size: 1.8em; border-bottom: 1px solid #a2a9b1; padding-bottom: 0.25em; margin-bottom: 0.1em; font-weight: 400; }
+        #main-content h2.section-title { font-family: 'Linux Libertine', 'Lora', serif; font-size: 1.5em; border-bottom: 1px solid #a2a9b1; padding-bottom: 0.25em; margin-top: 1em; margin-bottom: 0.5em; font-weight: 400; }
         .link-blue { color: #0645ad; }
         a.link-blue:hover { text-decoration: underline; }
         .infobox { background-color: #f8f9fa; border: 1px solid #a2a9b1; font-size: 0.88em; line-height: 1.5; }
         .infobox th { text-align: left; padding-right: 1em; font-weight: bold; }
-        .infobox td { padding: 0.5em; } /* Added padding for infobox cells */
+        .infobox td { padding: 0.5em; }
         .citation { font-family: 'Arimo', sans-serif; font-size: 0.8em; vertical-align: super; line-height: 1; }
         .toc { background-color: #f8f9fa; border: 1px solid #a2a9b1; padding: 1em; display: table; margin-bottom: 1em; }
         .toc ul { list-style-type: none; padding-left: 0; }
@@ -105,13 +107,10 @@
         .wikitable { border: 1px solid #a2a9b1; border-collapse: collapse; width: 100%; margin-top: 1em; }
         .wikitable th, .wikitable td { border: 1px solid #a2a9b1; padding: 0.5rem; text-align: left; }
         .wikitable th { background-color: #eaecf0; font-weight: bold; }
-        p { margin-bottom: 1.5em; } 
-        .image-caption {
-            font-size: 0.8rem;
-            text-align: center;
-            color: #54595d;
-            padding: 0.25rem;
-        }
+        #main-content p { margin-bottom: 1.5em; } 
+        .image-caption { font-size: 0.8rem; text-align: center; color: #54595d; padding: 0.25rem; }
+        #left-sidebar a.active { font-weight: bold; color: #000; }
+
         /* Gallery Styles */
         .scroll-gallery {
             display: flex;
@@ -120,17 +119,9 @@
             scrollbar-width: thin;
             scrollbar-color: #a2a9b1 #f8f9fa;
         }
-        .scroll-gallery::-webkit-scrollbar {
-            height: 8px;
-        }
-        .scroll-gallery::-webkit-scrollbar-track {
-            background: #f8f9fa;
-        }
-        .scroll-gallery::-webkit-scrollbar-thumb {
-            background-color: #a2a9b1;
-            border-radius: 10px;
-            border: 2px solid #f8f9fa;
-        }
+        .scroll-gallery::-webkit-scrollbar { height: 8px; }
+        .scroll-gallery::-webkit-scrollbar-track { background: #f8f9fa; }
+        .scroll-gallery::-webkit-scrollbar-thumb { background-color: #a2a9b1; border-radius: 10px; border: 2px solid #f8f9fa; }
         .gallery-item {
             flex: 0 0 auto;
             width: 150px;
@@ -140,265 +131,284 @@
             padding: 0.5rem;
             background-color: #fff;
         }
-        .gallery-item img {
-            width: 100%;
-            height: 100px;
-            object-fit: cover;
+        .gallery-item img { width: 100%; height: 100px; object-fit: cover; }
+        
+        /* Web Dev Portfolio Styles */
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .portfolio-card {
+            border: 1px solid #a2a9b1;
+            background-color: #f8f9fa;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+        }
+        .portfolio-card h3 {
+            font-family: 'Arimo', sans-serif;
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 0.75rem;
+        }
+        .portfolio-card .cost {
+            font-weight: bold;
+            color: #006400; /* Dark green for cost */
+            margin: 0.5rem 0;
+        }
+        .portfolio-card .tech-stack {
+            margin-top: auto;
+            padding-top: 1rem;
+            font-size: 0.9em;
+            color: #54595d;
+        }
+        .aspect-video {
+            aspect-ratio: 16 / 9;
         }
     </style>
 </head>
-<body class="p-4 md:p-8">
-    <div class="max-w-7xl mx-auto">
-        <main>
-            <div class="flex flex-col md:flex-row-reverse gap-8">
-                
-                <!-- Right Sidebar (Infobox) -->
-                <div class="w-full md:w-1/3">
-                    <table class="infobox w-full sans-serif">
-                        <tbody>
-                            <tr><th colspan="2" class="text-center text-lg font-bold bg-gray-200 p-2">Charles A. Paris</th></tr>
-                            <tr><td colspan="2" class="text-center p-2">
-                                <img src="https://github.com/365otg/365CP/blob/main/Charles_Paris_bio.jpg?raw=true" alt="Charles A. Paris, the music producer and developer known as Brother OTG" class="mx-auto" onerror="this.onerror=null;this.src='https://placehold.co/300x300/cccccc/ffffff?text=Image+Not+Found';">
-                                <div class="text-xs p-1">Charles A. Paris</div>
-                            </td></tr>
-                            <tr class="border-t border-gray-300"><th scope="row" class="p-2">Born</th><td id="born-cell" class="p-2">Charles Anthony Paris<br>April 30, 1980<br>Urbana, Illinois, U.S.</td></tr>
-                            <tr class="border-t border-gray-300"><th scope="row" class="p-2">Nationality</th><td class="p-2">Black American</td></tr>
-                            <tr class="border-t border-gray-300"><th scope="row" class="p-2">Other names</th><td class="p-2">Brother OTG, 365OTG, Charles Paris Music, O.T.G, I Double L, Supply The Work</td></tr>
-                            <tr class="border-t border-gray-300"><th scope="row" class="p-2">Occupation</th><td class="p-2">Record producer, composer, software developer, author, brand consultant, community activist</td></tr>
-                             <tr class="border-t border-gray-300"><th scope="row" class="p-2">Title</th><td class="p-2">CEO & Founder, Over Time Grind Productions LLC</td></tr>
-                            <tr class="border-t border-gray-300"><th scope="row" class="p-2">Years active</th><td class="p-2">1998–present</td></tr>
-                            <tr class="border-t border-gray-300"><th scope="row" class="p-2">Website</th><td class="p-2"><a href="https://365otg.github.io/CharlesParisMusic/" class="link-blue" target="_blank" rel="noopener noreferrer">Charles Paris Music</a></td></tr>
-                            <tr class="border-t border-gray-300"><th scope="row" class="p-2">Business Card</th><td class="p-2"><a href="https://365otg.github.io/CharlesParisLinks/" class="link-blue" target="_blank" rel="noopener noreferrer">Charles Paris Business Card</a></td></tr>
-                             <tr class="border-t border-gray-300"><td colspan="2" class="p-2">
-                                  <div class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md" role="alert">
-                                    <div class="flex">
-                                      <div class="py-1"><svg class="fill-current h-6 w-6 text-teal-500 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z"/></svg></div>
-                                      <div>
-                                        <p class="font-bold">Build Credit with Chime</p>
-                                        <p class="text-sm">Get paid early and build credit. <a href="https://chime.com/r/charlesparis19" class="font-bold link-blue">Sign up with my referral link</a>.</p>
-                                      </div>
-                                    </div>
-                                  </div>
-                             </td></tr>
-                             <tr class="border-t border-gray-300"><td colspan="2" class="p-2">
-                                  <div class="bg-pink-100 border-t-4 border-pink-500 rounded-b text-pink-900 px-4 py-3 shadow-md" role="alert">
-                                    <div class="flex">
-                                      <div class="py-1"><svg class="fill-current h-6 w-6 text-pink-500 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 3.22l-.61-.6a5.5 5.5 0 0 0-7.78 7.77L10 18.78l8.39-8.4a5.5 5.5 0 0 0-7.78-7.77l-.61.61z"/></svg></div>
-                                      <div>
-                                        <p class="font-bold">Support O.T.G</p>
-                                        <p class="text-sm"><a href="https://paypal.me/shopotg" class="font-bold link-blue">PayPal (Shop)</a>, <a href="https://paypal.me/overtimegrind" class="font-bold link-blue">PayPal (Grind)</a>, <a href="https://cash.app/$pfprinting" class="font-bold link-blue">Cash App</a>.</p>
-                                      </div>
-                                    </div>
-                                  </div>
-                             </td></tr>
-                        </tbody>
-                    </table>
+<body class="bg-gray-100">
+
+    <div class="flex flex-col md:flex-row max-w-screen-2xl mx-auto bg-white shadow-lg">
+        <!-- Left Sidebar -->
+        <aside id="left-sidebar" class="w-full md:w-48 bg-[#f8f9fa] border-r border-gray-300 p-4 text-sm">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/1200px-Wikipedia-logo-v2.svg.png" alt="Wikipedia Logo" class="w-24 mx-auto mb-4">
+            <h2 class="font-bold mb-2 sans-serif">Navigation</h2>
+            <nav>
+                <ul>
+                    <li class="mb-1"><a href="#" class="link-blue hover:underline active" data-page="main">Main page</a></li>
+                    <li class="mb-1"><a href="#" class="link-blue hover:underline" data-page="webdev">Web Development</a></li>
+                    <li class="mb-1"><a href="#" class="link-blue hover:underline" data-page="masterclass">Masterclass</a></li>
+                    <li class="mb-1"><a href="#" class="link-blue hover:underline" data-page="discography">Discography</a></li>
+                    <li class="mb-1"><a href="#" class="link-blue hover:underline" data-page="apps">Producer Tools</a></li>
+                    <li class="mb-1"><a href="#" class="link-blue hover:underline" data-page="conspiracy">Conspiracy</a></li>
+                    <li class="mb-1"><a href="#" class="link-blue hover:underline" data-page="gallery">Gallery</a></li>
+                    <li class="mb-1"><a href="#" class="link-blue hover:underline" data-page="linkhub">Link Hub</a></li>
+                    <li class="mb-1"><a href="#" class="link-blue hover:underline" data-page="contact">Services & Contact</a></li>
+                </ul>
+            </nav>
+            <hr class="my-4">
+            <h2 class="font-bold mb-2 sans-serif">Tools</h2>
+            <nav>
+                <ul>
+                    <li class="mb-1"><a href="#" class="link-blue hover:underline">What links here</a></li>
+                    <li class="mb-1"><a href="#" class="link-blue hover:underline">Related changes</a></li>
+                    <li class="mb-1"><a href="#" class="link-blue hover:underline">Permanent link</a></li>
+                    <li class="mb-1"><a href="#" class="link-blue hover:underline">Cite this page</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <div class="flex-1 flex flex-col min-w-0">
+            <!-- Top Bar -->
+            <header class="flex justify-between items-center p-4 border-b border-gray-300 bg-[#f8f9fa] sans-serif text-sm">
+                <div>
+                    <a href="#" class="link-blue hover:underline">Article</a>
+                    <a href="#" class="ml-4 text-gray-500">Talk</a>
                 </div>
+                <div class="flex items-center">
+                    <input type="search" placeholder="Search Wikipedia" class="border border-gray-400 rounded-l px-2 py-1 text-sm w-24 md:w-auto">
+                    <button class="bg-gray-200 border border-gray-400 border-l-0 rounded-r px-3 py-1 text-sm">Search</button>
+                </div>
+            </header>
 
-                <!-- Main Content Column -->
-                <div class="w-full md:w-2/3">
-                    <h1 class="page-title">Charles Paris Music</h1>
-                    <p class="text-sm -mt-1 mb-4 text-gray-500">Over Time Grind Productions, LLC, Midwest Ill Muzik Group, & Brother O.T.G</p>
+            <!-- Page Content -->
+            <main id="main-content" class="p-4 md:p-8 flex-1 overflow-y-auto">
+                <!-- JavaScript will populate this area -->
+            </main>
+
+            <!-- Footer -->
+            <footer class="p-4 border-t border-gray-300 text-xs text-gray-600 bg-[#f8f9fa]">
+                <p>This page was last edited on 14 August 2025, at 05:19 (EDT).</p>
+                <p>Text is available under the <a href="#" class="link-blue hover:underline">Creative Commons Attribution-ShareAlike License 4.0</a>; additional terms may apply. By using this site, you agree to the <a href="#" class="link-blue hover:underline">Terms of Use</a> and <a href="#" class="link-blue hover:underline">Privacy Policy</a>.</p>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4 hidden z-50">
+        <div class="bg-white p-4 rounded-lg max-w-3xl max-h-full overflow-auto relative">
+            <button id="closeModal" class="absolute top-2 right-2 text-black text-2xl font-bold">&times;</button>
+            <img id="modalImage" src="" alt="" class="w-full h-auto rounded">
+            <p id="modalCaption" class="text-center mt-2 text-gray-700"></p>
+        </div>
+    </div>
+
+    <script>
+        // --- CONTENT FOR EACH PAGE ---
+        const pageContent = {
+            main: {
+                title: "Charles Paris Music",
+                html: `
+                    <p class="text-sm -mt-1 mb-4 text-gray-500">From Wikipedia, the free encyclopedia</p>
+                    <div class="flex flex-col md:flex-row-reverse gap-8">
+                        <!-- Right Sidebar (Infobox) -->
+                        <div class="w-full md:w-1/3">
+                            <table class="infobox w-full sans-serif">
+                                <tbody>
+                                    <tr><th colspan="2" class="text-center text-lg font-bold bg-gray-200 p-2">Charles A. Paris</th></tr>
+                                    <tr><td colspan="2" class="text-center p-2">
+                                        <img src="https://github.com/365otg/365CP/blob/main/Charles_Paris_bio.jpg?raw=true" alt="Charles A. Paris, the music producer and developer known as Brother OTG" class="mx-auto" onerror="this.onerror=null;this.src='https://placehold.co/300x300/cccccc/ffffff?text=Image+Not+Found';">
+                                        <div class="text-xs p-1">Charles A. Paris</div>
+                                    </td></tr>
+                                    <tr class="border-t border-gray-300"><th scope="row" class="p-2">Born</th><td id="born-cell" class="p-2">Charles Anthony Paris<br>April 30, 1980<br>Urbana, Illinois, U.S.</td></tr>
+                                    <tr class="border-t border-gray-300"><th scope="row" class="p-2">Nationality</th><td class="p-2">Black American</td></tr>
+                                    <tr class="border-t border-gray-300"><th scope="row" class="p-2">Other names</th><td class="p-2">Brother OTG, 365OTG, Charles Paris Music, O.T.G, I Double L, Supply The Work</td></tr>
+                                    <tr class="border-t border-gray-300"><th scope="row" class="p-2">Occupation</th><td class="p-2">Record producer, composer, software developer, author, brand consultant, community activist</td></tr>
+                                    <tr class="border-t border-gray-300"><th scope="row" class="p-2">Title</th><td class="p-2">CEO & Founder, Over Time Grind Productions LLC</td></tr>
+                                    <tr class="border-t border-gray-300"><th scope="row" class="p-2">Years active</th><td class="p-2">1998–present</td></tr>
+                                    <tr class="border-t border-gray-300"><th scope="row" class="p-2">Website</th><td class="p-2"><a href="https://365otg.github.io/CharlesParisMusic/" class="link-blue" target="_blank" rel="noopener noreferrer">Charles Paris Music</a></td></tr>
+                                    <tr class="border-t border-gray-300"><th scope="row" class="p-2">Business Card</th><td class="p-2"><a href="https://365otg.github.io/CharlesParisLinks/" class="link-blue" target="_blank" rel="noopener noreferrer">Charles Paris Business Card</a></td></tr>
+                                    <tr class="border-t border-gray-300"><td colspan="2" class="p-2">
+                                        <div class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md" role="alert">
+                                            <div class="flex"><div class="py-1"><svg class="fill-current h-6 w-6 text-teal-500 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z"/></svg></div>
+                                            <div><p class="font-bold">Build Credit with Chime</p><p class="text-sm">Get paid early and build credit. <a href="https://chime.com/r/charlesparis19" class="font-bold link-blue">Sign up with my referral link</a>.</p></div></div>
+                                        </div>
+                                    </td></tr>
+                                    <tr class="border-t border-gray-300"><td colspan="2" class="p-2">
+                                        <div class="bg-pink-100 border-t-4 border-pink-500 rounded-b text-pink-900 px-4 py-3 shadow-md" role="alert">
+                                            <div class="flex"><div class="py-1"><svg class="fill-current h-6 w-6 text-pink-500 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 3.22l-.61-.6a5.5 5.5 0 0 0-7.78 7.77L10 18.78l8.39-8.4a5.5 5.5 0 0 0-7.78-7.77l-.61.61z"/></svg></div>
+                                            <div><p class="font-bold">Support O.T.G</p><p class="text-sm"><a href="https://paypal.me/shopotg" class="font-bold link-blue">PayPal (Shop)</a>, <a href="https://paypal.me/overtimegrind" class="font-bold link-blue">PayPal (Grind)</a>, <a href="https://cash.app/$pfprinting" class="font-bold link-blue">Cash App</a>.</p></div></div>
+                                        </div>
+                                    </td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- Main Content Column -->
+                        <div class="w-full md:w-2/3">
+                            <p>
+                                <a href="https://www.ascap.com/repertory#/ace/writer/600701211/PARIS%20CHARLES%20ANTHONY" class="link-blue" target="_blank" rel="noopener noreferrer"><b>Charles Anthony Paris</b></a> (born April 30, 1980), known professionally as <b>Brother OTG</b>, is an American <a href="https://en.wikipedia.org/wiki/Record_producer" class="link-blue">record producer</a>, software developer, and author. He is the founder of <a href="https://365otg.github.io/CharlesParisMusic/" class="link-blue" target="_blank" rel="noopener noreferrer">CHARLES PARIS MUSIC</a> and developed the <b>Over Time Grind</b> business philosophy. His work includes production for <a href="https://en.wikipedia.org/wiki/Beanie_Sigel" class="link-blue">Beanie Sigel</a>, the theme song for the BET series "<a href="https://en.wikipedia.org/wiki/Tiny_and_Toya" class="link-blue" target="_blank" rel="noopener noreferrer">Tiny and Toya 2</a>," and tracks that have accumulated over 6.3 million plays on TikTok. Paris was formerly a voting member of the <a href="https://en.wikipedia.org/wiki/Grammy_Awards" class="link-blue">Grammy Awards</a> and develops web applications for music creators.
+                            </p>
+                            <!-- Table of Contents -->
+                            <div id="toc" class="toc my-4 sans-serif mt-6">
+                                <h2 class="text-lg font-bold text-center border-b-0 m-0 p-0 mb-2">Contents</h2>
+                                <ul>
+                                    <li class="toclevel-1"><a href="#career"><span>1</span> Career Journey</a></li>
+                                    <li class="toclevel-1"><a href="#tonetrump-era"><span>2</span> The Tone Trump Era & Brand Development</a></li>
+                                    <li class="toclevel-1"><a href="#production-era"><span>3</span> The Beanie Sigel Era & Podcasting Influence</a></li>
+                                    <li class="toclevel-1"><a href="#marketing-tech"><span>4</span> Marketing Innovator & Tech Visionary</a></li>
+                                    <li class="toclevel-1"><a href="#community-activism"><span>5</span> Community Engagement & Activism</a></li>
+                                </ul>
+                            </div>
+                            <h2 id="career" class="section-title">Career Journey</h2>
+                            <p>Born in <a href="https://en.wikipedia.org/wiki/Urbana,_Illinois" class="link-blue" target="_blank" rel="noopener noreferrer">Urbana, Illinois</a>, Paris began his career from 2002 to 2009 under the name "I Double L," founding the <a href="https://www.ascap.com/repertory#/ace/works/publisher/2685089/MIDWEST%20ILL%20MUZIK%20GROUP" class="link-blue" target="_blank" rel="noopener noreferrer"><b>Midwest Muzik Group</b></a>. After winning local music contests, he signed a contract that did not advance his career. Following advice from <a href="https://en.wikipedia.org/wiki/Black_Hand_Entertainment" class="link-blue" target="_blank" rel="noopener noreferrer"><b>Chaz Williams</b></a> of Black Hand Entertainment, Paris secured a publishing deal in 2009 with <a href="https://en.wikipedia.org/wiki/MC_Lyte" class="link-blue" target="_blank" rel="noopener noreferrer"><b>MC Lyte's</b></a> <a href="https://dubosemusic.com/" class="link-blue" target="_blank" rel="noopener noreferrer"><b>DuBose Music Group</b></a>. Between 2009 and 2011, he developed a business plan and created music in preparation for a move to Philadelphia.</p>
+                            <p>In 2011, Paris relocated to South Philadelphia and established <b>Over Time Grind Productions, LLC</b>. He worked as an engineer at Jazz U Up Studio and handled promotions for Glenn Lewis's single "Can't Say Love" with <a href="https://en.wikipedia.org/wiki/Ruffhouse_Records" class="link-blue" target="_blank" rel="noopener noreferrer">Ruffhouse Records</a>. From 2012 to 2016, he was the Social Media Manager and A&R for Phillybassd Records, where he mentored students from local universities. During this time, he was mentored by songwriter <a href="https://www.soulexpress.net/brucehawes.htm" class="link-blue" target="_blank" rel="noopener noreferrer"><b>Bruce Hawes</b></a>, known for writing <a href="https://en.wikipedia.org/wiki/The_Spinners_(American_band)" class="link-blue" target="_blank" rel="noopener noreferrer">The Spinners'</a> song "<a href="https://en.wikipedia.org/wiki/Sadie_(song)" class="link-blue" target="_blank" rel="noopener noreferrer">Sadie</a>," which was later sampled in <a href="https://en.wikipedia.org/wiki/2Pac" class="link-blue" target="_blank" rel="noopener noreferrer">2Pac's</a> track "<a href="https://en.wikipedia.org/wiki/Dear_Mama" class="link-blue" target="_blank" rel="noopener noreferrer">Dear Mama</a>."</p>
+                            <h2 id="tonetrump-era" class="section-title">The Tone Trump Era & Brand Development</h2>
+                            <p>For approximately a decade, Paris collaborated with artist <a href="https://en.wikipedia.org/wiki/Tone_Trump" class="link-blue">Tone Trump</a>, serving as President of his label. In this role, Paris was responsible for public image management, marketing, and road campaign management. This collaboration included Tone Trump's casting in the film <a href="https://en.wikipedia.org/wiki/Creed_(film)" class="link-blue" target="_blank" rel="noopener noreferrer">*Creed*</a>.</p>
+                            <h2 id="production-era" class="section-title">The Beanie Sigel Era & Podcasting Influence</h2>
+                            <p>From 2015 to 2020, Paris worked with recording artist <a href="https://en.wikipedia.org/wiki/Beanie_Sigel" class="link-blue">Beanie Sigel</a>, managing his transition into digital media. Paris's role involved sourcing production from producers such as <a href="https://en.wikipedia.org/wiki/The_Streetrunners" class="link-blue" target="_blank" rel="noopener noreferrer">The Streetrunners</a> and assisting with business matters, including the patent for <a href="https://en.wikipedia.org/wiki/State_Property_(group)" class="link-blue" target="_blank" rel="noopener noreferrer">State Property</a>, which preceded a group reunion. Paris produced Sigel's interviews on the Taxstone podcast, which have been credited by some media commentators with increasing the popularity of urban podcasting. Paris also worked with Sigel during the <a href="https://en.wikipedia.org/wiki/Bad_Boy_Family_Reunion_Tour" class="link-blue" target="_blank" rel="noopener noreferrer">Bad Boy Reunion Tour</a>.</p>
+                            <h2 id="marketing-tech" class="section-title">Marketing Innovator & Tech Visionary</h2>
+                            <p>Paris has developed and executed digital and street marketing campaigns for brands, including the retail store <a href="https://cityblueshop.com/" class="link-blue" target="_blank" rel="noopener noreferrer"><b>City Blue</b></a>. His work in this area led to his participation in industry conferences such as <a href="https://www.ad-tech.com/" class="link-blue" target="_blank" rel="noopener noreferrer"><b>Ad:tech</b></a>, where he spoke about using automation for social media engagement.</p>
+                            <h2 id="community-activism" class="section-title">Community Engagement & Activism</h2>
+                            <p>Paris has stated that his community activism is influenced by his upbringing in the Midwest, the history of the Black Panthers, and events such as the <a href="https://en.wikipedia.org/wiki/Rodney_King" class="link-blue" target="_blank" rel="noopener noreferrer">Rodney King</a> beating. He was involved in organizing "Hands Up Don't Shoot" events in Philadelphia in 2014 and participated in the 2020 protests on the <a href="https://en.wikipedia.org/wiki/Vine_Street_Expressway" class="link-blue" target="_blank" rel="noopener noreferrer">Vine Street Expressway</a>. His community work includes organizing local clean-ups, engaging with politicians, and outreach with the Nation of Islam.</p>
+                        </div>
+                    </div>
+                `
+            },
+            webdev: {
+                title: "Web Development Portfolio",
+                html: `
+                    <p class="text-sm -mt-1 mb-4 text-gray-500">From Wikipedia, the free encyclopedia</p>
+                    <p>As a developer, Charles Paris specializes in crafting robust, intuitive, and high-performance web applications that solve real-world problems, particularly for creative professionals. Below is a selection of projects demonstrating this expertise.</p>
                     
-                    <p>
-                        <a href="https://www.ascap.com/repertory#/ace/writer/600701211/PARIS%20CHARLES%20ANTHONY" class="link-blue" target="_blank" rel="noopener noreferrer"><b>Charles Anthony Paris</b></a> (born April 30, 1980), known professionally as <b>Brother OTG</b>, is an American <a href="https://en.wikipedia.org/wiki/Record_producer" class="link-blue">record producer</a>, software developer, and author. He is the founder of <a href="https://365otg.github.io/CharlesParisMusic/" class="link-blue" target="_blank" rel="noopener noreferrer">CHARLES PARIS MUSIC</a> and developed the <b>Over Time Grind</b> business philosophy. His work includes production for <a href="https://en.wikipedia.org/wiki/Beanie_Sigel" class="link-blue">Beanie Sigel</a>,<sup id="ref-1-source"><a href="#ref-1" class="link-blue">[1]</a></sup> the theme song for the BET series "<a href="https://en.wikipedia.org/wiki/Tiny_and_Toya" class="link-blue" target="_blank" rel="noopener noreferrer">Tiny and Toya 2</a>,"<sup id="ref-2-source"><a href="#ref-2" class="link-blue">[2]</a></sup> and tracks that have accumulated over 6.3 million plays on TikTok. Paris was formerly a voting member of the <a href="https://en.wikipedia.org/wiki/Grammy_Awards" class="link-blue">Grammy Awards</a> and develops web applications for music creators.
-                    </p>
-
-                    <!-- Table of Contents -->
-                    <div id="toc" class="toc my-4 sans-serif mt-6">
-                        <h2 class="text-lg font-bold text-center border-b-0 m-0 p-0 mb-2">Contents</h2>
-                        <ul>
-                            <li class="toclevel-1"><a href="#career"><span>1</span> Career Journey</a></li>
-                            <li class="toclevel-1"><a href="#tonetrump-era"><span>2</span> The Tone Trump Era & Brand Development</a></li>
-                            <li class="toclevel-1"><a href="#production-era"><span>3</span> The Beanie Sigel Era & Podcasting Influence</a></li>
-                            <li class="toclevel-1"><a href="#marketing-tech"><span>4</span> Marketing Innovator & Tech Visionary</a></li>
-                            <li class="toclevel-1"><a href="#community-activism"><span>5</span> Community Engagement & Activism</a></li>
-                            <li class="toclevel-1"><a href="#rebirth"><span>6</span> The Rebirth & The Future</a></li>
-                            <li class="toclevel-1"><a href="#discography"><span>7</span> Discography</a></li>
-                            <li class="toclevel-1"><a href="#published-works"><span>8</span> Published Works</a></li>
-                            <li class="toclevel-1"><a href="#education"><span>9</span> Educational Content</a></li>
-                            <li class="toclevel-1"><a href="#services"><span>10</span> Professional Services</a></li>
-                            <li class="toclevel-1"><a href="#awards"><span>11</span> Awards and Recognition</a></li>
-                            <li class="toclevel-1"><a href="#references"><span>12</span> References</a></li>
-                        </ul>
+                    <h2 class="section-title">Portfolio of Applications</h2>
+                    <div class="portfolio-grid mt-6">
+                        <!-- Projects will be dynamically inserted here from the portfolioData object -->
+                    </div>
+                `
+            },
+             masterclass: {
+                title: "Producer Business Blueprint (1-on-1 Session)",
+                html: `
+                    <p class="text-sm -mt-1 mb-4 text-gray-500">From Wikipedia, the free encyclopedia</p>
+                    <div class="bg-[#f8f9fa] border border-[#a2a9b1] p-4 rounded-md mb-6 text-center">
+                        <h2 class="text-2xl font-bold sans-serif mb-2">A 2-Hour Live 1-on-1 Zoom Session</h2>
+                        <p class="text-lg">Your Music is Your Craft. Your Career is Your Business.</p>
                     </div>
 
-                    <h2 id="career" class="section-title">Career Journey</h2>
-                    <p class="my-6">
-                        Born in <a href="https://en.wikipedia.org/wiki/Urbana,_Illinois" class="link-blue" target="_blank" rel="noopener noreferrer">Urbana, Illinois</a>, Paris began his career from 2002 to 2009 under the name "I Double L," founding the <a href="https://www.ascap.com/repertory#/ace/works/publisher/2685089/MIDWEST%20ILL%20MUZIK%20GROUP" class="link-blue" target="_blank" rel="noopener noreferrer"><b>Midwest Muzik Group</b></a>.<sup id="ref-3-source"><a href="#ref-3" class="link-blue">[3]</a></sup> After winning local music contests, he signed a contract that did not advance his career. Following advice from <a href="https://en.wikipedia.org/wiki/Black_Hand_Entertainment" class="link-blue" target="_blank" rel="noopener noreferrer"><b>Chaz Williams</b></a> of Black Hand Entertainment,<sup id="ref-4-source"><a href="#ref-4" class="link-blue">[4]</a></sup> Paris secured a publishing deal in 2009 with <a href="https://en.wikipedia.org/wiki/MC_Lyte" class="link-blue" target="_blank" rel="noopener noreferrer"><b>MC Lyte's</b></a><sup id="ref-5-source"><a href="#ref-5" class="link-blue">[5]</a></sup> <a href="https://dubosemusic.com/" class="link-blue" target="_blank" rel="noopener noreferrer"><b>DuBose Music Group</b></a>. Between 2009 and 2011, he developed a business plan and created music in preparation for a move to Philadelphia.
-                    </p>
-                    <p class="my-6">
-                        In 2011, Paris relocated to South Philadelphia and established <b>Over Time Grind Productions, LLC</b>. He worked as an engineer at Jazz U Up Studio and handled promotions for Glenn Lewis's single "Can't Say Love" with <a href="https://en.wikipedia.org/wiki/Ruffhouse_Records" class="link-blue" target="_blank" rel="noopener noreferrer">Ruffhouse Records</a>.<sup id="ref-6-source"><a href="#ref-6" class="link-blue">[6]</a></sup> From 2012 to 2016, he was the Social Media Manager and A&R for Phillybassd Records, where he mentored students from local universities. During this time, he was mentored by songwriter <a href="https://www.soulexpress.net/brucehawes.htm" class="link-blue" target="_blank" rel="noopener noreferrer"><b>Bruce Hawes</b></a>,<sup id="ref-7-source"><a href="#ref-7" class="link-blue">[7]</a></sup> known for writing <a href="https://en.wikipedia.org/wiki/The_Spinners_(American_band)" class="link-blue" target="_blank" rel="noopener noreferrer">The Spinners'</a> song "<a href="https://en.wikipedia.org/wiki/Sadie_(song)" class="link-blue" target="_blank" rel="noopener noreferrer">Sadie</a>,"<sup id="ref-8-source"><a href="#ref-8" class="link-blue">[8]</a></sup> which was later sampled in <a href="https://en.wikipedia.org/wiki/2Pac" class="link-blue" target="_blank" rel="noopener noreferrer">2Pac's</a> track "<a href="https://en.wikipedia.org/wiki/Dear_Mama" class="link-blue" target="_blank" rel="noopener noreferrer">Dear Mama</a>."<sup id="ref-9-source"><a href="#ref-9" class="link-blue">[9]</a></sup>
-                    </p>
-                     <h3 class="font-bold border-b-0">The "Over Time Grind" Philosophy</h3>
-                    <p>Paris defines his "Over Time Grind" (O.T.G.) philosophy as the application of a blue-collar work ethic to creative industries, based on his past experiences in manual labor jobs. This approach, which forms the basis of his **Supply The Work** movement, involves undertaking a wide range of tasks to create opportunities, including photography, transportation for artists, and recording. His various professional aliases are now being consolidated under the **Charles Paris Music** brand.</p>
-                    <h3 class="font-bold border-b-0">A Visual Archive</h3>
-                     <div class="scroll-gallery" id="archive-gallery">
-                        <div class="gallery-item">
-                            <img src="https://github.com/365otg/PicturesandVids/blob/main/Charles%20OTG%20Paris%20365OTG%202017.jpg?raw=true" alt="Charles Paris Music - Over Time Grind 2017">
-                            <p class="image-caption">OTG, 2017</p>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="https://github.com/365otg/PicturesandVids/blob/main/CharlesParisMusicSuit.png?raw=true" alt="Charles Paris Music 2015">
-                            <p class="image-caption">Charles Paris Music, 2015</p>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="https://github.com/365otg/PicturesandVids/blob/main/CharlesParisMusicImpalass.jpg?raw=true" alt="Charles Paris Music 2019">
-                            <p class="image-caption">Charles Paris Music, 2019</p>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="https://github.com/365otg/PicturesandVids/blob/main/205864200_10219396254757627_2935330599415007964_n.jpg?raw=true" alt="Charles Paris Music 2023">
-                            <p class="image-caption">Charles Paris Music, 2023</p>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="https://github.com/365otg/PicturesandVids/blob/main/CharlesParisMusicGraffitiPier.jpg?raw=true" alt="Charles Paris Music at Graffiti Pier 2023">
-                            <p class="image-caption">At Graffiti Pier, 2023</p>
-                        </div>
-                    </div>
+                    <h2 class="section-title">The Cost of Not Knowing Your Business</h2>
+                    <blockquote class="border-l-4 border-gray-300 pl-4 italic my-4">
+                        <p>"In 2020, I changed my producer name, struggling with the technical side of music distribution and business. Five years later, in 2025, I rebranded to 'Charles Paris Music' and focused on getting my business in order. Almost immediately, I saw a jump in my income. When I contacted my distributor, I discovered a beat I made 16 years ago had been going viral on TikTok since 2020, accumulating over 6.3 million plays!"</p>
+                        <p>"Here's the hard truth: if I had known what I'm about to teach you, I could have capitalized on that moment with social media packages, Content ID, and more. My music has now reached 18 million plays, but it will take another six months to generate accurate data. The biggest regret? In that time, I had taken down some of my music, unknowingly losing out on those 'viral' moments."</p>
+                        <p>"Don't make the same mistake. Let me help you."</p>
+                    </blockquote>
 
-                    <h2 id="tonetrump-era" class="section-title">The Tone Trump Era & Brand Development</h2>
-                    <p>For approximately a decade, Paris collaborated with artist <a href="https://en.wikipedia.org/wiki/Tone_Trump" class="link-blue">Tone Trump</a>, serving as President of his label. In this role, Paris was responsible for public image management, marketing, and road campaign management. This collaboration included Tone Trump's casting in the film <a href="https://en.wikipedia.org/wiki/Creed_(film)" class="link-blue" target="_blank" rel="noopener noreferrer">*Creed*</a>.<sup id="ref-10-source"><a href="#ref-10" class="link-blue">[10]</a></sup></p>
-                     <div class="scroll-gallery" id="tonetrump-gallery">
-                        <div class="gallery-item">
-                            <img src="https://github.com/365otg/PicturesandVids/blob/main/TOneTrumpCharlesParisMusic1.png?raw=true" alt="Charles 'O.T.G' Paris and Tone Trump">
-                            <p class="image-caption">With Tone Trump</p>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="https://github.com/365otg/PicturesandVids/blob/main/TOneTrumpRoeNittyCharlesParisMusic.png?raw=true" alt="Tone Trump, Roe Nitty, Charles OTG Paris">
-                            <p class="image-caption">With Tone Trump & Roe Nitty</p>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="https://github.com/365otg/CharlesParisWiki/blob/main/Charles%20Paris%20Tone%20Trump%20and%20Ockz.webp?raw=true" alt="Charles 'Brother OTG' Paris with Tone Trump, Roe Nitty, and Ockz">
-                            <p class="image-caption">With Tone Trump & Crew</p>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="https://github.com/365otg/PicturesandVids/blob/main/TopNotchOTGFebruary23%2C2016.jpg?raw=true" alt="Charles 'Brother OTG' Paris with Tone Trump and Top Notch">
-                            <p class="image-caption">With Tone Trump & Top Notch</p>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="https://github.com/365otg/PicturesandVids/blob/main/MaskedUPOTG.jpg?raw=true" alt="Tone Trump, Roe Nitty, and Charles Paris Music">
-                            <p class="image-caption">Masked Up</p>
-                        </div>
-                    </div>
-
-                    <h2 id="production-era" class="section-title">The Beanie Sigel Era & Podcasting Influence</h2>
-                    <p class="my-6">
-                        From 2015 to 2020, Paris worked with recording artist <a href="https://en.wikipedia.org/wiki/Beanie_Sigel" class="link-blue">Beanie Sigel</a>, managing his transition into digital media. Paris's role involved sourcing production from producers such as <a href="https://en.wikipedia.org/wiki/The_Streetrunners" class="link-blue" target="_blank" rel="noopener noreferrer">The Streetrunners</a><sup id="ref-11-source"><a href="#ref-11" class="link-blue">[11]</a></sup> and assisting with business matters, including the patent for <a href="https://en.wikipedia.org/wiki/State_Property_(group)" class="link-blue" target="_blank" rel="noopener noreferrer">State Property</a>, which preceded a group reunion. Paris produced Sigel's interviews on the Taxstone podcast,<sup id="ref-4-source"><a href="#ref-4" class="link-blue">[4]</a></sup> which have been credited by some media commentators with increasing the popularity of urban podcasting. Paris also worked with Sigel during the <a href="https://en.wikipedia.org/wiki/Bad_Boy_Family_Reunion_Tour" class="link-blue" target="_blank" rel="noopener noreferrer">Bad Boy Reunion Tour</a>.
-                    </p>
-                    <div class="my-4 clear-both">
-                        <div class="aspect-w-16 aspect-h-9">
-                            <iframe class="w-full h-full rounded" src="https://www.youtube.com/embed/D2EwTKIOr4k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <p class="image-caption">The historic Taxstone podcast interview with Beanie Sigel, produced by Charles "O.T.G" Paris.</p>
-                    </div>
+                    <h2 class="section-title">What You Will Learn</h2>
+                    <ul class="list-disc list-inside space-y-2 mt-4">
+                        <li><strong>Financial & Legal Foundation:</strong> Master the process of submitting to ASCAP, ensuring you get every dollar you've earned in royalties.</li>
+                        <li><strong>Distribution Strategy:</strong> Walk through the faceless setup of music distribution to get your beats on all major platforms.</li>
+                        <li><strong>Social Media Domination:</strong> Learn advanced strategies for Facebook, Instagram, TikTok, and YouTube to build an engaged following.</li>
+                        <li><strong>Getting Placements:</strong> Discover proven tactics for getting your music heard by the right people, from artists to music supervisors.</li>
+                        <li><strong>Build Your Brand:</strong> Develop a brand identity that stands out in a crowded market and builds trust with clients and collaborators.</li>
+                        <li><strong>E-Commerce Power:</strong> Set up and automate a professional beat store and online storefront that sells your products 24/7.</li>
+                        <li><strong>Contracts & Licensing:</strong> Demystify the world of music contracts and licensing to protect your work and secure fair deals.</li>
+                        <li><strong>Networking for Placements:</strong> Learn how to build a robust network of artists, managers, and A&R to land high-value placements.</li>
+                        <li><strong>Live Q&A Session:</strong> Get your specific questions answered in real-time during your dedicated 1-on-1 session.</li>
+                    </ul>
                     
-                    <h2 id="marketing-tech" class="section-title">Marketing Innovator & Tech Visionary</h2>
-                    <p class="my-6">
-                        Paris has developed and executed digital and street marketing campaigns for brands, including the retail store <a href="https://cityblueshop.com/" class="link-blue" target="_blank" rel="noopener noreferrer"><b>City Blue</b></a>.<sup id="ref-12-source"><a href="#ref-12" class="link-blue">[12]</a></sup> His work in this area led to his participation in industry conferences such as <a href="https://www.ad-tech.com/" class="link-blue" target="_blank" rel="noopener noreferrer"><b>Ad:tech</b></a>,<sup id="ref-5-source"><a href="#ref-5" class="link-blue">[5]</a></sup> where he spoke about using automation for social media engagement. The CEO of the marketing technology company <a href="https://en.wikipedia.org/wiki/Rocket_Fuel_Inc." class="link-blue" target="_blank" rel="noopener noreferrer">Rocketfuel</a> commented that Paris's combined background in maintenance, automation, and music would make him a "fierce competitor."
-                    </p>
-                    <p class="my-6">
-                        His work has also included A&R for artists <a href="https://www.phillyinternationalrecords.com/" class="link-blue" target="_blank" rel="noopener noreferrer"><b>Helen and Terry Bruner</b></a>,<sup id="ref-13-source"><a href="#ref-13" class="link-blue">[13]</a></sup> consulting for brands and media platforms, and branding for the "Follow The Dream" campaign with <a href="https://www.revolt.tv/" class="link-blue" target="_blank" rel="noopener noreferrer"><b>Revolt TV</b></a> host DJ Damage.
-                    </p>
-                    <h3 class="font-bold border-b-0">A Network of Legends</h3>
-                    <p>Paris has collaborated with figures across multiple industries.</p>
-                    <div class="scroll-gallery" id="image-gallery">
-                        <div class="gallery-item">
-                            <img src="https://github.com/365otg/CharlesParisWiki/blob/main/Charles%20Paris%20and%20Bernard%20Hopkins.webp?raw=true" alt="Charles 'Brother OTG' Paris with boxing legend Bernard Hopkins">
-                            <p class="image-caption">With Bernard Hopkins</p>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="https://github.com/365otg/CharlesParisWiki/blob/main/Charles%20Paris%20and%20Dj%20Damage.webp?raw=true" alt="Charles 'Brother OTG' Paris with DJ Damage">
-                            <p class="image-caption">With DJ Damage</p>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="https://github.com/365otg/CharlesParisWiki/blob/main/Over%20Time%20Grind%20and%20Jahlil%20Beats.webp?raw=true" alt="Charles 'Brother OTG' Paris with Jahlil Beats">
-                            <p class="image-caption">With Jahlil Beats</p>
-                        </div>
-                         <div class="gallery-item">
-                            <img src="https://github.com/365otg/CharlesParisWiki/blob/main/Over%20Time%20Grind%20and%20ENess.webp?raw=true" alt="Charles 'Brother OTG' Paris with Eness">
-                            <p class="image-caption">With Eness</p>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="https://github.com/365otg/CharlesParisWiki/blob/main/Charles%20Paris%20and%20Chris%20Schwartz.webp?raw=true" alt="Charles 'Brother OTG' Paris with Chris Schwartz">
-                            <p class="image-caption">With Chris Schwartz</p>
-                        </div>
-                         <div class="gallery-item">
-                            <img src="https://github.com/365otg/CharlesParisWiki/blob/main/Charles%20Paris%20%20and%20Stalley.webp?raw=true" alt="Charles 'Brother OTG' Paris with Stalley">
-                            <p class="image-caption">With Stalley</p>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="https://github.com/365otg/PicturesandVids/blob/main/Charles%20OTG%20Paris%20and%20Jak%20Brown.png?raw=true" alt="Charles 'Brother OTG' Paris with Jak SuthernFolk Brown">
-                            <p class="image-caption">With Jak "SuthernFolk" Brown</p>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="https://github.com/365otg/PicturesandVids/blob/main/Charles%20Paris%20Music%20WEFT%202009.png?raw=true" alt="Charles Paris at WEFT 90.1 FM in 2009">
-                            <p class="image-caption">At WEFT 90.1 FM (2009)</p>
-                        </div>
-                         <div class="gallery-item">
-                            <img src="https://github.com/365otg/PicturesandVids/blob/main/Charles%20Paris%20Music%20and%20Howard%20Cohen%20.png?raw=true" alt="Charles 'Brother OTG' Paris with Howard Cohen, creator of the 8-Ball Jacket">
-                            <p class="image-caption">With Howard Cohen</p>
-                        </div>
-                         <div class="gallery-item">
-                            <img src="https://github.com/365otg/PicturesandVids/blob/main/CharlesParisMusciTOneTrumpss.jpg?raw=true" alt="Charles 'Brother OTG' Paris with Tone Trump at DJ Kay Slay's Birthday Party">
-                            <p class="image-caption">At DJ Kay Slay's Birthday</p>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="https://github.com/365otg/PicturesandVids/blob/main/Ad%20Tech%20Credentials.png?raw=true" alt="Charles 'Brother OTG' Paris's Ad:tech credentials">
-                            <p class="image-caption">Ad:tech Credentials</p>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="https://github.com/365otg/PicturesandVids/blob/main/CHarlesParisMuscOTGMagazine%202016.jpg?raw=true" alt="Charles 'Brother OTG' Paris on a magazine cover for his work on Black Consciousness">
-                            <p class="image-caption">Magazine Cover, 2016</p>
-                        </div>
+                    <h2 class="section-title">Enrollment</h2>
+                    <div class="bg-[#f8f9fa] border border-[#a2a9b1] p-4 rounded-md my-6 text-center">
+                         <p class="text-lg mb-2"><strong>Book your 1-on-1 session for $100.</strong> This is an investment in your future.</p>
+                         <a href="https://paypal.me/overtimegrind/100" target="_blank" rel="noopener noreferrer" class="link-blue text-lg font-bold">Pay $100 to Reserve Your Spot →</a>
+                         <p class="text-xs text-gray-600 mt-2">*The Zoom link will be sent to the email verified on payment within 24 hours of purchase. All sales are final; there are no refunds.</p>
+                    </div>
+                `
+            },
+            conspiracy: {
+                title: "Conspiracy Theories: Real or Fake w/ Facts (Podcast Archive)",
+                html: `
+                    <p class="text-sm -mt-1 mb-4 text-gray-500">From Wikipedia, the free encyclopedia</p>
+                    <div class="bg-[#f8f9fa] border border-[#a2a9b1] p-4 rounded-md mb-6 text-sm">
+                        <h2 class="text-xl font-bold text-center sans-serif mb-2">Archive Summary</h2>
+                        <p class="text-center">This page archives the 41-episode run of the "Conspiracy Theories Real or Fake w/ Facts" podcast, hosted by Brother O.T.G. The series ran for <strong><span id="day-counter"></span> days</strong> from Feb 20, 2021, to Aug 27, 2021, totaling over <strong>248 hours</strong> of content.</p>
                     </div>
 
-                    <h2 id="community-activism" class="section-title">Community Engagement & Activism</h2>
-                    <p class="my-6">
-                        Paris has stated that his community activism is influenced by his upbringing in the Midwest, the history of the Black Panthers, and events such as the <a href="https://en.wikipedia.org/wiki/Rodney_King" class="link-blue" target="_blank" rel="noopener noreferrer">Rodney King</a> beating.<sup id="ref-14-source"><a href="#ref-14" class="link-blue">[14]</a></sup> He was involved in organizing "Hands Up Don't Shoot" events in Philadelphia in 2014 and participated in the 2020 protests on the <a href="https://en.wikipedia.org/wiki/Vine_Street_Expressway" class="link-blue" target="_blank" rel="noopener noreferrer">Vine Street Expressway</a>.<sup id="ref-15-source"><a href="#ref-15" class="link-blue">[15]</a></sup> His community work includes organizing local clean-ups, engaging with politicians, and outreach with the Nation of Islam. From 2008 to 2010, he coached youth sports at the YMCA, and in 2017, he participated in a Kidney Walk in Baltimore with the artist Freeway.
-                    </p>
-                    <p class="my-6">
-                        He has also conducted interviews with public figures including <b>Chairman Fred Hampton Jr.</b>, political analyst <a href="https://www.wilmerleon.com/" class="link-blue" target="_blank" rel="noopener noreferrer"><b>Dr. Wilmer Leon</b></a>,<sup id="ref-16-source"><a href="#ref-16" class="link-blue">[16]</a></sup> and <b>Tariq Nasheed</b>. The subjects of these interviews are related to themes in his book, which discusses history, spirituality, and social theories.
-                    </p>
-                    <h3 class="font-bold border-b-0">Activism Gallery</h3>
-                    <div class="scroll-gallery" id="activism-gallery">
-                        <div class="gallery-item">
-                            <img src="https://github.com/365otg/CharlesParisWiki/blob/main/Charles%20Paris%20and%20Freeway.webp?raw=true" alt="Charles 'Brother OTG' Paris with Freeway at the Kidney Walk">
-                            <p class="image-caption">With Freeway, Kidney Walk</p>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="https://github.com/365otg/PicturesandVids/blob/main/101387032_10216999035668648_7824818101299445760_n.jpg?raw=true" alt="2020 Philadelphia Protest at the Frank Rizzo statue">
-                            <p class="image-caption">2020 Protest, Frank Rizzo Statue</p>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="https://github.com/365otg/PicturesandVids/blob/main/FrontLines%20CenterCitymay312020.jpg?raw=true" alt="On the front lines of the 2020 Philadelphia Protests">
-                            <p class="image-caption">On the Front Lines, 2020</p>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="https://github.com/365otg/PicturesandVids/blob/main/VinesStreetMay30.jpg?raw=true" alt="Vine Street Parkway during the 2020 Philadelphia Riots">
-                            <p class="image-caption">Vine Street Parkway, 2020</p>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="https://github.com/365otg/PicturesandVids/blob/main/VinesstreetV3.jpg?raw=true" alt="Vine Street Riots, Philadelphia 2020">
-                            <p class="image-caption">Vine Street Riots, 2020</p>
-                        </div>
+                    <h2 class="section-title">Episode List</h2>
+                    <div id="episode-list" class="space-y-8">
+                        <!-- Episodes will be populated by JavaScript -->
                     </div>
                     
-                    <h2 id="rebirth" class="section-title">The Rebirth & The Future</h2>
-                    <p>During the COVID-19 pandemic, Paris began using the social audio application <b>Clubhouse</b> to host a discussion room called "OTG Safe Space," which focused on topics such as history and culture. Terminology used in the room, such as "Rich Rising," was later adopted by other media figures, including <a href="https://en.wikipedia.org/wiki/The_Joe_Budden_Podcast" class="link-blue" target="_blank" rel="noopener noreferrer">Joe Budden</a>.<sup id="ref-7-source"><a href="#ref-7" class="link-blue">[7]</a></sup> Following this period, Paris rebranded his YouTube channel and began developing the **Charles Paris Music Academy**. The stated purpose of the academy is to be a media center that teaches musicians business and technical skills for an independent career.</p>
+                    <h2 class="section-title">Executive Summary & Glossary</h2>
+                    <div class="space-y-4 mt-4">
+                        <div>
+                            <h3 class="text-xl font-semibold sans-serif mb-2">Executive Summary</h3>
+                            <p>This archive documents 41 episodes of the "Conspiracy Theories Real or Fake w/ Facts" podcast, hosted by Brother O.T.G., spanning a significant 188-day period from February 20, 2021, to August 27, 2021. The collection represents over 248 hours of in-depth discussions on a wide range of topics, from historical and political conspiracies to social issues and esoteric knowledge. The podcast provided a unique "Black First" perspective on these subjects, fostering a space for late-night conversations and truth-seeking. This period is regarded by many listeners as life-changing, marked by its intense schedule and the depth of its content.</p>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold sans-serif mb-2">Glossary of Key Terms</h3>
+                            <ul class="list-disc list-inside space-y-1">
+                                <li><strong>CTRFWF:</strong> Abbreviation for "Conspiracy Theories Real or Fake w/ Facts."</li>
+                                <li><strong>O.T.G:</strong> Over Time Grind, the brand and philosophy of the host.</li>
+                                <li><strong>Safe Spaces:</strong> A term for the live rooms on Clubhouse where the podcast was recorded, emphasizing a "Black First" environment for open discussion.</li>
+                                <li><strong>Project C.T.R.L:</strong> A series within the podcast focusing on specific deep-dive topics like MKUltra and historical timelines.</li>
+                                <li><strong>Tin Foil Hat Time:</strong> A recurring segment or series dedicated to more speculative and esoteric conspiracy theories.</li>
+                            </ul>
+                        </div>
+                    </div>
 
-                    <h2 id="discography" class="section-title">Discography</h2>
+                    <h2 class="section-title">Associated Video Content</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
+                         <div class="aspect-video">
+                             <iframe class="w-full h-full" src="https://www.youtube.com/embed/videoseries?list=PL5CNM_INhrKZ0RMlGB2HAEyTGO7fIzG-j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                         </div>
+                         <div class="aspect-video">
+                             <iframe class="w-full h-full" src="https://www.youtube.com/embed/videoseries?list=PLOrCnNLDAql-PxckdFG4gZSRCPppA8Sbn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                         </div>
+                    </div>
+                `
+            },
+            discography: {
+                title: "Discography",
+                html: `
+                    <p class="text-sm -mt-1 mb-4 text-gray-500">From Wikipedia, the free encyclopedia</p>
                     <div class="my-4">
                         <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1781558929/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://charlesparismusic.bandcamp.com/album/charles-paris-music">Charles Paris Music by Charles Paris Music</a></iframe>
                     </div>
-                    <div class="overflow-y-auto" style="max-height: 400px;">
+                    <div class="overflow-y-auto" style="max-height: 500px;">
                         <table class="wikitable">
-                            <thead>
-                                <tr>
-                                    <th>Year</th>
-                                    <th>Artist</th>
-                                    <th>Album / Project</th>
-                                </tr>
-                            </thead>
+                            <thead><tr><th>Year</th><th>Artist</th><th>Album / Project</th></tr></thead>
                             <tbody>
                                 <tr><td>2025</td><td>Charles Paris Music</td><td><a href="https://charlesparismusic.bandcamp.com/album/charles-paris-music" class="link-blue" target="_blank" rel="noopener noreferrer">Charles Paris Music</a></td></tr>
                                 <tr><td>2024</td><td>Charles Paris Music</td><td><a href="https://youtube.com/playlist?list=OLAK5uy_mW0i-NiUNzZr86QNVoJgNfwisidyoCREA" class="link-blue" target="_blank" rel="noopener noreferrer">Everyday</a></td></tr>
@@ -418,7 +428,7 @@
                                 <tr><td>2012</td><td>Charles Paris Music</td><td><a href="https://youtube.com/playlist?list=OLAK5uy_nQbVTfBjTT-144bmLyj-zM2LfwAW1erMc&si=T7kXGlzxUmuKhprE" class="link-blue" target="_blank" rel="noopener noreferrer">January Jam Sessions</a></td></tr>
                                 <tr><td>2011</td><td>Charles Paris Music</td><td><a href="https://youtube.com/playlist?list=OLAK5uy_n0EhAOvK3SXO5WdYHxR7cKpXbbEMp0ttE&si=Ix2l2Yj-GyPoRYNO" class="link-blue" target="_blank" rel="noopener noreferrer">Beat Tape Basics</a></td></tr>
                                 <tr><td>2011</td><td>Charles Paris Music</td><td><a href="https://youtube.com/playlist?list=OLAK5uy_ljGI7NBfKhfC7MfRpfD4_VSe2PrhSEfKw&si=SAYncB8kfRMeXhOQ" class="link-blue" target="_blank" rel="noopener noreferrer">R.I.P My MPC, Vol. 2</a></td></tr>
-                                 <tr><td>2011</td><td>Charles Paris Music</td><td><a href="https://youtube.com/playlist?list=OLAK5uy_lyPt7wrpHRkeNna7r62aKpKksiLeALItM&si=ggj5_PveD49Os3zJ" class="link-blue" target="_blank" rel="noopener noreferrer">Soundtrack to the Streets, Vol. 1</a></td></tr>
+                                <tr><td>2011</td><td>Charles Paris Music</td><td><a href="https://youtube.com/playlist?list=OLAK5uy_lyPt7wrpHRkeNna7r62aKpKksiLeALItM&si=ggj5_PveD49Os3zJ" class="link-blue" target="_blank" rel="noopener noreferrer">Soundtrack to the Streets, Vol. 1</a></td></tr>
                                 <tr><td>2009</td><td>Charles Paris Music</td><td><a href="https://youtube.com/playlist?list=OLAK5uy_nvjlxUPX1hb1SXvhbh3ky5iAIbqvmT5YU&si=1dYBu7AOggTVtale" class="link-blue" target="_blank" rel="noopener noreferrer">Abstract Mathematics</a></td></tr>
                                 <tr><td>2008</td><td>Charles Paris Music</td><td><a href="https://youtube.com/playlist?list=OLAK5uy_nFSUlAMZbeAWXj--627TLzXyURxTiDbzo&si=4C8pD76wjesgTwH9" class="link-blue" target="_blank" rel="noopener noreferrer">R.I.P My MPC, Vol. 1</a></td></tr>
                                 <tr><td>2008</td><td>Charles Paris Music</td><td><a href="https://youtube.com/playlist?list=OLAK5uy_mmdlXsd-x0qspvrZBdz9Qfzt6iDebGzgA&si=ciheVVYXcqZhfYo0" class="link-blue" target="_blank" rel="noopener noreferrer">10</a></td></tr>
@@ -426,108 +436,356 @@
                             </tbody>
                         </table>
                     </div>
-
-                    <h2 id="published-works" class="section-title">Published Works</h2>
-                    <h3 class="font-bold border-b-0">Book</h3>
-                    <p class="my-2">Paris is the author of <a href="https://brotherotg.gumroad.com/l/lsxpg" class="link-blue" target="_blank" rel="noopener noreferrer"><b>"The Unforgettable Chronicle"</b></a>, which presents a timeline of historical and theological events.</p>
+                `
+            },
+            apps: {
+                title: "Producer Tools & Web Applications",
+                html: `
+                    <p class="text-sm -mt-1 mb-4 text-gray-500">From Wikipedia, the free encyclopedia</p>
+                    <p>As a self-taught developer, Paris created the <a href="https://365otg.github.io/CPU/" class="link-blue" target="_blank" rel="noopener noreferrer"><b>Charles Paris Producer Tools</b></a>, a suite of over 15 web applications designed to assist music creators with the business and technical aspects of production. The tools are available for free.</p>
+                    <div class="my-4 p-4 border border-gray-300 bg-gray-50 rounded">
+                        <h3 class="font-bold text-lg sans-serif">Featured Tools:</h3>
+                        <ul class="list-disc list-inside mt-2 space-y-1">
+                            <li>BPM & Note Calculators</li>
+                            <li>Music Licensing Fee Estimator</li>
+                            <li>Sample Chop Generator</li>
+                            <li>Royalty Split Sheet Creator</li>
+                        </ul>
+                        <a href="http://charlesparis.online/" class="inline-block bg-blue-600 text-white font-bold py-2 px-4 rounded hover:bg-blue-700 mt-4 sans-serif" target="_blank" rel="noopener noreferrer">Access All Producer Tools</a>
+                    </div>
+                `
+            },
+            gallery: {
+                title: "Gallery",
+                html: `
+                    <p class="text-sm -mt-1 mb-4 text-gray-500">From Wikipedia, the free encyclopedia</p>
+                    <h2 class="section-title">A Visual Archive</h2>
+                    <div class="scroll-gallery my-4">
+                        <div class="gallery-item"><img src="https://github.com/365otg/PicturesandVids/blob/main/Charles%20OTG%20Paris%20365OTG%202017.jpg?raw=true" alt="Charles Paris Music - Over Time Grind 2017"><p class="image-caption">OTG, 2017</p></div>
+                        <div class="gallery-item"><img src="https://github.com/365otg/PicturesandVids/blob/main/CharlesParisMusicSuit.png?raw=true" alt="Charles Paris Music 2015"><p class="image-caption">Charles Paris Music, 2015</p></div>
+                        <div class="gallery-item"><img src="https://github.com/365otg/PicturesandVids/blob/main/CharlesParisMusicImpalass.jpg?raw=true" alt="Charles Paris Music 2019"><p class="image-caption">Charles Paris Music, 2019</p></div>
+                        <div class="gallery-item"><img src="https://github.com/365otg/PicturesandVids/blob/main/205864200_10219396254757627_2935330599415007964_n.jpg?raw=true" alt="Charles Paris Music 2023"><p class="image-caption">Charles Paris Music, 2023</p></div>
+                        <div class="gallery-item"><img src="https://github.com/365otg/PicturesandVids/blob/main/CharlesParisMusicGraffitiPier.jpg?raw=true" alt="Charles Paris Music at Graffiti Pier 2023"><p class="image-caption">At Graffiti Pier, 2023</p></div>
+                    </div>
+                    <h2 class="section-title">A Network of Legends</h2>
+                    <div class="scroll-gallery my-4">
+                        <div class="gallery-item"><img src="https://github.com/365otg/CharlesParisWiki/blob/main/Charles%20Paris%20and%20Bernard%20Hopkins.webp?raw=true" alt="Charles 'Brother OTG' Paris with boxing legend Bernard Hopkins"><p class="image-caption">With Bernard Hopkins</p></div>
+                        <div class="gallery-item"><img src="https://github.com/365otg/CharlesParisWiki/blob/main/Charles%20Paris%20and%20Dj%20Damage.webp?raw=true" alt="Charles 'Brother OTG' Paris with DJ Damage"><p class="image-caption">With DJ Damage</p></div>
+                        <div class="gallery-item"><img src="https://github.com/365otg/CharlesParisWiki/blob/main/Over%20Time%20Grind%20and%20Jahlil%20Beats.webp?raw=true" alt="Charles 'Brother OTG' Paris with Jahlil Beats"><p class="image-caption">With Jahlil Beats</p></div>
+                        <div class="gallery-item"><img src="https://github.com/365otg/CharlesParisWiki/blob/main/Over%20Time%20Grind%20and%20ENess.webp?raw=true" alt="Charles 'Brother OTG' Paris with Eness"><p class="image-caption">With Eness</p></div>
+                        <div class="gallery-item"><img src="https://github.com/365otg/CharlesParisWiki/blob/main/Charles%20Paris%20and%20Chris%20Schwartz.webp?raw=true" alt="Charles 'Brother OTG' Paris with Chris Schwartz"><p class="image-caption">With Chris Schwartz</p></div>
+                        <div class="gallery-item"><img src="https://github.com/365otg/CharlesParisWiki/blob/main/Charles%20Paris%20%20and%20Stalley.webp?raw=true" alt="Charles 'Brother OTG' Paris with Stalley"><p class="image-caption">With Stalley</p></div>
+                    </div>
+                    <h2 class="section-title">Activism</h2>
+                    <div class="scroll-gallery my-4">
+                        <div class="gallery-item"><img src="https://github.com/365otg/CharlesParisWiki/blob/main/Charles%20Paris%20and%20Freeway.webp?raw=true" alt="Charles 'Brother OTG' Paris with Freeway at the Kidney Walk"><p class="image-caption">With Freeway, Kidney Walk</p></div>
+                        <div class="gallery-item"><img src="https://github.com/365otg/PicturesandVids/blob/main/101387032_10216999035668648_7824818101299445760_n.jpg?raw=true" alt="2020 Philadelphia Protest at the Frank Rizzo statue"><p class="image-caption">2020 Protest, Frank Rizzo Statue</p></div>
+                        <div class="gallery-item"><img src="https://github.com/365otg/PicturesandVids/blob/main/FrontLines%20CenterCitymay312020.jpg?raw=true" alt="On the front lines of the 2020 Philadelphia Protests"><p class="image-caption">On the Front Lines, 2020</p></div>
+                        <div class="gallery-item"><img src="https://github.com/365otg/PicturesandVids/blob/main/VinesStreetMay30.jpg?raw=true" alt="Vine Street Parkway during the 2020 Philadelphia Riots"><p class="image-caption">Vine Street Parkway, 2020</p></div>
+                    </div>
+                `
+            },
+            linkhub: {
+                title: "External Links & Digital Hub",
+                html: `
+                    <p class="text-sm -mt-1 mb-4 text-gray-500">From Wikipedia, the free encyclopedia</p>
+                    <p>This section contains a comprehensive list of official external links related to Charles A. Paris, including social media profiles, digital storefronts, and other resources.</p>
                     
-                    <h3 class="font-bold border-b-0 mt-4">Web Applications</h3>
-                    <p class="my-2">As a developer, Paris created the <a href="https://365otg.github.io/CPU/" class="link-blue" target="_blank" rel="noopener noreferrer"><b>Charles Paris Producer Tools</b></a>, a suite of over 15 web applications for music creators. The tools are available at <a href="http://charlesparis.online/" class="link-blue" target="_blank" rel="noopener noreferrer">charlesparis.online</a>.</p>
-                    
-                    <h2 id="education" class="section-title">Educational Content</h2>
-                    <h3 class="font-bold border-b-0 mt-6">The Future: Charles Paris Music Academy</h3>
-                    <p>Paris offers masterclasses and personalized coaching for producers and songwriters. This work has led to the development of the **Charles Paris Music Academy**, a planned media center with a stated mission of teaching musicians the skills for an independent career.</p>
+                    <h2 class="section-title">Social Media & Primary Platforms</h2>
+                    <ul class="list-disc list-inside space-y-2 mt-4">
+                        <li><a href="http://linktr.ee/365charlesparis" target="_blank" rel="noopener noreferrer" class="link-blue">All My Links (Linktree)</a></li>
+                        <li><a href="http://instagram.com/365charlesparis" target="_blank" rel="noopener noreferrer" class="link-blue">Instagram</a></li>
+                        <li><a href="https://www.youtube.com/@365charlesparis/releases" target="_blank" rel="noopener noreferrer" class="link-blue">YouTube Releases</a></li>
+                        <li><a href="http://x.com/365charlesparis" target="_blank" rel="noopener noreferrer" class="link-blue">Twitter/X</a></li>
+                        <li><a href="http://tiktok.com/@365otg" target="_blank" rel="noopener noreferrer" class="link-blue">TikTok</a></li>
+                        <li><a href="https://www.reddit.com/user/supplythework/" target="_blank" rel="noopener noreferrer" class="link-blue">Reddit Profile</a></li>
+                    </ul>
 
-                    <h2 id="services" class="section-title">Professional Services</h2>
+                    <h2 class="section-title">Digital Storefront (Gumroad)</h2>
+                    <ul class="list-disc list-inside space-y-2 mt-4">
+                        <li><a href="https://brotherotg.gumroad.com/l/jkvtk" target="_blank" rel="noopener noreferrer" class="link-blue">O.T.G MPC Stimulus Pack</a></li>
+                        <li><a href="https://brotherotg.gumroad.com/l/MPCMasterclass" target="_blank" rel="noopener noreferrer" class="link-blue">$5 Akai MPC ONE & Live 2 Masterclass</a></li>
+                        <li><a href="https://brotherotg.gumroad.com/l/cjkeak" target="_blank" rel="noopener noreferrer" class="link-blue">400+ MPC Chord Progressions</a></li>
+                        <li><a href="https://brotherotg.gumroad.com/l/fayaz" target="_blank" rel="noopener noreferrer" class="link-blue">O.T.G Smackers DrumKit</a></li>
+                        <li><a href="https://brotherotg.gumroad.com/l/dchte" target="_blank" rel="noopener noreferrer" class="link-blue">15GB - 45 Expansions</a></li>
+                        <li><a href="https://brotherotg.gumroad.com/l/cxozj" target="_blank" rel="noopener noreferrer" class="link-blue">O.T.G Roland Stimulus Pack</a></li>
+                        <li><a href="https://brotherotg.gumroad.com/l/eccpqg" target="_blank" rel="noopener noreferrer" class="link-blue">Roland Stash</a></li>
+                        <li><a href="https://brotherotg.gumroad.com/l/oayds" target="_blank" rel="noopener noreferrer" class="link-blue">$5 Roland SP-404 MK2 Masterclass</a></li>
+                        <li><a href="https://brotherotg.gumroad.com/l/xsxltf" target="_blank" rel="noopener noreferrer" class="link-blue">Roland SP-404 MK2 CheatSheet</a></li>
+                        <li><a href="https://brotherotg.gumroad.com/l/zrhjl" target="_blank" rel="noopener noreferrer" class="link-blue">Roland SP-404 MK2 Soundbank</a></li>
+                        <li><a href="https://brotherotg.gumroad.com/l/crvbw" target="_blank" rel="noopener noreferrer" class="link-blue">Roland SP-404 MK2 Free Screensaver</a></li>
+                    </ul>
+
+                    <h2 class="section-title">Producer Guides & Web Apps</h2>
+                    <ul class="list-disc list-inside space-y-2 mt-4">
+                        <li><a href="https://365otg.github.io/ProducerTools/" target="_blank" rel="noopener noreferrer" class="link-blue">Charles Paris Producer Tools</a></li>
+                        <li><a href="https://365otg.github.io/AkaiMPCGuide/" target="_blank" rel="noopener noreferrer" class="link-blue">Charles Paris Akai MPC Guide</a></li>
+                        <li><a href="https://365otg.github.io/seqtrak/" target="_blank" rel="noopener noreferrer" class="link-blue">Charles Paris Yamaha SeqTrak Guide</a></li>
+                        <li><a href="https://365otg.github.io/sp404-mk2-guide/" target="_blank" rel="noopener noreferrer" class="link-blue">Charles Paris SP-404 MK2 Guide</a></li>
+                        <li><a href="https://365otg.github.io/drumapp/" target="_blank" rel="noopener noreferrer" class="link-blue">Charles Paris Drum App</a></li>
+                        <li><a href="https://365otg.github.io/akaiforceapp/" target="_blank" rel="noopener noreferrer" class="link-blue">Charles Paris Akai Force App</a></li>
+                        <li><a href="https://365otg.github.io/RolandVerselabMV1/" target="_blank" rel="noopener noreferrer" class="link-blue">Charles Paris Roland Verselab MV-1 Guide</a></li>
+                        <li><a href="https://365otg.github.io/aetherflow-app/" target="_blank" rel="noopener noreferrer" class="link-blue">Charles Paris Aetherflow App</a></li>
+                        <li><a href="https://365otg.github.io/OTGQuotes/" target="_blank" rel="noopener noreferrer" class="link-blue">Charles Paris Quote Maker</a></li>
+                        <li><a href="https://365otg.github.io/CPUKnife/" target="_blank" rel="noopener noreferrer" class="link-blue">Charles Paris CPU Knife</a></li>
+                        <li><a href="https://365otg.github.io/metronome/" target="_blank" rel="noopener noreferrer" class="link-blue">Charles Paris Metronome</a></li>
+                        <li><a href="https://365otg.github.io/ChordExplorer/" target="_blank" rel="noopener noreferrer" class="link-blue">Charles Paris Chord Explorer</a></li>
+                        <li><a href="https://365otg.github.io/SampleOrganizer/" target="_blank" rel="noopener noreferrer" class="link-blue">Charles Paris Sample Organizer</a></li>
+                        <li><a href="https://365otg.github.io/producertutorials/" target="_blank" rel="noopener noreferrer" class="link-blue">Charles Paris Producer Tutorials</a></li>
+                    </ul>
+                    
+                    <h2 class="section-title">Support & Financial</h2>
+                     <ul class="list-disc list-inside space-y-2 mt-4">
+                        <li><a href="https://chime.com/r/charlesparis19" target="_blank" rel="noopener noreferrer" class="link-blue">Build Credit with Chime (Referral)</a></li>
+                        <li><a href="https://paypal.me/shopotg" target="_blank" rel="noopener noreferrer" class="link-blue">PayPal</a></li>
+                        <li><a href="https://cash.app/$pfprinting" target="_blank" rel="noopener noreferrer" class="link-blue">Cash App</a></li>
+                    </ul>
+                `
+            },
+            contact: {
+                title: "Services & Contact",
+                html: `
+                    <p class="text-sm -mt-1 mb-4 text-gray-500">From Wikipedia, the free encyclopedia</p>
+                    <h2 class="section-title">Professional Services</h2>
                     <div class="space-y-4 mt-6">
                         <p><b>Web Development:</b> Paris provides web development services for artists and brands. Information is available at <a href="http://charlesparis.online/" class="link-blue" target="_blank" rel="noopener noreferrer">charlesparis.online</a>.</p>
                         <p><b>Brand Consulting:</b> He offers brand consulting services for creative professionals. Information is available at <a href="http://charlesparismusic.online/" class="link-blue" target="_blank" rel="noopener noreferrer">charlesparismusic.online</a>.</p>
                         <p><b>Producer Mentorship:</b> A one-on-one mentorship program is available for music producers. Information is available at <a href="http://charlesparismusic.online/" class="link-blue" target="_blank" rel="noopener noreferrer">charlesparismusic.online</a>.</p>
                     </div>
-
-                    <h2 id="awards" class="section-title">Awards and Recognition</h2>
-                    <div class="my-4">
-                        <img src="https://github.com/365otg/CharlesParisWiki/blob/main/Over%20Time%20Grind%20Hip%20Hop%20Award.webp?raw=true" alt="Charles 'Brother OTG' Paris with his Philadelphia Hip Hop Award" class="w-full rounded" onerror="this.onerror=null;this.src='https://placehold.co/300x300/cccccc/ffffff?text=Image+Not+Found';">
-                        <p class="image-caption">Charles 'O.T.G' Paris receiving a Philadelphia Hip Hop Award.</p>
-                    </div>
-                    <p>Paris received a <b>Philadelphia Hip Hop Award</b><sup id="ref-17-source"><a href="#ref-17" class="link-blue">[17]</a></sup> and was nominated for the <b>Philly Power 30</b> for five consecutive years.</p>
-                    
-                    <h2 id="references" class="section-title">References</h2>
-                    <ol class="list-decimal pl-5 text-sm">
-                        <li id="ref-1" class="mb-2">See section: <a href="#production-era" class="link-blue">The Beanie Sigel Era & Podcasting Influence</a></li>
-                        <li id="ref-2" class="mb-2">See ASCAP Repertory for a full list of over 300 placements: <a href="https://www.ascap.com/repertory#/ace/writer/600701211/PARIS%20CHARLES%20ANTHONY" class="link-blue" target="_blank" rel="noopener noreferrer">ASCAP Writer Profile</a></li>
-                        <li id="ref-3" class="mb-2"><a href="https://www.ascap.com/repertory#/ace/works/publisher/2685089/MIDWEST%20ILL%20MUZIK%20GROUP" class="link-blue" target="_blank" rel="noopener noreferrer">Midwest Ill Muzik Group - ASCAP</a></li>
-                        <li id="ref-4" class="mb-2"><a href="https://en.wikipedia.org/wiki/Black_Hand_Entertainment" class="link-blue" target="_blank" rel="noopener noreferrer">Black Hand Entertainment - Wikipedia</a></li>
-                        <li id="ref-5" class="mb-2"><a href="https://en.wikipedia.org/wiki/MC_Lyte" class="link-blue" target="_blank" rel="noopener noreferrer">MC Lyte - Wikipedia</a></li>
-                        <li id="ref-6" class="mb-2"><a href="https://en.wikipedia.org/wiki/Ruffhouse_Records" class="link-blue" target="_blank" rel="noopener noreferrer">Ruffhouse Records - Wikipedia</a></li>
-                        <li id="ref-7" class="mb-2"><a href="https://www.soulexpress.net/brucehawes.htm" class="link-blue" target="_blank" rel="noopener noreferrer">Bruce Hawes Biography - Soul Express</a></li>
-                        <li id="ref-8" class="mb-2"><a href="https://en.wikipedia.org/wiki/Sadie_(song)" class="link-blue" target="_blank" rel="noopener noreferrer">"Sadie" (song) - Wikipedia</a></li>
-                        <li id="ref-9" class="mb-2"><a href="https://en.wikipedia.org/wiki/Dear_Mama" class="link-blue" target="_blank" rel="noopener noreferrer">"Dear Mama" by 2Pac - Wikipedia</a></li>
-                        <li id="ref-10" class="mb-2"><a href="https://en.wikipedia.org/wiki/Creed_(film)" class="link-blue" target="_blank" rel="noopener noreferrer">Creed (film) - Wikipedia</a></li>
-                        <li id="ref-11" class="mb-2"><a href="https://en.wikipedia.org/wiki/The_Streetrunners" class="link-blue" target="_blank" rel="noopener noreferrer">The Streetrunners - Wikipedia</a></li>
-                        <li id="ref-12" class="mb-2"><a href="https://cityblueshop.com/" class="link-blue" target="_blank" rel="noopener noreferrer">City Blue Official Website</a></li>
-                        <li id="ref-13" class="mb-2"><a href="https://www.phillyinternationalrecords.com/" class="link-blue" target="_blank" rel="noopener noreferrer">Philadelphia International Records</a></li>
-                        <li id="ref-14" class="mb-2"><a href="https://en.wikipedia.org/wiki/Rodney_King" class="link-blue" target="_blank" rel="noopener noreferrer">Rodney King - Wikipedia</a></li>
-                        <li id="ref-15" class="mb-2"><a href="https://en.wikipedia.org/wiki/Vine_Street_Expressway" class="link-blue" target="_blank" rel="noopener noreferrer">Vine Street Expressway - Wikipedia</a></li>
-                        <li id="ref-16" class="mb-2"><a href="https://www.wilmerleon.com/" class="link-blue" target="_blank" rel="noopener noreferrer">Dr. Wilmer Leon Official Website</a></li>
-                        <li id="ref-17" class="mb-2">See image: <a href="#awards" class="link-blue">Philadelphia Hip Hop Award</a></li>
-                    </ol>
-
-                </div>
-            </div>
-        </main>
-    </div>
-
-    <!-- Modal Structure -->
-    <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4 hidden z-50">
-        <div class="bg-white p-4 rounded-lg max-w-3xl max-h-full overflow-auto relative">
-            <button id="closeModal" class="absolute top-2 right-2 text-black text-2xl font-bold">&times;</button>
-            <img id="modalImage" src="" alt="" class="w-full h-auto rounded">
-            <p id="modalCaption" class="text-center mt-2 text-gray-700"></p>
-        </div>
-    </div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const bornCell = document.getElementById('born-cell');
-            if (bornCell) {
-                const birthDate = new Date('1980-04-30');
-                const ageDifMs = Date.now() - birthDate.getTime();
-                const ageDate = new Date(ageDifMs);
-                const age = Math.abs(ageDate.getUTCFullYear() - 1970);
-                bornCell.innerHTML = `Charles Anthony Paris<br>April 30, 1980 (age ${age})<br>Urbana, Illinois, U.S.`;
+                    <h2 class="section-title">Contact & Social Media</h2>
+                    <p>For professional inquiries and to follow official updates:</p>
+                    <ul class="list-disc list-inside mt-4 space-y-2">
+                        <li><b>Official Links:</b> <a href="https://365otg.github.io/CharlesParisLinks/" class="link-blue" target="_blank" rel="noopener noreferrer">Digital Business Card (All Links)</a></li>
+                        <li><b>Instagram:</b> <a href="https://www.instagram.com/charlesparismusic" class="link-blue" target="_blank" rel="noopener noreferrer">@charlesparismusic</a></li>
+                        <li><b>TikTok:</b> <a href="https://www.tiktok.com/@365otg" class="link-blue" target="_blank" rel="noopener noreferrer">@365otg</a></li>
+                        <li><b>Substack:</b> <a href="https://brotherotg.substack.com/" class="link-blue" target="_blank" rel="noopener noreferrer">Brother OTG's Newsletter</a></li>
+                    </ul>
+                `
             }
+        };
 
-            // Modal functionality
-            const galleries = document.querySelectorAll('.scroll-gallery');
+        // --- PORTFOLIO DATA ---
+        const portfolioData = [
+            { title: "Charles Paris Producer Tools (Main Hub)", desc: "A central hub aggregating various web-based tools designed to assist music producers in their workflow. This project demonstrates strong organizational skills and the ability to create a cohesive user experience across multiple applications.", cost: "$12,000 - $25,000", tech: "HTML, CSS, JavaScript, Responsive Design", url: "https://365otg.github.io/CPU/" },
+            { title: "Producer Tools (Audio/Image/Creative)", desc: "A suite of web-based tools for audio and image manipulation, tailored for creative professionals. Showcases proficiency in handling media assets.", cost: "$25,000 - $50,000", tech: "HTML, CSS, JavaScript, File API", url: "https://365otg.github.io/ProducerTools/" },
+            { title: "Akai MPC Guide", desc: "An interactive guide for Akai MPC users, providing clear instructions and resources. Demonstrates expertise in creating structured, educational web content and intuitive navigation.", cost: "$8,000 - $15,000", tech: "HTML, CSS, JavaScript, Content Management", url: "https://365otg.github.io/AkaiMPCGuide/" },
+            { title: "Yamaha SeqTrak Guide", desc: "A comprehensive online guide for the Yamaha SeqTrak, designed for easy learning and reference. Highlights the ability to present complex information in an accessible web format.", cost: "$8,000 - $15,000", tech: "HTML, CSS, JavaScript, Responsive Design", url: "https://365otg.github.io/seqtrak/" },
+            { title: "SP-404 MK2 Guide", desc: "An interactive resource for Roland SP-404 MK2 users, simplifying complex features and workflows. Showcases strong UI/UX for specialized hardware guides.", cost: "$8,000 - $15,000", tech: "HTML, CSS, JavaScript, User Guides", url: "https://365otg.github.io/sp404-mk2-guide/" },
+            { title: "Roland Verselab MV-1 Guide", desc: "A dedicated web guide for the Roland Verselab MV-1, offering clear instructions and tips. Demonstrates the creation of detailed, user-friendly documentation online.", cost: "$8,000 - $15,000", tech: "HTML, CSS, JavaScript, Educational Content", url: "https://365otg.github.io/RolandVerselabMV1/" },
+            { title: "Drum App", desc: "A web-based drum machine for practicing rhythms and beat-making. Highlights interactive audio elements and real-time user input processing.", cost: "$18,000 - $35,000", tech: "HTML, CSS, JavaScript, Web Audio API", url: "https://365otg.github.io/drumapp/" },
+            { title: "Akai Force App", desc: "An application designed to enhance the Akai Force workflow. Demonstrates understanding of specific hardware integration concepts and user utility.", cost: "$15,000 - $28,000", tech: "HTML, CSS, JavaScript, Utility Tool", url: "https://365otg.github.io/akaiforceapp/" },
+            { title: "Aetherflow App", desc: "A creative web application for generating unique visual or audio patterns. Showcases innovative design and complex JavaScript logic for dynamic content generation.", cost: "$40,000 - $80,000", tech: "HTML, CSS, JavaScript, Generative Art/Audio", url: "https://365otg.github.io/aetherflow-app/" },
+            { title: "Quote Maker", desc: "A simple tool for generating and customizing quotes for various purposes. Highlights text manipulation, UI controls, and content generation.", cost: "$7,000 - $12,000", tech: "HTML, CSS, JavaScript, Text Utility", url: "https://365otg.github.io/OTGQuotes/" },
+            { title: "CPU Knife", desc: "A utility application designed to help users manage or understand CPU-related processes. Demonstrates system interaction concepts within a web environment.", cost: "$7,000 - $12,000", tech: "HTML, CSS, JavaScript, System Utility", url: "https://365otg.github.io/CPUKnife/" },
+            { title: "Metronome", desc: "A precise web-based metronome tool for musicians. Showcases timing accuracy, audio feedback, and simple, effective UI design.", cost: "$8,000 - $15,000", tech: "HTML, CSS, JavaScript, Web Audio API", url: "https://365otg.github.io/metronome/" },
+            { title: "Chord Explorer", desc: "An interactive tool for exploring musical chords and their structures. Demonstrates data visualization, user input interpretation, and educational utility.", cost: "$15,000 - $30,000", tech: "HTML, CSS, JavaScript, Music Theory", url: "https://365otg.github.io/ChordExplorer/" },
+            { title: "Sample Organizer", desc: "A web application designed to help producers manage and categorize their audio samples. Highlights data organization, search functionality, and file management concepts.", cost: "$30,000 - $55,000", tech: "HTML, CSS, JavaScript, Data Management", url: "https://365otg.github.io/SampleOrganizer/" },
+            { title: "Producer Tutorials (Main Hub)", desc: "A comprehensive portal for video tutorials on music production techniques and software. Showcases content aggregation, video embedding, and educational platform design.", cost: "$12,000 - $25,000", tech: "HTML, CSS, JavaScript, Video Embedding", url: "https://365otg.github.io/producertutorials/" },
+            { title: "Charles Paris Links Hub", desc: "A comprehensive digital hub consolidating all online presence and resources for Charles Paris. Demonstrates effective information architecture and user navigation for a personal brand.", cost: "$3,000 - $7,000", tech: "HTML, CSS, JavaScript, Responsive Design", url: "https://365otg.github.io/CharlesParisLinks/" },
+            { title: "Charles Paris Music Site", desc: "A dedicated website showcasing Charles Paris's music, discography, and artistic endeavors. Highlights professional online presence for artists and content creators.", cost: "$5,000 - $15,000", tech: "HTML, CSS, JavaScript, Content Presentation", url: "https://365otg.github.io/CharlesParisMusic/" },
+            { title: "365CP - Personal Bio & Brand Site", desc: "A personal brand and bio website for Charles Paris (Brother OTG), detailing his multi-faceted career as a producer, developer, and author. Focuses on personal branding and content presentation.", cost: "$5,000 - $12,000", tech: "HTML, CSS, JavaScript, Personal Branding", url: "https://365otg.github.io/365CP/" },
+            { title: "History", desc: "A web application designed to present historical information or personal timelines in an engaging and accessible format.", cost: "$8,000 - $15,000", tech: "HTML, CSS, JavaScript, Content Presentation", url: "https://365otg.github.io/History/" },
+            { title: "RC-202 Guide", desc: "An interactive guide for the Roland RC-202 Loop Station, offering clear instructions and creative tips for musicians.", cost: "$8,000 - $15,000", tech: "HTML, CSS, JavaScript, User Guides", url: "https://365otg.github.io/RC202/" },
+            { title: "Video Converter", desc: "A web-based utility for converting video formats, demonstrating proficiency in handling media processing within a browser environment.", cost: "$25,000 - $50,000", tech: "HTML, CSS, JavaScript, File API, Media Processing", url: "https://365otg.github.io/VideoConverter/" },
+            { title: "AAE (Advanced Audio Editor)", desc: "An advanced web-based audio editing tool with new features, showcasing sophisticated audio manipulation and a user-friendly interface.", cost: "$35,000 - $75,000", tech: "HTML, CSS, JavaScript, Web Audio API", url: "https://365otg.github.io/AAE/" },
+            { title: "Continuum", desc: "A creative web application exploring continuous visual or interactive experiences, demonstrating innovative design and dynamic content generation.", cost: "$30,000 - $60,000", tech: "HTML, CSS, JavaScript, Interactive Design, Generative Content", url: "https://365otg.github.io/Continuum/" },
+            { title: "WebDev - Web Development Services", desc: "A dedicated web presence showcasing comprehensive web development services, from custom applications to responsive website design. This project serves as a direct portfolio piece for potential clients.", cost: "$5,000 - $15,000", tech: "HTML, CSS, JavaScript, Responsive Design, Portfolio", url: "https://365otg.github.io/WebDev/" },
+        ];
+        
+        // --- CONSPIRACY EPISODE DATA ---
+        const conspiracyEpisodes = [
+            { spotifyId: "4PpcWXT0zKw8bLubMt5CxK", title: "Ep. 1: O.T.G SAFE SPACE | Vol: Build or Destroy 1", desc: "Did Quarantine expose a lack of hustle and discipline? Live from our clubhouse room on FRIDAY Nights.", date: "Feb 20, 2021", duration: "4 hr 4 min" },
+            { spotifyId: "5wPeglhZD9WdC2OfhUHwA6", title: "Ep. 2: O.T.G PODCAST EP.1 - WELCOME", desc: "WELCOME TO THE COMMUNITY.", date: "Feb 21, 2021", duration: "9 min 41 sec" },
+            { spotifyId: "7IFfKQEKDpNXcIYLlDnU69", title: "Ep. 3: Conspiracy Theories - Real or Fake w/ Facts ep 44", desc: "Live recording of our clubhouse room held Tuesday, Thursday, and Saturday!! This the second half of the show 3am to 7am.", date: "Mar 1, 2021", duration: "4 hr 15 min" },
+            { spotifyId: "2RWpdXjRc7LYsXdGDwiuYA", title: "Ep. 4: Conspiracy Theories Real or Fake W/ Facts Ep: 45", desc: "Episode 45 in it's full entirety, March 2nd 2021. Recorded from 12AM until 7AM clubhouse OTGSafeSpaces", date: "Mar 3, 2021", duration: "6 hr 53 min" },
+            { spotifyId: "0cCJbajhMohrOvshmA7Q8Y", title: "Ep. 5: How Can You Help Us 🤝 How can we Help you Ep. 1", desc: "Networking on Clubhouse.", date: "Mar 7, 2021", duration: "2 hr 17 min" },
+            { spotifyId: "2iwJ46nBYtv9GETGyIYYmm", title: "Ep. 6: Conspiracy Theories - Real or Fake w/ Facts ep 47", desc: "Covering some topics about Michael Jordan, and O.J.", date: "Mar 7, 2021", duration: "6 hr 49 min" },
+            { spotifyId: "2kXRr3SVbeoIRIV6RKEZLB", title: "Ep. 7: Conspiracy Theories - Real or Fake w/ Facts ep 48", desc: "O.T.G SAFE SPACES - EPISODE 48 - RECORDED - MARCH 09,2021 www.OTG123.ORG", date: "Mar 10, 2021", duration: "7 hr 19 min" },
+            { spotifyId: "0DLR3ut46VRh8UE2KYOE1L", title: "Ep. 8: Conspiracy Theories - Real or Fake Ep.49 ORIGINAL EYGPT", desc: "FEATURING Horace Butler AUTHOR OF 'WHEN ROCKS CRY OUT' and KING CHIP.", date: "Mar 12, 2021", duration: "7 hr 48 min" },
+            { spotifyId: "18bU9ah6Mw8HjLIESDe7gz", title: "Ep. 9: Yakub Father of the Caveman Vol 1", desc: "AN epic conversation about Yakub the father of the caveman. Study group with groups of people from all walks of life. Recorded Sunday/Monday March 14th / March 15th 2021", date: "Mar 15, 2021", duration: "5 hr 4 min" },
+            { spotifyId: "0ofiF83GgYnvIF8072BBC6", title: "Ep. 10: TIN FOIL HAT TIME EP 1 - LAND BRIDGES", desc: "WE KICKED OFF THE FIRST EPISODE OF TIN FOIL TIME. COVERED A LOT OF DIFFERENT TOPICS. RECORDED TUESDAY MARCH 16, 2021", date: "Mar 17, 2021", duration: "7 hr 10 min" },
+            { spotifyId: "5reFQ5K7R1HIxFGvpf0ndc", title: "Ep. 11: Rich Rising CTRFWF: S2E2", desc: "Origins of Gold, and Conspiracy Theories about Money/Gold. Recorded March 20, 2021", date: "Mar 21, 2021", duration: "4 hr 30 min" },
+            { spotifyId: "3JTf70jiJnAlzW4pHXmImi", title: "Ep. 12: Yakub Father of the Caveman Pt 2", desc: "In Depth Look at Yakub from 2 unique perspectives. Recorded Sunday March 21, 2021", date: "Mar 22, 2021", duration: "7 hr 17 min" },
+            { spotifyId: "4jUQVwvZSGx0EaAE1ecRXF", title: "Ep. 13: AlphaGalactic Timeline Annunaki Edition S2E3", desc: "In-Depth Look at Annunaki History and Sumerian Tablets. Recorded Tuesday 24, March 2021 In Clubhouse Room.", date: "Mar 24, 2021", duration: "7 hr 30 min" },
+            { spotifyId: "36NzaKkFX9tikWTIP5Irf7", title: "Ep. 14: Secret Societies - CTRFS2E4", desc: "CONSPIRACIES THEORIES 👽 REAL OR FAKE SEASON 2 EPISODE 4 'SECRET SOCIETIES' 🚀 CHECK-IN ON OTG123.ORG TO JOIN DISCORD, PATREON, AND MAIL LIST.", date: "Mar 26, 2021", duration: "7 hr 35 min" },
+            { spotifyId: "58Q1nvjeQbMlrrI62Smgxj", title: "Ep. 15: Un.Identified Episode CTRFWF S2 E5", desc: "CONSPIRACIES THEORIES 👽 REAL OR FAKE SEASON 2 EPISODE 5 'Unidentified' 🚀 CHECK-IN ON OTG123.ORG TO JOIN DISCORD, PATREON, AND MAIL LIST. 🔴 RECORDED 🔴 COMMENT YOUR LINKS ON TWITTER @OTGSAFESPACES", date: "Mar 28, 2021", duration: "6 hr 40 min" },
+            { spotifyId: "7fZLVkBXIxyDH8N8nEzT3m", title: "Ep. 16: Time - CTRFWF S2E6", desc: "This Episode is about Time, The team cooks up on time and a lot more recorded Tuesday, March 30 2021 OTG Safe spaces club house.", date: "Mar 31, 2021", duration: "8 hr 17 min" },
+            { spotifyId: "1SGs5Cs8Kxr00MYXtQmeb2", title: "Ep. 17: TIN FOIL HAT TIME - Timelines", desc: "Recorded March 31, 2021 Covering the timeline of crazy events!", date: "Apr 1, 2021", duration: "6 hr 27 min" },
+            { spotifyId: "3TwqfAffdHMK9kHrsGhhiy", title: "Ep. 18: BLOODLINES - CONSPIRACY THEORIES S2 EP7", desc: "Speaking about all of the different bloodlines in Conspiracies and more! - Recorded April 1, 2021", date: "Apr 2, 2021", duration: "6 hr 49 min" },
+            { spotifyId: "628pTrv5gyvBUQh5mbcsNo", title: "Ep. 19: Conspiracy Theories Q/A Extra Credit", desc: "Conversation with Jahmal - Talking about Conspiracy Theories Real or Fake w/ Facts. Recorded April 2 2021", date: "Apr 4, 2021", duration: "2 hr 29 min" },
+            { spotifyId: "7ddgeIeQKpnrKp7Weu2VBN", title: "Ep. 20: Reflections - CTRFWF S2E8", desc: "We recapped all 8 episodes of season 2. Recorded Live April 3 2021 Saturday.", date: "Apr 4, 2021", duration: "7 hr 35 min" },
+            { spotifyId: "1INtEzI1zlNwjgm1UfjvnU", title: "Ep. 21: Conspiracy Theories Study Group/timelines Extra Credit", desc: "Great conversation breaking down timelines, with brother Randall. Starting a weekly study group timeline! Recorded on April 4 Sunday 2021", date: "Apr 6, 2021", duration: "1 hr 55 min" },
+            { spotifyId: "5doG3pssmTplsx5u0aWG8c", title: "Ep. 22: Leroy - CTRFWF S2E10", desc: "The power of trolling turns into a real thing! Check out the story of Leroy! Recorded Tuesday April 06 2021", date: "Apr 6, 2021", duration: "6 hr" },
+            { spotifyId: "5mGKqvTH0FDoyUr8yxyhuO", title: "Ep. 23: Timelines pt 2. Tin Foil Hat Time Episode 3", desc: "Going through Timelines. Recorded Wednesday April 07, 2021", date: "Apr 9, 2021", duration: "6 hr" },
+            { spotifyId: "0EBQgvTyuOLCXOjyRGPy2Z", title: "Ep. 24: BLACKOUT - CTRFWF S2 E10", desc: "BLACKOUT. APRIL 08,2021 THURSDAY", date: "Apr 10, 2021", duration: "8 hr 52 min" },
+            { spotifyId: "2opD4X7YS45iKPjGjR99Zz", title: "Ep. 25: Tariq Nasheed replay - Special Recording", desc: "On Monday April 26th 2021 Tariq Nasheed became under a coordinated attack from certain groups on social media, @FloridaBoyJay created a room called 'You Cant Cancel Tariq Nasheed for doing black work' This is the recording of that room...", date: "Apr 27, 2021", duration: "1 hr 49 min" },
+            { spotifyId: "5RK6D0Yg7oJembLRZ0xEnW", title: "Ep. 26: CTRFWF | Moon Time - June 2-2021", desc: "We have been discussing the Self Creation of the Universe. We will do a recap. We have the PDF of the book we are reading from on our patreon.com/overtimegrind", date: "Jun 4, 2021", duration: "8 hr 5 min" },
+            { spotifyId: "4xAtBw3ccqIzg4sI7E1zXq", title: "Ep. 27: Conspiracy Theory Radio Ep.1 - World War II - Battle for Earth", desc: "Welcome to Conspiracy Theory Radio! First Episode turned out to be a funny classic!", date: "Jun 10, 2021", duration: "7 hr 35 min" },
+            { spotifyId: "6tQdQHo7MD7IZxFkEbnUoA", title: "Ep. 28: Conspiracy Theory Live Radio Episode 2", desc: "Recording Live daily Make sure you tap in! Recorded June 9th into 10th. Great episode with some amazing talk points!", date: "Jun 11, 2021", duration: "7 hr 2 min" },
+            { spotifyId: "1r5gcuWgJuR880b6M8JAeF", title: "Ep. 29: Conspiracy Theories Radio Live Episode 2 - Alien Invasion Plan", desc: "Last night we had a great episode you should check it out with a crazy Invasion plan!", date: "Jun 11, 2021", duration: "7 hr 29 min" },
+            { spotifyId: "7nQbO3yDuRgk0BfVr6OeNZ", title: "Ep. 30: Conspiracy Theory Live Radio Episode 3", desc: "A great conversation about Tiamat and the Earth!", date: "Jun 13, 2021", duration: "6 hr 56 min" },
+            { spotifyId: "6xI55QjVpexdbe44pQ5GA4", title: "Ep. 31: Conspiracy Theories Radio Live Episode 4 - Michael Jackson", desc: "We talk Michael Jackson and Weaponized Weed.", date: "Jun 13, 2021", duration: "8 hr 8 min" },
+            { spotifyId: "0SlPyIX36Q3Xj1fIcK9X7v", title: "Ep. 32: #ProjectCTRL Episode 5 - MKUltra, Edward Snowden, Self Creation of the Universe!", desc: "We Started with MKUltra, Had a surprise visit from Tiffany Haddish Last night around the 6 hour mark! Great conversation!", date: "Jun 17, 2021", duration: "7 hr 41 min" },
+            { spotifyId: "6A9B90hx5m8O8RmHOmkZ2R", title: "Ep. 33: Project C.T.R.L Episode 6: JuneTeenth, Julian Assange, and More!", desc: "We cover Juneteenth, Julian Assange and more!", date: "Jun 18, 2021", duration: "10 hr 18 min" },
+            { spotifyId: "5onbDav8xy3MY6nsLyI3d8", title: "Ep. 34: Project C.T.R.L Episode 7: Black Social Issues, Jail, God and more", desc: "⚠️Project C•T•R•L⚠️= Conspiracy Theory Radio Live | Real Life. We study history, and lectures break them down against conspiracy theories looking for the truth. Everything to join is here: 🅾️ OTG123.ORG 📚 📑 Text: 'OTG' to 808-278-9220 ✅ 📲 Email List. ('75...", date: "Jun 22, 2021", duration: "7 hr 51 min" },
+            { spotifyId: "5vV7fFuEJBrBNTAwpuavRz", title: "Ep. 35: Nation of Islam Room: Ask Us Anything Part 2", desc: "Nation of Islam Room, Ask Us Anything Part 2 in-depth conversation.", date: "Jun 25, 2021", duration: "4 hr 19 min" },
+            { spotifyId: "4ixmx8yoOVxWtIcypSMquV", title: "Ep. 36: 'But Didn't you kill Malcolm' Featuring Brother Demetric Muhammad", desc: "An in-depth look at the Assassination of Brother Malcolm X Myth-busting the propaganda against the Nation of Islam.", date: "Jun 29, 2021", duration: "2 hr 26 min" },
+            { spotifyId: "73DRTREOcAnmQYIDYzGKOR", title: "Ep. 37: Book OF God Chapters 1-14 - Audio Reading", desc: "Book of God Encyclopedic Proof the Black Man is God.", date: "Jul 28, 2021", duration: "8 hr 40 min" },
+            { spotifyId: "272fs4TcFMcQK3P41Bs7I7", title: "Ep. 38: CONSPIRACIES THEORIES 🛸 REAL OR FAKE W/FACTS SEASON 4 EPISODE 1", desc: "CONSPIRACY THEORIES ROOM IS BACK. LATE-NIGHT CONVOS ABOUT ALL KINDS OF TOPICS FROM A BLACK FIRST SPACE. CHECKING AND LOOKING FOR THE TRUTH. WANT MORE INFORMATION: OTG123.ORG", date: "Aug 12, 2021", duration: "8 hr 40 min" },
+            { spotifyId: "0llHZkhUrvvaFt5QWdTnDQ", title: "Ep. 39: CONSPIRACIES THEORIES: SECRET THREE WORDS, UFOS, AND MORE", desc: "WE DIG INTO THE BOOK OF GOD AND FIGURE OUT WHERE UFO'S ARE MADE, WHERE THE BIBLE WAS CHANGED, AND ONE OF THE BIGGEST MYSTERIES OF SECRET SOCIETIES.", date: "Aug 19, 2021", duration: "4 hr 54 min" },
+            { spotifyId: "2xDxNRIGkB2ce4r5bSgczu", title: "Ep. 40: CONSPIRACIES THEORIES: WAR ON BLACK AMERICA 👁️ CRACK TO WEED", desc: "In this episode, we dig into the war on black America all the information is inside the episode or at otgsafespaces.com", date: "Aug 26, 2021", duration: "9 hr 58 min" },
+            { spotifyId: "2iRjgsAqn3fQft48KothNp", title: "Ep. 41: CONSPIRACIES THEORIES 🛸 Super Predator - Hillary Clinton", desc: "We continue covering the War on Black America with Super Predator Hillary Clinton otgsafespaces.com", date: "Aug 27, 2021", duration: "10 hr 24 min" },
+        ];
+
+
+        // --- NAVIGATION & PAGE LOGIC ---
+        document.addEventListener('DOMContentLoaded', function() {
+            const mainContent = document.getElementById('main-content');
+            const navLinks = document.querySelectorAll('#left-sidebar nav a[data-page]');
+
+            // --- Modal functionality ---
             const modal = document.getElementById('imageModal');
             const modalImage = document.getElementById('modalImage');
             const modalCaption = document.getElementById('modalCaption');
-            const closeModal = document.getElementById('closeModal');
+            const closeModalBtn = document.getElementById('closeModal');
 
-            if (galleries.length > 0 && modal) {
-                galleries.forEach(gallery => {
-                    const galleryItems = gallery.querySelectorAll('.gallery-item');
-                    galleryItems.forEach(item => {
-                        item.addEventListener('click', (e) => {
-                            if (e.target.closest('a')) return; // Don't trigger modal for links
-                            const img = item.querySelector('img');
-                            modalImage.src = img.src;
-                            modalImage.alt = img.alt;
-                            modalCaption.textContent = img.alt;
-                            modal.classList.remove('hidden');
+            function attachModalListeners() {
+                const galleries = mainContent.querySelectorAll('.scroll-gallery');
+                if (galleries.length > 0 && modal) {
+                    galleries.forEach(gallery => {
+                        const galleryItems = gallery.querySelectorAll('.gallery-item');
+                        galleryItems.forEach(item => {
+                            item.addEventListener('click', (e) => {
+                                if (e.target.closest('a')) return;
+                                const img = item.querySelector('img');
+                                modalImage.src = img.src;
+                                modalImage.alt = img.alt;
+                                modalCaption.textContent = img.alt;
+                                modal.classList.remove('hidden');
+                            });
                         });
                     });
-                });
-
+                }
+            }
+            
+            if (modal) {
                 const close = () => modal.classList.add('hidden');
-                closeModal.addEventListener('click', close);
+                closeModalBtn.addEventListener('click', close);
                 modal.addEventListener('click', (e) => {
-                    if (e.target === modal) {
-                        close();
-                    }
+                    if (e.target === modal) close();
                 });
             }
+
+            // --- Age Calculation ---
+            function calculateAge() {
+                const bornCell = document.getElementById('born-cell');
+                if (bornCell) {
+                    const birthDate = new Date('1980-04-30');
+                    const ageDifMs = Date.now() - birthDate.getTime();
+                    const ageDate = new Date(ageDifMs);
+                    const age = Math.abs(ageDate.getUTCFullYear() - 1970);
+                    bornCell.innerHTML = `Charles Anthony Paris<br>April 30, 1980 (age ${age})<br>Urbana, Illinois, U.S.`;
+                }
+            }
+
+            // --- Populate Web Dev Portfolio ---
+            function populatePortfolio() {
+                const grid = document.querySelector('.portfolio-grid');
+                if (!grid) return;
+
+                let portfolioHTML = '';
+                portfolioData.forEach(project => {
+                    portfolioHTML += `
+                        <div class="portfolio-card">
+                            <h3>${project.title}</h3>
+                            <p>${project.desc}</p>
+                            <p class="cost">Typical Cost: ${project.cost}</p>
+                            <div class="tech-stack">
+                                <strong>Tech:</strong> ${project.tech}
+                            </div>
+                            <div class="mt-4">
+                                <a href="${project.url}" target="_blank" rel="noopener noreferrer" class="link-blue">Live Demo →</a>
+                            </div>
+                        </div>
+                    `;
+                });
+                grid.innerHTML = portfolioHTML;
+            }
+            
+            // --- Conspiracy Page Logic ---
+            function populateConspiracyEpisodes() {
+                const container = document.getElementById('episode-list');
+                if (!container) return;
+                
+                let episodesHTML = '';
+                conspiracyEpisodes.forEach(ep => {
+                    episodesHTML += `
+                        <div class="border-t border-gray-300 pt-4">
+                            <iframe style="border-radius:12px; width: 100%; max-width: 350px; margin-bottom: 1rem;" src="https://open.spotify.com/embed/episode/${ep.spotifyId}?utm_source=generator&theme=0" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h3 class="text-xl font-bold sans-serif">${ep.title}</h3>
+                            <p class="text-sm text-gray-600 mt-2">${ep.desc}</p>
+                            <p class="text-xs text-gray-500 mt-2">${ep.date} • ${ep.duration}</p>
+                        </div>
+                    `;
+                });
+                container.innerHTML = episodesHTML;
+            }
+
+            function calculateDaysSince() {
+                const counterElement = document.getElementById('day-counter');
+                if (counterElement) {
+                    const startDate = new Date('2021-02-20T00:00:00');
+                    const today = new Date();
+                    const timeDiff = today.getTime() - startDate.getTime();
+                    const dayDiff = Math.floor(timeDiff / (1000 * 3600 * 24));
+                    counterElement.textContent = dayDiff;
+                }
+            }
+
+            // --- Page Display Function ---
+            function showPage(pageId) {
+                if (!pageContent[pageId]) {
+                    console.error('Page not found:', pageId);
+                    return;
+                }
+                
+                // Update content
+                const content = pageContent[pageId];
+                mainContent.innerHTML = `<h1 class="page-title">${content.title}</h1>${content.html}`;
+
+                // Update active link in sidebar
+                navLinks.forEach(link => {
+                    link.classList.toggle('active', link.dataset.page === pageId);
+                });
+                
+                // Run page-specific logic
+                if (pageId === 'main') {
+                    calculateAge();
+                }
+                if (pageId === 'webdev') {
+                    populatePortfolio();
+                }
+                 if (pageId === 'conspiracy') {
+                    calculateDaysSince();
+                    populateConspiracyEpisodes();
+                }
+                attachModalListeners(); // Re-attach listeners for galleries on new page
+                
+                // Scroll to top
+                mainContent.scrollTop = 0; 
+            }
+
+            // Add click listeners to nav links
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const pageId = this.dataset.page;
+                    showPage(pageId);
+                });
+            });
+
+            // Show the main page by default
+            showPage('main');
         });
     </script>
 </body>
