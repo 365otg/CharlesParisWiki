@@ -6,14 +6,14 @@
     
     <!-- SEO OPTIMIZATION -->
     <title>Charles Paris Music | The International Teemsterrs Union</title>
-    <meta name="description" content="The official hub for Charles A. Paris (Brother OTG) and The International Teemsterrs Union. Explore the music, producer tools, and the mission to empower independent workers.">
-    <meta name="keywords" content="Charles Paris Music, The International Teemsterrs Union, Brother OTG, Over Time Grind, Supply The Work, independent workers, freelance union, creative guild, gig economy, 1099 workers, music producer, software developer, community activist, Beanie Sigel, Bernard Hopkins, Taxstone, Gerdau Macsteel, Atmosphere Annealing">
+    <meta name="description" content="The official hub for Charles A. Paris (Brother OTG), The International Teemsterrs Union, and OTG Research. Explore the music, producer tools, mission to empower independent workers, and a wiki of forbidden knowledge.">
+    <meta name="keywords" content="Charles Paris Music, The International Teemsterrs Union, The Teem, Charles Paris, Brother OTG, Over Time Grind, Supply The Work, independent workers, freelance union, creative guild, gig economy, 1099 workers, music producer, software developer, community activist, Beanie Sigel, Bernard Hopkins, Taxstone, Gerdau Macsteel, Atmosphere Annealing, OTG Research, Anunnaki, Nibiru, Tartarian Empire, Mud Flood">
     
     <link rel="canonical" href="https://365otg.github.io/365CP/" />
 
     <!-- Open Graph / Facebook / LinkedIn Tags -->
     <meta property="og:title" content="Charles Paris Music | The International Teemsterrs Union">
-    <meta property="og:description" content="The official site for music producer Charles A. Paris and the movement he founded, The International Teemsterrs Union.">
+    <meta property="og:description" content="The official site for music producer Charles A. Paris, the movement he founded, The International Teemsterrs Union, and the OTG Research wiki.">
     <meta property="og:image" content="https://raw.githubusercontent.com/365otg/teemsterrspics/main/teemstersUSA.jpg">
     <meta property="og:url" content="https://365otg.github.io/365CP/">
     <meta property="og:type" content="website">
@@ -69,10 +69,10 @@
         h1, h2, h3, h4, h5, h6, .sans-serif { font-family: 'Arimo', sans-serif; }
         #main-content h1.page-title { font-family: 'Linux Libertine', 'Lora', serif; font-size: 1.8em; border-bottom: 1px solid #a2a9b1; padding-bottom: 0.25em; margin-bottom: 0.1em; font-weight: 400; }
         #main-content h2.section-title { font-family: 'Linux Libertine', 'Lora', serif; font-size: 1.5em; border-bottom: 1px solid #a2a9b1; padding-bottom: 0.25em; margin-top: 1em; margin-bottom: 0.5em; font-weight: 400; }
-        .link-blue { color: #0645ad; }
-        a.link-blue:hover { text-decoration: underline; }
+        .link-blue, .wiki-link { color: #0645ad; cursor: pointer; }
+        a.link-blue:hover, .wiki-link:hover { text-decoration: underline; }
         .infobox { background-color: #f8f9fa; border: 1px solid #a2a9b1; font-size: 0.88em; line-height: 1.5; }
-        .infobox th { text-align: left; padding-right: 1em; font-weight: bold; }
+        .infobox th { text-align: left; padding: 0.5em; font-weight: bold; }
         .infobox td { padding: 0.5em; }
         .toc { background-color: #f8f9fa; border: 1px solid #a2a9b1; padding: 1em; display: table; margin-bottom: 1em; }
         .toc ul { list-style-type: none; padding-left: 0; }
@@ -93,19 +93,72 @@
         #mobile-menu.is-open {
             transform: translateX(0);
         }
+
+        /* Gallery Styles */
+        .scroll-gallery {
+            display: flex;
+            overflow-x: auto;
+            padding-bottom: 1rem;
+            scrollbar-width: thin;
+            scrollbar-color: #a2a9b1 #f8f9fa;
+        }
+        .scroll-gallery::-webkit-scrollbar { height: 8px; }
+        .scroll-gallery::-webkit-scrollbar-track { background: #f8f9fa; }
+        .scroll-gallery::-webkit-scrollbar-thumb { background-color: #a2a9b1; border-radius: 10px; border: 2px solid #f8f9fa; }
+        .gallery-item {
+            flex: 0 0 auto;
+            width: 150px;
+            margin-right: 1rem;
+            cursor: pointer;
+            border: 1px solid #a2a9b1;
+            padding: 0.5rem;
+            background-color: #fff;
+        }
+        .gallery-item img { width: 100%; height: 100px; object-fit: cover; }
+        
+        /* Web Dev Portfolio Styles */
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .portfolio-card {
+            border: 1px solid #a2a9b1;
+            background-color: #f8f9fa;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+        }
+        .portfolio-card h3 {
+            font-family: 'Arimo', sans-serif;
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 0.75rem;
+        }
+        .portfolio-card .cost {
+            font-weight: bold;
+            color: #006400; /* Dark green for cost */
+            margin: 0.5rem 0;
+        }
+        .portfolio-card .tech-stack {
+            margin-top: auto;
+            padding-top: 1rem;
+            font-size: 0.9em;
+            color: #54595d;
+        }
     </style>
 </head>
 <body class="bg-gray-100 pb-16 md:pb-0">
 
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="fixed top-0 left-0 h-full w-64 bg-[#f8f9fa] border-r border-gray-300 p-4 text-sm z-50 md:hidden overflow-y-auto">
-          <button id="close-menu-button" class="absolute top-4 right-4 text-2xl">&times;</button>
-          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/1200px-Wikipedia-logo-v2.svg.png" alt="The International Teemsterrs Union" class="w-24 mx-auto mb-4 mt-8">
-          <h2 class="font-bold text-center mb-2 sans-serif">Brother O.T.G</h2>
-          <h2 class="font-bold mb-2 sans-serif">Navigation</h2>
-          <nav id="mobile-nav">
-              <!-- Mobile nav links will be cloned here by JS -->
-          </nav>
+        <button id="close-menu-button" class="absolute top-4 right-4 text-2xl">&times;</button>
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/1200px-Wikipedia-logo-v2.svg.png" alt="The International Teemsterrs Union" class="w-24 mx-auto mb-4 mt-8">
+        <h2 class="font-bold text-center mb-2 sans-serif">Brother O.T.G</h2>
+        <h2 class="font-bold mb-2 sans-serif">Navigation</h2>
+        <nav id="mobile-nav">
+            <!-- Mobile nav links will be cloned here by JS -->
+        </nav>
     </div>
 
     <div class="flex flex-col md:flex-row max-w-screen-2xl mx-auto bg-white shadow-lg">
@@ -117,8 +170,11 @@
             <nav id="desktop-nav">
                 <ul>
                     <li class="mb-1"><a href="#" class="link-blue hover:underline active" data-page="main">About the Founder</a></li>
+                    <li class="mb-1"><a href="#" class="link-blue hover:underline" data-page="book">The Books</a></li>
+                    <li class="mb-1"><a href="#" class="link-blue hover:underline" data-page="revelations">The 91 Revelations</a></li>
                     <hr class="my-2">
                     <li class="mb-1"><a href="#" class="link-blue hover:underline" data-page="union">The Teemsterrs Union</a></li>
+                    <li class="mb-1"><a href="#" class="link-blue hover:underline" data-page="roadmap">Local #1 Roadmap</a></li>
                     <li class="mb-1"><a href="#" class="link-blue hover:underline" data-page="teem">The Teem (Community)</a></li>
                     <li class="mb-1"><a href="#" class="link-blue hover:underline" data-page="contributors">Contributor Wall</a></li>
                     <li class="mb-1"><a href="#" class="link-blue hover:underline" data-page="directory">Business Directory</a></li>
@@ -172,6 +228,15 @@
     <button id="mobile-menu-button-float" class="md:hidden fixed bottom-4 right-4 bg-white border border-gray-400 rounded-full p-3 shadow-lg z-40">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
     </button>
+    
+    <!-- Modal Structure for Gallery -->
+    <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4 hidden z-50">
+        <div class="bg-white p-4 rounded-lg max-w-3xl max-h-full overflow-auto relative">
+            <button id="closeModal" class="absolute top-2 right-2 text-black text-2xl font-bold">&times;</button>
+            <img id="modalImage" src="" alt="" class="w-full h-auto rounded">
+            <p id="modalCaption" class="text-center mt-2 text-gray-700"></p>
+        </div>
+    </div>
 
     <script>
         // --- CONTENT FOR EACH PAGE ---
@@ -199,7 +264,7 @@
                         <div class="w-full md:w-2/3">
                             <p><b>Charles Anthony Paris</b> (born April 30, 1980), known professionally as <b>Brother OTG</b>, is an American <a href="https://en.wikipedia.org/wiki/Record_producer" class="link-blue">record producer</a>, software developer, author, and founder of <b>The International Teemsterrs Union</b>. He is also the founder of <a href="https://365otg.github.io/CharlesParisMusic/" class="link-blue" target="_blank" rel="noopener noreferrer">CHARLES PARIS MUSIC</a> and developed the <b>Over Time Grind</b> business philosophy. His work includes production for <a href="https://en.wikipedia.org/wiki/Beanie_Sigel" class="link-blue">Beanie Sigel</a>, the theme song for the BET series "<a href="https://en.wikipedia.org/wiki/Tiny_and_Toya" class="link-blue" target="_blank" rel="noopener noreferrer">Tiny and Toya 2</a>," and tracks that have accumulated over 6.3 million plays on TikTok.</p>
                             <h2 class="section-title">The "Over Time Grind" Philosophy</h2>
-                            <p>The "Over Time Grind" (OTG) brand is more than a name; it's a philosophy forged in the fire of American blue-collar labor. It comes from working in the annealing plants of Indiana for companies like Atmosphere Annealing and Gerdau Macsteel, learning the trade of a journeyman maintenance mechanic on furnaces. It's the toughness gained from suffering third-degree burns and working with wrists that don't bend, all while teaching himself music on the side. This philosophy was carried through management roles at AutoZone, into his first studio at Jazz U Up in South Philly, and even into managing a barbershop at 18th and Reed. This is the grit he brought to his own career, to the artists he managed, and it's the foundation of The International Teemsterrs Union—a movement to ensure the next generation of workers doesn't have to endure the same hardships to succeed.</p>
+                            <p>The "Over Time Grind" (OTG) brand is more than a name; it's a philosophy forged in the fire of American blue-collar labor. It comes from working in the annealing plants of Indiana for companies like Atmosphere Annealing and Gerdau Macsteel, learning the trade of a journeyman maintenance mechanic on furnaces. It's the toughness gained from suffering third-degree burns and working with wrists that don't bend, all while teaching himself music on the side. This philosophy was carried through management roles at AutoZone, into his first studio at Jazz U Up in South Philly, and even into managing a barbershop at 18th and Reed. This is the grit he brought to his own career, to the artists he managed, and it's the foundation of <a href="#" data-page="union">The International Teemsterrs Union</a>—a movement to ensure the next generation of workers doesn't have to endure the same hardships to succeed.</p>
                             <h2 class="section-title">Career Journey</h2>
                             <p>Born in <a href="https://en.wikipedia.org/wiki/Urbana,_Illinois" class="link-blue" target="_blank" rel="noopener noreferrer">Urbana, Illinois</a>, Paris began his career from 2002 to 2009 under the name "I Double L," founding the <a href="https://www.ascap.com/repertory#/ace/works/publisher/2685089/MIDWEST%20ILL%20MUZIK%20GROUP" class="link-blue" target="_blank" rel="noopener noreferrer"><b>Midwest Muzik Group</b></a>. After winning local music contests, he signed a contract that did not advance his career. Following advice from <a href="https://en.wikipedia.org/wiki/Black_Hand_Entertainment" class="link-blue" target="_blank" rel="noopener noreferrer"><b>Chaz Williams</b></a> of Black Hand Entertainment, Paris secured a publishing deal in 2009 with <a href="https://en.wikipedia.org/wiki/MC_Lyte" class="link-blue" target="_blank" rel="noopener noreferrer"><b>MC Lyte's</b></a> <a href="https://dubosemusic.com/" class="link-blue" target="_blank" rel="noopener noreferrer"><b>DuBose Music Group</b></a>. Between 2009 and 2011, he developed a business plan and created music in preparation for a move to Philadelphia.</p>
                             <p>In 2011, Paris relocated to South Philadelphia and established <b>Over Time Grind Productions, LLC</b>. From his first office in a barbershop at the "5 Spot" (formerly Zakkiyah's), he met DJ Damage, sparking a collaboration that led to a viral campaign, a performance at the first Made in America festival, and Damage's hiring at Revolt TV. During this period, Paris was hired at Phillybassd Records, where he was mentored by songwriter <a href="https://www.soulexpress.net/brucehawes.htm" class="link-blue" target="_blank" rel="noopener noreferrer"><b>Bruce Hawes</b></a> ("Sadie," "Dear Mama") and rose to an A&R position.</p>
@@ -209,6 +274,140 @@
                             <p>From 2015 to 2020, Paris worked with recording artist <a href="https://en.wikipedia.org/wiki/Beanie_Sigel" class="link-blue">Beanie Sigel</a>, managing his transition into digital media. Paris's role involved sourcing production and assisting with business matters, including the patent for <a href="https://en.wikipedia.org/wiki/State_Property_(group)" class="link-blue" target="_blank" rel="noopener noreferrer">State Property</a>, which preceded a group reunion. He produced Sigel's interviews on the Taxstone podcast, which have been credited with increasing the popularity of urban podcasting.</p>
                             <h2 class="section-title">Founding The International Teemsterrs Union</h2>
                             <p>After the pandemic, leveraging everything he learned from years in sales at UDrive with Brian Birkenpass and the community built through Clubhouse and internet radio (including the "Rich Rising" Joe Budden episode), Paris came back to music with a renewed purpose. On August 20, 2025, he founded The International Teemsterrs Union. The union represents the culmination of his life's work: a platform where his business, OTG, powers the music, branding, and ads to support a movement for all independent workers.</p>
+                        </div>
+                    </div>
+                `
+            },
+            book: {
+                title: "The Books",
+                html: `
+                    <p class="text-sm -mt-1 mb-4 text-gray-500">The story behind the history you were taught.</p>
+                    <div class="flex flex-col md:flex-row gap-8">
+                        <!-- Unforgettable Chronicle Section -->
+                        <div class="w-full md:w-1/2">
+                            <div class="infobox w-full sans-serif">
+                                <h3 class="text-xl font-bold text-center bg-gray-200 p-2">The Unforgettable Chronicle</h3>
+                                <div class="p-2 text-center">
+                                    <img src="https://public-files.gumroad.com/rmdlhpawwaacwk2gkqltr5rxewyd" alt="The cover of the book The Unforgettable Chronicle" class="mx-auto rounded-lg">
+                                    <div class="text-xs p-1">Cover Art</div>
+                                </div>
+                            </div>
+                            <p class="mt-4">Have you ever felt that the history you were taught is incomplete? That beneath the surface of accepted fact lies a deeper, more profound story waiting to be told?</p>
+                            <p>History, as it is commonly presented, is a palimpsest—an ancient scroll scraped clean of its original text to make way for a simpler, more mundane narrative. **The Unforgettable Chronicle** is the meticulous restoration of that original text.</p>
+                            <p class="mt-4 text-center"><a href="https://brotherotg.gumroad.com/l/theunforgettablechronicle" class="font-bold link-blue" target="_blank" rel="noopener noreferrer">Click Here to Get the Book &rarr;</a></p>
+                        </div>
+                        <!-- 91 Revelations Section -->
+                        <div class="w-full md:w-1/2">
+                            <div class="infobox w-full sans-serif">
+                                <h3 class="text-xl font-bold text-center bg-gray-200 p-2">The 91 Revelations</h3>
+                                <div class="p-2 text-center">
+                                    <img src="https://public-files.gumroad.com/rmdlhpawwaacwk2gkqltr5rxewyd" alt="The cover of the book The 91 Revelations" class="mx-auto rounded-lg">
+                                    <div class="text-xs p-1">Cover Art</div>
+                                </div>
+                            </div>
+                            <p class="mt-4">This chronicle is an epic, sweeping history of the world that reinterprets historical and mythological events as part of a single, continuous cosmic struggle between the forces of creation and control. The narrative is framed as a series of 91 revelations that trace this conflict from the dawn of the universe to a final, modern-day convergence.</p>
+                            <p class="mt-4 text-center"><a href="https://brotherotg.gumroad.com/l/91revelations" class="font-bold link-blue" target="_blank" rel="noopener noreferrer">Click Here to Get the Book &rarr;</a></p>
+                        </div>
+                    </div>
+                `
+            },
+            revelations: {
+                title: "The 91 Revelations",
+                html: `
+                    <p class="text-sm -mt-1 mb-4 text-gray-500">The key to unlocking a forgotten history.</p>
+                    <div class="flex flex-col md:flex-row-reverse gap-8">
+                        <div class="w-full md:w-1/3">
+                            <div class="infobox w-full sans-serif">
+                                <h3 class="text-xl font-bold text-center bg-gray-200 p-2">The 91 Revelations</h3>
+                                <div class="p-2 text-center">
+                                    <img src="https://public-files.gumroad.com/rmdlhpawwaacwk2gkqltr5rxewyd" alt="The cover of the book The 91 Revelations" class="mx-auto rounded-lg">
+                                    <div class="text-xs p-1">The 91 Revelations</div>
+                                </div>
+                                <div class="p-2 border-t border-gray-300 text-center">
+                                    <p class="font-bold">Buy now and begin your journey into the truth.</p>
+                                    <a href="https://brotherotg.gumroad.com/l/91revelations" class="font-bold link-blue" target="_blank" rel="noopener noreferrer">Get the book here &rarr;</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-2/3">
+                            <p>Have you ever felt that the history you were taught is a lie? That there's a deeper, hidden story of our world waiting to be uncovered?</p>
+                            <p>The 91 Revelations is more than a book—it's the key to unlocking a forgotten history. Forged from five years of relentless research, this manuscript is the life's work of a craftsman, a hip-hop producer, and a chronicler of truth who uncovered a story so powerful it demanded to be told.</p>
+                            <p>This isn't just another conspiracy book. This is a journey through time, from the dawn of creation to the shadows of the modern age. We will explore the Forbidden History of our world, from the cosmic wars of the Anunnaki to the sunken continents of Atlantis and Lemuria. We will decode the secrets of the Emerald Tablets, the Gnostic mysteries, and the truth behind the Ancient Apocalypse that reset civilization.</p>
+                            
+                            <h2 class="section-title">Inside, you will discover:</h2>
+                            <ul class="list-disc pl-5 mb-6 space-y-2">
+                                <li>The true story of our cosmic origins and the alien intelligences that shaped our solar system.</li>
+                                <li>The hidden science of the Great Pyramid, the secrets of the Hollow Earth, and the real reason for the UFO cover-up.</li>
+                                <li>The secret societies, from the Freemasons to the Rosicrucians, have guarded this knowledge for millennia.</li>
+                                <li>The modern conspiracies, from COINTELPRO to the Vatican's hidden archives, that continue to shape our world.</li>
+                            </ul>
+                            
+                            <h2 class="section-title">Conspiracies and Esoteric Topics Addressed in The 91 Revelations</h2>
+                            <div class="space-y-4">
+                                <h3 class="text-lg font-bold sans-serif">Cosmic & Extraterrestrial:</h3>
+                                <ul class="list-disc pl-5">
+                                    <li><a href="#" class="wiki-link" data-term="Anunnaki" data-origin="Cosmic & Extraterrestrial">The Anunnaki</a> and their gold-mining mission on Earth.</li>
+                                    <li><a href="#" class="wiki-link" data-term="Nibiru" data-origin="Cosmic & Extraterrestrial">The planet Nibiru</a> and its 3,600-year orbit.</li>
+                                    <li>The true nature of God as a Man (W.F. Muhammad).</li>
+                                    <li>The Ringmakers of Saturn and their ancient industry in our solar system.</li>
+                                    <li>The Firmament (a solid dome over a flat Earth).</li>
+                                    <li><a href="#" class="wiki-link" data-term="Hollow Earth" data-origin="Cosmic & Extraterrestrial">The Hollow Earth</a> and the inner-Earth civilization of Agartha.</li>
+                                    <li>The Lucifer Rebellion as a cosmic civil war.</li>
+                                    <li>The UFO Cover-up, starting with the Roswell incident.</li>
+                                    <li>The true nature of UFOs as Adamic Drones or craft from Agartha.</li>
+                                    <li>The Brotherhoods of Light and higher-dimensional intelligences.</li>
+                                    <li>The Great Solar Minimum and the coming Solar Flash.</li>
+                                    <li>The Tunguska Event as a deliberate act of celestial intervention.</li>
+                                    <li>The Lunar Matrix and the theft of the true solar calendar.</li>
+                                    <li>The Lizard People (corrupted Jinn) are infiltrating human power structures.</li>
+                                </ul>
+                                <h3 class="text-lg font-bold sans-serif">Lost Civilizations & Ancient History:</h3>
+                                <ul class="list-disc pl-5">
+                                    <li>The lost continents of <a href="#" class="wiki-link" data-term="Lemuria" data-origin="Lost Civilizations & Ancient History">Lemuria (Mu)</a> and <a href="#" class="wiki-link" data-term="Atlantis" data-origin="Lost Civilizations & Ancient History">Atlantis</a>.</li>
+                                    <li>The four great Atlantean Cataclysms, including the final sinking of Poseidonis.</li>
+                                    <li>The advanced science of Atlantis, including Vril power, sonic levitation, and airships.</li>
+                                    <li>The true history of Thoth the Atlantean and his 16,000-year reign in Egypt.</li>
+                                    <li><a href="#" class="wiki-link" data-term="The Emerald Tablets of Thoth" data-origin="Lost Civilizations & Ancient History">The Emerald Tablets of Thoth</a>.</li>
+                                    <li>The true purpose of the Great Pyramid of Giza as a power plant and initiation chamber.</li>
+                                    <li>The Library of Alexandria's destruction as a deliberate theft of knowledge by the Vatican.</li>
+                                    <li>The Global Flood Myths as echoes of multiple, real cataclysms.</li>
+                                    <li>The Pole Shift as the true "Adam and Eve Cataclysm."</li>
+                                    <li>The Sentinelese people as guardians of a Lemurian portal.</li>
+                                </ul>
+                                <h3 class="text-lg font-bold sans-serif">Secret Societies & Esoteric Traditions:</h3>
+                                <ul class="list-disc pl-5">
+                                    <li>The true origins of Freemasonry in the mystery schools of ancient Egypt.</li>
+                                    <li>The corruption of Freemasonry (Owl Tempest).</li>
+                                    <li>The Rosicrucians and their "Sun's Storm" of revelation.</li>
+                                    <li>The Gnostics, Alchemists, and other medieval mystery schools.</li>
+                                    <li>The Priesthood of Melchizedek as cosmic emergency responders.</li>
+                                    <li>The Hiramic Legend and its connection to the theme of usurpation.</li>
+                                    <li>The Count of St. Germain as an ascended master working through history.</li>
+                                </ul>
+                                <h3 class="text-lg font-bold sans-serif">Biblical & Theological Conspiracies:</h3>
+                                <ul class="list-disc pl-5">
+                                    <li>The creation of the <a href="#" class="wiki-link" data-term="Adamu" data-origin="Biblical & Theological Conspiracies">Adamu</a> (the first humans) as a slave race by the Anunnaki.</li>
+                                    <li>The true story of Adam and Eve as a failed mission of biological uplift.</li>
+                                    <li>The story of <a href="#" class="wiki-link" data-term="Lilith" data-origin="Biblical & Theological Conspiracies">Lilith</a> as the first, rebellious matriarch.</li>
+                                    <li>The story of Cain and Abel as the origin of Vampires and Werewolves.</li>
+                                    <li>The Tower of Babel as a failed Anunnaki coup and the origin of the confusion of tongues through sonic warfare.</li>
+                                    <li>The story of Ham and Noah as the theft of a sacred garment and a tool of power.</li>
+                                    <li>The true identity of Nimrod as the first tyrant and the founder of Caesarism.</li>
+                                    <li>The story of Jacob and Esau is an allegory for the triumph of the intellect over the physical.</li>
+                                    <li>The true mission of Moses as a civilize of savage tribes.</li>
+                                    <li>The Nuclear Calamity of 2024 B.C.E. as the true story of Sodom and Gomorrah.</li>
+                                    <li>The Book of Revelation as a transcript of an initiation on the island of Patmos.</li>
+                                </ul>
+                                <h3 class="text-lg font-bold sans-serif">Modern & Political Conspiracies:</h3>
+                                <ul class="list-disc pl-5">
+                                    <li>The story of <a href="#" class="wiki-link" data-term="Yakub" data-origin="Modern & Political Conspiracies">Yakub</a> grafting a new race on the Isle of Patmos.</li>
+                                    <li>The Bloodlines of the Elite (Ashkenazi Elites vs. The New Race), continuing the Anunnaki war.</li>
+                                    <li><a href="#" class="wiki-link" data-term="COINTELPRO" data-origin="Modern & Political Conspiracies">COINTELPRO</a> as a spiritual war against the Black Panthers and the Nation of Islam.</li>
+                                    <li>The Vatican's role in suppressing history ("Apocalyptic Mist").</li>
+                                    <li><a href="#" class="wiki-link" data-term="Admiral Byrd" data-origin="Modern & Political Conspiracies">Admiral Byrd's</a> discovery of the Hollow Earth.</li>
+                                    <li>The Digital Babel and the use of algorithms and social media for mass control.</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 `
@@ -230,6 +429,11 @@
                                     <tr class="border-t border-gray-300"><th scope="row" class="p-2">Sectors</th><td class="p-2">Creative, Digital, Automotive, Skilled Trades, Gig Economy</td></tr>
                                 </tbody>
                             </table>
+                            <div class="bg-gray-100 border-t-4 border-gray-400 rounded-b text-gray-900 px-4 py-3 shadow-md mt-4 text-center" role="alert">
+                                <p class="font-bold">Join the Movement</p>
+                                <p class="text-sm my-2">Support our mission by getting your free Founding Member Kit or contributing a "coffee" today.</p>
+                                <a href="https://brotherotg.gumroad.com/coffee" class="font-bold link-blue" target="_blank" rel="noopener noreferrer">Click Here to Contribute &rarr;</a>
+                            </div>
                         </div>
                         <div class="w-full md:w-2/3">
                             <p><b>The International Teemsterrs Union</b> is an American professional guild and developing labor union founded by creative entrepreneur Charles Paris. It is the culmination of a 20-year journey through the heart of American labor—from union halls and highway paving crews to the recording studio and the digital frontier. It was created for the new wave of multi-skilled, independent workers who are the backbone of the modern economy.</p>
@@ -242,30 +446,99 @@
                                 <li><b>Automotive & Sales:</b> Car Salespeople, Sales Managers, Auto Shop Entrepreneurs, Installers.</li>
                                 <li><b>Skilled Labor:</b> General Maintenance, Event Setup and Logistics.</li>
                             </ul>
+                            <h2 class="section-title">Our Philosophy: "Over Time Grind"</h2>
+                            <p>"Over Time Grind" is the work it takes to be successful. It's the long nights, the double shifts. It's being the secretary, the trashman, and the rocket scientist all in one day. The International Teemsterrs Union is built on this ethos. We want our members to feel that sense of camaraderie found on a job site or in a real team. We want you to feel like you are a part of something, because you are. We want you to know that OTG has your back.</p>
+                            <p class="font-bold">We are the union for everyone who has had to do it all by themselves. Now, we do it together.</p>
                         </div>
                     </div>
+                `
+            },
+            roadmap: {
+                title: "The International Teemsterrs Union Local #1 Itinerary & Official Roadmap",
+                html: `
+                    <p class="text-sm -mt-1 mb-4 text-gray-500">From Wikipedia, the free encyclopedia</p>
+                    <p>Welcome to the movement. You are a Founding Member of Local #1. This document outlines our plan of action. This is the grind.</p>
+                    <h2 class="section-title">Mission Statement</h2>
+                    <p>Our mission is to build a future where no independent worker has to grind alone. We are a union for the new economy—the producers, the creators, the drivers, the designers, and the multi-skilled hustlers who wear every hat to build their dream. We were founded on the "Over Time Grind" philosophy: we know the work it takes because we've lived it. We provide the resources to ensure you're paid what you're worth, the network to build real camaraderie, and the collective voice to demand the respect you've earned. We are The International Teemsterrs Union. Now, we do it together.</p>
+                    <h2 class="section-title">Leadership</h2>
+                    <p>The International Teemsterrs Union was founded by Charles A. Paris (Brother OTG). As the founder of Local #1, he is responsible for guiding the vision, managing the resources, and building the foundation of the union.</p>
+                    <h2 class="section-title">Community Guidelines & Code of Conduct</h2>
+                    <p>This is a professional guild built on respect. All members are expected to:</p>
+                    <ul class="list-disc pl-5 mb-6">
+                        <li><b>Support Each Other:</b> We are a network, not a competition. Share knowledge, offer help, and hire fellow members when possible.</li>
+                        <li><b>Engage Respectfully:</b> Disagreements are normal, but disrespect is not. All communication in our spaces will be professional and constructive.</li>
+                        <li><b>Uphold the Grind:</b> Represent the union with the same integrity and work ethic that you bring to your own craft.</li>
+                    </ul>
+                    <h2 class="section-title">Financial Transparency</h2>
+                    <p>The International Teemsterrs Union is a grassroots movement. All contributions, from the smallest donation to the largest, are considered investments into the mission. These funds will be used to cover the operational costs of building this union, including equipment, software, marketing, and the resources needed to advocate for our members. We are committed to being transparent with our members as we grow. Please check with your accountant or tax professional to see if your contribution is a business write-off.</p>
+                    <p>All contributions are processed securely via Gumroad. <a href="https://brotherotg.gumroad.com/coffee" class="link-blue" target="_blank" rel="noopener noreferrer"><b>Click Here to Donate &rarr;</b></a></p>
+                    <h2 class="section-title">The Goal</h2>
+                    <p>Our goal is simple: to build a future where every independent worker has the numbers, the muscle, and the leverage to get what they've earned. We are building a real-world network and a digital fortress of resources that will shift the balance of power back to the people doing the work.</p>
+                    <h2 class="section-title">The Itinerary: Our Long-Term Plan</h2>
+                    <p>This is how we get it done. This is a marathon, not a sprint.</p>
+                    <h3 class="font-bold sans-serif text-lg mb-2">Phase 1: Build the Foundation (The First Year: Months 1-12)</h3>
+                    <p><b>Objective:</b> Gather the numbers. Our power comes from our community.</p>
+                    <ul class="list-disc pl-5 mb-6">
+                        <li><b>Grow Local #1:</b> Drive membership through the free Founding Member Kit.</li>
+                        <li><b>Build the Digital Hall:</b> Solidify our presence on all social platforms (Twitter, Instagram, etc.).</li>
+                        <li><b>Launch the Contributor Wall & Business Directory:</b> Immediately provide value and visibility to our first supporters.</li>
+                        <li><b>Gather Intel:</b> Use our platforms to collect the stories and data we need to understand the biggest challenges facing our members.</li>
+                    </ul>
+                    <h3 class="font-bold sans-serif text-lg mb-2">Phase 2: Build the Resources (The Second Year: Months 13-24)</h3>
+                    <p><b>Objective:</b> Build the muscle. Turn our numbers into tangible benefits.</p>
+                    <ul class="list-disc pl-5 mb-6">
+                        <li><b>Launch the "OTG Helps" Initiative:</b> Formalize the coaching and mentorship program, offering member-exclusive workshops on branding, business, and AI.</li>
+                        <li><b>Develop Resource Guides:</b> Create and distribute free guides on topics like "How to Set Your Rates," "Understanding 1099 Contracts," and "Finding Healthcare as a Freelancer."</li>
+                        <li><b>Host Member-Only Events:</b> Hold live audio rooms and virtual events for members to network and share knowledge.</li>
+                    </ul>
+                    <h3 class="font-bold sans-serif text-lg mb-2">Phase 3: Build the Power (Year 3 and Beyond)</h3>
+                    <p><b>Objective:</b> Build the leverage. Use our numbers and muscle to create real change.</p>
+                    <ul class="list-disc pl-5 mb-6">
+                        <li><b>Formalize Chapters:</b> Explore establishing official chapters in new cities based on member concentration.</li>
+                        <li><b>Targeted Advocacy:</b> Launch campaigns to address specific issues our members face (e.g., unfair platform fees, late payments).</li>
+                        <li><b>Explore Collective Bargaining:</b> Identify groups of members working for the same clients and explore the path to becoming a legally recognized bargaining unit.</li>
+                    </ul>
+                    <h2 class="section-title">Your Role in the Grind: The Member's Pledge</h2>
+                    <p>This movement is powered by you. Your contribution is more than just money—it's your engagement, your voice, and your belief in the mission. By joining, you pledge to:</p>
+                    <ul class="list-disc pl-5 mb-6">
+                        <li><b>Fuel the Engine:</b> The content is our engine. I will support the movement by engaging with the music, the podcasts, and the videos that power our platform. I will subscribe, share, and add to playlists to help grow our numbers.</li>
+                        <li><b>Be the Network:</b> I will spread the word to other independent workers and share the link to the free Founding Member Kit. My word-of-mouth is our most powerful tool.</li>
+                        <li><b>Rep The Union:</b> I will add "Founding Member of The International Teemsterrs Union, Local #1" to my social media bios to let the world know I'm part of the foundation.</li>
+                        <li><b>Share My Story:</b> I will participate in our community discussions and polls, because my experiences are the data that will fuel our fight.</li>
+                    </ul>
+                    <p class="font-bold">This isn't just about one person. It's about building a force that outlives all of us. This is the work. This is the Over Time Grind. Welcome to the union.</p>
+                    <p class="mt-4 text-center">Support the Mission: <a href="https://brotherotg.gumroad.com/coffee" class="link-blue" target="_blank" rel="noopener noreferrer">Buy Me a Coffee &rarr;</a></p>
                 `
             },
             teem: {
                 title: "The Teem (Community & Fans)",
                 html: `
                     <p class="text-sm -mt-1 mb-4 text-gray-500">The Community. The Fans. The Foundation.</p>
-                     <div class="flex flex-col md:flex-row-reverse gap-8">
+                    <div class="flex flex-col md:flex-row-reverse gap-8">
                         <div class="w-full md:w-1/3">
                             <table class="infobox w-full sans-serif">
                                 <tbody>
-                                    <tr><th colspan="2" class="text-center text-lg font-bold bg-gray-200 p-2">The Teemsterrs Union</th></tr>
+                                    <tr><th colspan="2" class="text-center text-lg font-bold bg-gray-200 p-2">The International Teemsterrs Union</th></tr>
                                     <tr><td colspan="2" class="text-center p-2"><img src="https://raw.githubusercontent.com/365otg/teemsterrspics/main/Teemsterrswork.jpg" alt="Logo for The Teem Community" class="mx-auto"><div class="text-xs p-1">The Teemsterrs: Established 2025</div></td></tr>
                                     <tr class="border-t border-gray-300"><th scope="row" class="p-2">Founded By</th><td class="p-2">Charles Paris</td></tr>
                                 </tbody>
                             </table>
                         </div>
                         <div class="w-full md:w-2/3">
-                             <h2 class="section-title">History of The Teem</h2>
-                            <p>The Teem is more than a fanbase; it's a family built over years of shared experiences. It began with fans of different brands—<b>Charles Paris Music</b>, <b>The Rich Rising Movement</b>, the <b>365 Brand</b>—and grew in the <b>OTG Safe Spaces</b> of Clubhouse. It includes people I sold cars to, content fans, and supporters of the <b>Supply The Work</b> philosophy. Everyone who dedicated their time, shared their stories, and offered their support created the vision for The Teemsterrs.</p>
+                            <h2 class="section-title">History of The Teem</h2>
+                            <p>The Teem is more than a fanbase; it's a family built over years of shared experiences. It began with fans of different brands—<b><a href="#" data-page="main">Charles Paris Music</a></b>, <b>The Rich Rising Movement</b>, the <b>365 Brand</b>—and grew in the <b>OTG Safe Spaces</b> of Clubhouse. It includes people I sold cars to, content fans, and supporters of the <b>Supply The Work</b> philosophy. Everyone who dedicated their time, shared their stories, and offered their support created the vision for The Teemsterrs.</p>
                             <h2 class="section-title">Join the Movement</h2>
-                            <p>Whether you're a fan of the music, a worker in the gig economy, or someone who believes in the Over Time Grind philosophy, you are part of The Teem. The best way to get involved is to join our mailing list and receive the official Founding Member Kit. It's free, and it's your first step into a larger community. All members receive exclusive updates and member-only content.</p>
-                            <p><a href="https://brotherotg.gumroad.com/l/teemsterrs" class="font-bold link-blue" target="_blank" rel="noopener noreferrer">Click here to get your free Founding Member Kit.</a></p>
+                            <p>Whether you're a fan of the music, a worker in the gig economy, or someone who believes in the Over Time Grind philosophy, you are part of The Teem. The best way to get involved is to get your free Founding Member Kit and support the mission by buying a "coffee."</p>
+                            <p><a href="https://brotherotg.gumroad.com/coffee" class="font-bold link-blue" target="_blank" rel="noopener noreferrer">Click here to get your free Founding Member Kit.</a></p>
+                            <h2 class="section-title">Music & Media</h2>
+                            <p><b>Latest Album:</b></p>
+                            <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1781558929/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://charlesparismusic.bandcamp.com/album/charles-paris-music">Charles Paris Music by Charles Paris Music</a></iframe>
+                            <p class="mt-4">For all music, media, and entertainment, visit the official <a href="http://charlesparismusic.com" class="link-blue" target="_blank" rel="noopener noreferrer"><b>CharlesParisMusic.com</b></a> hub.</p>
+                            <h2 class="section-title">Community Spotlight: The Audiobook</h2>
+                            <p>From our community space "Conspiracy Theories Real Or Fake with the Facts," here is the official audiobook, AI-read and produced by <a href="#" data-page="main">Charles Paris</a>.</p>
+                            <div class="aspect-video my-4">
+                                <iframe class="w-full h-full" src="https://www.youtube.com/embed/srzPTZulDTE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
                         </div>
                     </div>
                 `
@@ -274,8 +547,8 @@
                 title: "Founding Contributors Wall",
                 html: `
                     <p class="text-sm -mt-1 mb-4 text-gray-500">From Wikipedia, the free encyclopedia</p>
-                    <p>This page honors and recognizes the founding contributors who have generously supported the mission of The International Teemsterrs Union. Their belief in this movement helps us build resources, advocate for independent workers, and grow Local #1.</p>
-                    <p>To have your name and link added to the wall, <a href="https://brotherotg.gumroad.com/l/teemsterrs" class="link-blue" target="_blank" rel="noopener noreferrer"><b>please make a contribution here</b></a>. Thank you for your support.</p>
+                    <p>This page honors and recognizes the founding contributors who have generously supported the mission of <a href="#" data-page="union">The International Teemsterrs Union</a>. Their belief in this movement helps us build resources, advocate for independent workers, and grow Local #1.</p>
+                    <p>To have your name and link added to the wall, <a href="https://brotherotg.gumroad.com/coffee" class="link-blue" target="_blank" rel="noopener noreferrer"><b>please make a contribution here</b></a>. Thank you for your support.</p>
                     
                     <h2 class="section-title">Executive Council ($100+)</h2>
                     <p>Contributors at this level receive a permanent spot on the wall with their name, a link to their website or social media, and a short description of their business or craft.</p>
@@ -293,6 +566,7 @@
                                 <td><a href="#" class="link-blue">@JaneDoeCreates</a></td>
                                 <td>Independent Graphic Designer & Illustrator</td>
                             </tr>
+                            <!-- Add more Executive Council contributors here -->
                         </tbody>
                     </table>
 
@@ -310,12 +584,13 @@
                                 <td>John Smith</td>
                                 <td><a href="#" class="link-blue">JohnSmithMusic.com</a></td>
                             </tr>
+                            <!-- Add more Advocates here -->
                         </tbody>
                     </table>
 
                     <h2 class="section-title">Founding Members & Supporters (Up to $24)</h2>
                     <p>Every person who joins the movement by downloading the free member kit or making a contribution will have their name listed here. Supporters who contribute $5 or more will have a star (★) next to their name.</p>
-                     <table class="wikitable">
+                    <table class="wikitable">
                         <thead>
                             <tr>
                                 <th>Member Name</th>
@@ -324,15 +599,16 @@
                         <tbody>
                             <tr><td>Maria Garcia ★</td></tr>
                             <tr><td>David Chen</td></tr>
+                            <!-- Add more Founding Members here -->
                         </tbody>
                     </table>
                 `
             },
-             directory: {
+            directory: {
                 title: "Teemsterrs Business Directory",
                 html: `
                     <p class="text-sm -mt-1 mb-4 text-gray-500">From Wikipedia, the free encyclopedia</p>
-                    <p>This is the official business directory for members of The International Teemsterrs Union. This is a network built to encourage members to hire and support each other. All contributors at the Advocate level ($25+) are eligible for a listing.</p>
+                    <p>This is the official business directory for members of <a href="#" data-page="union">The International Teemsterrs Union</a>. This is a network built to encourage members to hire and support each other. All contributors at the Advocate level ($25+) are eligible for a listing.</p>
                     <h2 class="section-title">Directory</h2>
                     <table class="wikitable">
                         <thead>
@@ -353,43 +629,20 @@
                                 <td><a href="#" class="link-blue">JohnSmithMusic.com</a></td>
                                 <td>Composer for Film & Video Games</td>
                             </tr>
+                            <!-- Add more directory listings here -->
                         </tbody>
                     </table>
-                `
-            },
-            contact: {
-                title: "Links & Contact",
-                html: `
-                    <p class="text-sm -mt-1 mb-4 text-gray-500">From Wikipedia, the free encyclopedia</p>
-                    <p>This section contains a comprehensive list of official external links related to Charles A. Paris, The Teemsterrs Union, and all associated brands.</p>
-                    <h2 class="section-title">Official Union & Community Hubs</h2>
-                     <ul class="list-disc list-inside space-y-2 mt-4">
-                        <li><a href="https://share.google/kcJTScrUgEbQKJKIp" target="_blank" rel="noopener noreferrer" class="link-blue">Google My Business (Digital Union Hall)</a></li>
-                        <li><a href="https://brotherotg.gumroad.com/l/teemsterrs" target="_blank" rel="noopener noreferrer" class="link-blue">Join The Union (Free Founding Member Kit)</a></li>
-                    </ul>
-                    <h2 class="section-title">Contribute to the Movement</h2>
-                    <p>Help build the future for independent workers. All contributors are honored on our <a href="#" data-page="contributors" class="link-blue"><b>Founding Contributors Wall</b></a>.</p>
-                    <ul class="list-disc list-inside space-y-2 mt-4">
-                        <li><a href="https://brotherotg.gumroad.com/l/teemsterrs" target="_blank" rel="noopener noreferrer" class="link-blue">Contribute via Gumroad (Pay What You Want)</a></li>
-                    </ul>
-                    <h2 class="section-title">Social Media & Primary Platforms</h2>
-                    <ul class="list-disc list-inside space-y-2 mt-4">
-                        <li><a href="http://linktr.ee/365charlesparis" target="_blank" rel="noopener noreferrer" class="link-blue">All My Links (Linktree)</a></li>
-                        <li><a href="http://instagram.com/365charlesparis" target="_blank" rel="noopener noreferrer" class="link-blue">Instagram (@365charlesparis)</a></li>
-                        <li><a href="http://x.com/365charlesparis" target="_blank" rel="noopener noreferrer" class="link-blue">Twitter/X (@365charlesparis)</a></li>
-                        <li><a href="http://tiktok.com/@365otg" target="_blank" rel="noopener noreferrer" class="link-blue">TikTok (@365otg)</a></li>
-                    </ul>
                 `
             },
             webdev: {
                 title: "Web Development Portfolio",
                 html: `
                     <p class="text-sm -mt-1 mb-4 text-gray-500">From Wikipedia, the free encyclopedia</p>
-                    <p>As a developer, Charles Paris specializes in crafting robust, intuitive, and high-performance web applications that solve real-world problems, particularly for creative professionals. Below is a selection of projects demonstrating this expertise.</p>
+                    <p>As a developer, <a href="#" data-page="main">Charles Paris</a> specializes in crafting robust, intuitive, and high-performance web applications that solve real-world problems, particularly for creative professionals. Below is a selection of projects demonstrating this expertise.</p>
                     
                     <h2 class="section-title">Portfolio of Applications</h2>
-                    <div id="portfolio-grid" class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
-                        <!-- Portfolio items will be inserted here -->
+                    <div id="portfolio-grid" class="portfolio-grid mt-6">
+                        <!-- Projects will be dynamically inserted here from the portfolioData object -->
                     </div>
                 `
             },
@@ -404,7 +657,7 @@
 
                     <h2 class="section-title">The Cost of Not Knowing Your Business</h2>
                     <blockquote class="border-l-4 border-gray-300 pl-4 italic my-4">
-                        <p>"In 2020, I changed my producer name, struggling with the technical side of music distribution and business. Five years later, in 2025, I rebranded to 'Charles Paris Music' and focused on getting my business in order. Almost immediately, I saw a jump in my income. When I contacted my distributor, I discovered a beat I made 16 years ago had been going viral on TikTok since 2020, accumulating over 6.3 million plays!"</p>
+                        <p>"In 2020, I changed my producer name, struggling with the technical side of music distribution and business. Five years later, in 2025, I rebranded to '<a href="#" data-page="main">Charles Paris Music</a>' and focused on getting my business in order. Almost immediately, I saw a jump in my income. When I contacted my distributor, I discovered a beat I made 16 years ago had been going viral on TikTok since 2020, accumulating over 6.3 million plays!"</p>
                         <p>"Here's the hard truth: if I had known what I'm about to teach you, I could have capitalized on that moment with social media packages, Content ID, and more. My music has now reached 18 million plays, but it will take another six months to generate accurate data. The biggest regret? In that time, I had taken down some of my music, unknowingly losing out on those 'viral' moments."</p>
                         <p>"Don't make the same mistake. Let me help you."</p>
                     </blockquote>
@@ -424,9 +677,9 @@
                     
                     <h2 class="section-title">Enrollment</h2>
                     <div class="bg-[#f8f9fa] border border-[#a2a9b1] p-4 rounded-md my-6 text-center">
-                         <p class="text-lg mb-2"><strong>Book your 1-on-1 session for $100.</strong> This is an investment in your future.</p>
-                         <a href="https://paypal.me/overtimegrind/100" target="_blank" rel="noopener noreferrer" class="link-blue text-lg font-bold">Pay $100 to Reserve Your Spot →</a>
-                         <p class="text-xs text-gray-600 mt-2">*A link to schedule your session will be sent to the email verified on payment within 24 hours of purchase. All sales are final; there are no refunds.</p>
+                        <p class="text-lg mb-2"><strong>Book your 1-on-1 session for $100.</strong> This is an investment in your future.</p>
+                        <a href="https://paypal.me/overtimegrind/100" target="_blank" rel="noopener noreferrer" class="link-blue text-lg font-bold">Pay $100 to Reserve Your Spot →</a>
+                        <p class="text-xs text-gray-600 mt-2">*A link to schedule your session will be sent to the email verified on payment within 24 hours of purchase. All sales are final; there are no refunds.</p>
                     </div>
                 `
             },
@@ -446,7 +699,7 @@
                 title: "Producer Tools & Web Applications",
                 html: `
                     <p class="text-sm -mt-1 mb-4 text-gray-500">From Wikipedia, the free encyclopedia</p>
-                    <p>As a self-taught developer, Paris created the <a href="https://365otg.github.io/CPU/" class="link-blue" target="_blank" rel="noopener noreferrer"><b>Charles Paris Producer Tools</b></a>, a suite of over 15 web applications designed to assist music creators with the business and technical aspects of production. The tools are available for free.</p>
+                    <p>As a self-taught developer, <a href="#" data-page="main">Paris</a> created the <a href="https://365otg.github.io/CPU/" class="link-blue" target="_blank" rel="noopener noreferrer"><b>Charles Paris Producer Tools</b></a>, a suite of over 15 web applications designed to assist music creators with the business and technical aspects of production. The tools are available for free.</p>
                     <div class="my-4 p-4 border border-gray-300 bg-gray-50 rounded">
                         <h3 class="font-bold text-lg sans-serif">Featured Tools:</h3>
                         <ul class="list-disc list-inside mt-2 space-y-1">
@@ -463,52 +716,146 @@
                 title: "Blog & Updates",
                 html: `
                     <p class="text-sm -mt-1 mb-4 text-gray-500">From Wikipedia, the free encyclopedia</p>
-                    <p>This section contains the latest video updates from the official Charles Paris Music YouTube channel.</p>
+                    <p>This section contains the latest video updates from the official <a href="#" data-page="main">Charles Paris Music</a> YouTube channel.</p>
                     <div id="youtube-feed" class="space-y-8 mt-6">
                         <p>Loading latest videos...</p>
                     </div>
                 `
             },
             conspiracy: {
-                title: "Conspiracy Theories: Real or Fake w/ Facts (Podcast Archive)",
+                title: "OTG Research",
                 html: `
-                    <p class="text-sm -mt-1 mb-4 text-gray-500">From Wikipedia, the free encyclopedia</p>
-                    <div class="bg-[#f8f9fa] border border-[#a2a9b1] p-4 rounded-md mb-6 text-sm">
-                        <h2 class="text-xl font-bold text-center sans-serif mb-2">Archive Summary</h2>
-                        <p class="text-center">This page archives the 41-episode run of the "Conspiracy Theories Real or Fake w/ Facts" podcast, hosted by Brother O.T.G. The series ran for <strong><span id="day-counter"></span> days</strong> from Feb 20, 2021, to Aug 27, 2021, totaling over <strong>248 hours</strong> of content.</p>
-                    </div>
-
-                    <h2 class="section-title">Episode List</h2>
-                    <div id="episode-list" class="space-y-8">
-                        <!-- Episodes will be populated by JavaScript -->
-                    </div>
-                    
-                    <h2 class="section-title">Executive Summary & Glossary</h2>
-                    <div class="space-y-4 mt-4">
-                        <div>
-                            <h3 class="text-xl font-semibold sans-serif mb-2">Executive Summary</h3>
-                            <p>This archive documents 41 episodes of the "Conspiracy Theories Real or Fake w/ Facts" podcast, hosted by Brother O.T.G., spanning a significant 188-day period from February 20, 2021, to August 27, 2021. The collection represents over 248 hours of in-depth discussions on a wide range of topics, from historical and political conspiracies to social issues and esoteric knowledge. The podcast provided a unique "Black First" perspective on these subjects, fostering a space for late-night conversations and truth-seeking. This period is regarded by many listeners as life-changing, marked by its intense schedule and the depth of its content.</p>
+                    <p class="text-sm -mt-1 mb-4 text-gray-500">The Official Hub for "Conspiracy Theories: Real or Fake w/ Facts"</p>
+                    <div class="flex flex-col md:flex-row-reverse gap-8">
+                        <!-- Right Sidebar (Infobox) -->
+                        <div class="w-full md:w-1/3">
+                            <table class="infobox w-full sans-serif">
+                                <tbody>
+                                    <tr><th colspan="2" class="text-center text-lg font-bold bg-gray-200 p-2">OTG Research</th></tr>
+                                    <tr><td colspan="2" class="text-center p-2">
+                                        <img src="https://github.com/365otg/PicturesandVids/blob/main/COnspiracyRealorFake.png?raw=true" alt="OTG Research Podcast Logo" class="mx-auto" onerror="this.onerror=null;this.src='https://placehold.co/300x200/1a202c/ffffff?text=Logo+Not+Found';">
+                                        <div class="text-xs p-1">Real or Fake with the Facts</div>
+                                    </td></tr>
+                                    <tr class="border-t border-gray-300"><th scope="row" class="p-2">Genre</th><td class="p-2">Alternative Media, History, Mythology, Pop Culture</td></tr>
+                                    <tr class="border-t border-gray-300"><th scope="row" class="p-2">Hosted by</th><td class="p-2"><a href="#" data-page="main" class="link-blue">Brother O.T.G</a></td></tr>
+                                    <tr class="border-t border-gray-300"><th scope="row" class="p-2">Original Run</th><td class="p-2">2021–present</td></tr>
+                                    <tr class="border-t border-gray-300"><th scope="row" class="p-2">Website</th><td class="p-2"><a href="https://otgresearch.info" class="link-blue" target="_blank" rel="noopener noreferrer">OTGresearch.info</a></td></tr>
+                                </tbody>
+                            </table>
+                            <div class="bg-gray-100 border-t-4 border-gray-400 rounded-b text-gray-900 px-4 py-3 shadow-md mt-4 text-center" role="alert">
+                                <p class="font-bold">Connect to the Source</p>
+                                <p class="text-sm my-2">Get the full experience with a purchase of the books or audio archives.</p>
+                                <a href="https://brotherotg.gumroad.com/l/theunforgettablechronicle" class="font-bold link-blue" target="_blank" rel="noopener noreferrer">Buy The Unforgettable Chronicle &rarr;</a>
+                            </div>
                         </div>
-                        <div>
-                            <h3 class="text-xl font-semibold sans-serif mb-2">Glossary of Key Terms</h3>
-                            <ul class="list-disc list-inside space-y-1">
-                                <li><strong>CTRFWF:</strong> Abbreviation for "Conspiracy Theories Real or Fake w/ Facts."</li>
-                                <li><strong>O.T.G:</strong> Over Time Grind, the brand and philosophy of the host.</li>
-                                <li><strong>Safe Spaces:</strong> A term for the live rooms on Clubhouse where the podcast was recorded, emphasizing a "Black First" environment for open discussion.</li>
-                                <li><strong>Project C.T.R.L:</strong> A series within the podcast focusing on specific deep-dive topics like MKUltra and historical timelines.</li>
-                                <li><strong>Tin Foil Hat Time:</strong> A recurring segment or series dedicated to more speculative and esoteric conspiracy theories.</li>
+                        <!-- Main Content Column -->
+                        <div class="w-full md:w-2/3">
+                            <p>
+                                <b>OTG Research</b> is the official digital archive for the podcast and radio show <b>"Conspiracy Theories: Real or Fake w/ Facts,"</b> hosted by <a href="#" data-page="main">Brother O.T.G</a>. This site serves as a centralized, navigable resource for exploring the topics, evidence, and discussions from the show's extensive library. Our mission is to examine the world's most enduring mysteries, from ancient mythology to modern comic book lore, with a critical eye.
+                            </p>
+                            <div id="toc" class="toc my-4 sans-serif mt-6">
+                                <h2 class="text-lg font-bold text-center border-b-0 m-0 p-0 mb-2">Contents</h2>
+                                <ul>
+                                    <li class="toclevel-1"><a href="#anunnaki-lore"><span>1</span> Anunnaki & Sumerian Lore</a></li>
+                                    <li class="toclevel-1"><a href="#lost-civilizations"><span>2</span> Lost Civilizations & Inner Earth</a></li>
+                                    <li class="toclevel-1"><a href="#tartarian-empire"><span>3</span> Tartarian Empire & Resets</a></li>
+                                    <li class="toclevel-1"><a href="#cosmology-creation"><span>4</span> Cosmology & Creation Myths</a></li>
+                                    <li class="toclevel-1"><a href="#secret-histories"><span>5</span> Secret Histories & Suppressed Knowledge</a></li>
+                                    <li class="toclevel-1"><a href="#esoteric-traditions"><span>6</span> Esoteric Traditions & Movements</a></li>
+                                    <li class="toclevel-1"><a href="#creatures-cryptids"><span>7</span> Mythological Creatures & Cryptids</a></li>
+                                    <li class="toclevel-1"><a href="#greek-mythology"><span>8</span> Greek Mythology</a></li>
+                                    <li class="toclevel-1"><a href="#egyptian-mythology"><span>9</span> Egyptian Mythology</a></li>
+                                    <li class="toclevel-1"><a href="#marvel-universe"><span>10</span> Marvel Universe</a></li>
+                                    <li class="toclevel-1"><a href="#dc-universe"><span>11</span> DC Universe</a></li>
+                                </ul>
+                            </div>
+                            <h2 id="anunnaki-lore" class="section-title">Anunnaki & Sumerian Lore</h2>
+                            <p>This section explores the history and lore of the Anunnaki and ancient Sumer. The information is a collection of esoteric theories and traditional academia.</p>
+                            <ul class="list-disc pl-5 mb-6">
+                                <li><a href="#" class="wiki-link" data-term="Anunnaki" data-origin="Anunnaki & Sumerian Lore">Anunnaki</a></li>
+                                <li><a href="#" class="wiki-link" data-term="Adamu" data-origin="Anunnaki & Sumerian Lore">Adamu</a></li>
+                                <li><a href="#" class="wiki-link" data-term="Abzu" data-origin="Anunnaki & Sumerian Lore">Abzu</a></li>
+                                <li><a href="#" class="wiki-link" data-term="Lilith" data-origin="Anunnaki & Sumerian Lore">Lilith</a></li>
+                                <li><a href="#" class="wiki-link" data-term="Nibiru" data-origin="Anunnaki & Sumerian Lore">Nibiru</a></li>
+                            </ul>
+                            <h2 id="lost-civilizations" class="section-title">Lost Civilizations & Inner Earth</h2>
+                            <p>Dive into the mysteries of lost continents and the concept of an inner-earth civilization.</p>
+                            <ul class="list-disc pl-5 mb-6">
+                                <li><a href="#" class="wiki-link" data-term="Atlantis" data-origin="Lost Civilizations & Inner Earth">Atlantis</a></li>
+                                <li><a href="#" class="wiki-link" data-term="Lemuria" data-origin="Lost Civilizations & Inner Earth">Lemuria (Mu)</a></li>
+                                <li><a href="#" class="wiki-link" data-term="Agartha" data-origin="Lost Civilizations & Inner Earth">Agartha</a></li>
+                                <li><a href="#" class="wiki-link" data-term="Hollow Earth" data-origin="Lost Civilizations & Inner Earth">Hollow Earth</a></li>
+                                <li><a href="#" class="wiki-link" data-term="The Great Pyramid" data-origin="Lost Civilizations & Inner Earth">The Great Pyramid</a></li>
+                            </ul>
+                            <h2 id="tartarian-empire" class="section-title">Tartarian Empire & Resets</h2>
+                            <p>An exploration of a hidden global empire and the theories of a historical reset.</p>
+                            <ul class="list-disc pl-5 mb-6">
+                                <li><a href="#" class="wiki-link" data-term="Tartarian Empire" data-origin="Tartarian Empire & Resets">Tartarian Empire</a></li>
+                                <li><a href="#" class="wiki-link" data-term="Mud Flood" data-origin="Tartarian Empire & Resets">Mud Flood</a></li>
+                                <li><a href="#" class="wiki-link" data-term="Great Deception" data-origin="Tartarian Empire & Resets">The Great Deception</a></li>
+                            </ul>
+                            <h2 id="cosmology-creation" class="section-title">Cosmology & Creation Myths</h2>
+                            <p>A look at different models of creation and the true nature of the universe.</p>
+                            <ul class="list-disc pl-5 mb-6">
+                                <li><a href="#" class="wiki-link" data-term="Urantia" data-origin="Cosmology & Creation Myths">Urantia (The Earth)</a></li>
+                                <li><a href="#" class="wiki-link" data-term="Firmament" data-origin="Cosmology & Creation Myths">The Firmament</a></li>
+                                <li><a href="#" class="wiki-link" data-term="Council of 24 Scientists" data-origin="Cosmology & Creation Myths">The Council of 24 Scientists</a></li>
+                                <li><a href="#" class="wiki-link" data-term="Original Black Man" data-origin="Cosmology & Creation Myths">The Original Black Man</a></li>
+                            </ul>
+                            <h2 id="secret-histories" class="section-title">Secret Histories & Suppressed Knowledge</h2>
+                            <p>Topics and figures that have been allegedly hidden or erased from mainstream history.</p>
+                            <ul class="list-disc pl-5 mb-6">
+                                <li><a href="#" class="wiki-link" data-term="Lucifer Rebellion" data-origin="Secret Histories & Suppressed Knowledge">The Lucifer Rebellion</a></li>
+                                <li><a href="#" class="wiki-link" data-term="Great Flood" data-origin="Secret Histories & Suppressed Knowledge">The Great Flood</a></li>
+                                <li><a href="#" class="wiki-link" data-term="Nephilim" data-origin="Secret Histories & Suppressed Knowledge">The Nephilim</a></li>
+                                <li><a href="#" class="wiki-link" data-term="The Emerald Tablets of Thoth" data-origin="Secret Histories & Suppressed Knowledge">The Emerald Tablets of Thoth</a></li>
+                            </ul>
+                            <h2 id="esoteric-traditions" class="section-title">Esoteric Traditions & Movements</h2>
+                            <p>Exploring the world of secret societies, spiritual movements, and their core doctrines.</p>
+                            <ul class="list-disc pl-5 mb-6">
+                                <li><a href="#" class="wiki-link" data-term="Great White Brotherhood" data-origin="Esoteric Traditions & Movements">The Great White Brotherhood</a></li>
+                                <li><a href="#" class="wiki-link" data-term="The Keys of Enoch" data-origin="Esoteric Traditions & Movements">The Keys of Enoch</a></li>
+                                <li><a href="#" class="wiki-link" data-term="The Urantia Book" data-origin="Esoteric Traditions & Movements">The Urantia Book</a></li>
+                                <li><a href="#" class="wiki-link" data-term="Yakub's History" data-origin="Esoteric Traditions & Movements">Yakub's History</a></li>
+                            </ul>
+                            <h2 id="creatures-cryptids" class="section-title">Mythological Creatures & Cryptids</h2>
+                            <p>A deep dive into the real-world connections and origins behind mythical beings.</p>
+                            <ul class="list-disc pl-5 mb-6">
+                                <li><a href="#" class="wiki-link" data-term="Dogman" data-origin="Mythological Creatures & Cryptids">Dogman</a></li>
+                                <li><a href="#" class="wiki-link" data-term="Mothman" data-origin="Mythological Creatures & Cryptids">Mothman</a></li>
+                            </ul>
+                            <h2 id="greek-mythology" class="section-title">Greek Mythology</h2>
+                            <p>A wiki of gods, titans, and monsters from the world of ancient Greece.</p>
+                            <ul class="list-disc pl-5 mb-6">
+                                <li><a href="#" class="wiki-link" data-term="Zeus" data-origin="Greek Mythology">Zeus</a></li>
+                                <li><a href="#" class="wiki-link" data-term="Hades" data-origin="Greek Mythology">Hades</a></li>
+                                <li><a href="#" class="wiki-link" data-term="Minotaur" data-origin="Greek Mythology">Minotaur</a></li>
+                                <li><a href="#" class="wiki-link" data-term="Medusa" data-origin="Greek Mythology">Medusa</a></li>
+                            </ul>
+                            <h2 id="egyptian-mythology" class="section-title">Egyptian Mythology</h2>
+                            <p>An archive of the deities and beings from ancient Egypt.</p>
+                            <ul class="list-disc pl-5 mb-6">
+                                <li><a href="#" class="wiki-link" data-term="Ra" data-origin="Egyptian Mythology">Ra</a></li>
+                                <li><a href="#" class="wiki-link" data-term="Osiris" data-origin="Egyptian Mythology">Osiris</a></li>
+                                <li><a href="#" class="wiki-link" data-term="Thoth" data-origin="Egyptian Mythology">Thoth</a></li>
+                                <li><a href="#" class="wiki-link" data-term="Anubis" data-origin="Egyptian Mythology">Anubis</a></li>
+                            </ul>
+                            <h2 id="marvel-universe" class="section-title">Marvel Universe</h2>
+                            <p>Theories and breakdowns of Marvel characters and storylines from an esoteric perspective.</p>
+                            <ul class="list-disc pl-5 mb-6">
+                                <li><a href="#" class="wiki-link" data-term="Galactus" data-origin="Marvel Universe">Galactus</a></li>
+                                <li><a href="#" class="wiki-link" data-term="Doctor Doom" data-origin="Marvel Universe">Doctor Doom</a></li>
+                                <li><a href="#" class="wiki-link" data-term="Loki" data-origin="Marvel Universe">Loki</a></li>
+                            </ul>
+                            <h2 id="dc-universe" class="section-title">DC Universe</h2>
+                            <p>Theories and breakdowns of DC characters and storylines from an esoteric perspective.</p>
+                            <ul class="list-disc pl-5 mb-6">
+                                <li><a href="#" class="wiki-link" data-term="Darkseid" data-origin="DC Universe">Darkseid</a></li>
+                                <li><a href="#" class="wiki-link" data-term="Brainiac" data-origin="DC Universe">Brainiac</a></li>
+                                <li><a href="#" class="wiki-link" data-term="Superman" data-origin="DC Universe">Superman</a></li>
+                                <li><a href="#" class="wiki-link" data-term="Batman" data-origin="DC Universe">Batman</a></li>
                             </ul>
                         </div>
-                    </div>
-
-                    <h2 class="section-title">Associated Video Content</h2>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
-                         <div class="aspect-video">
-                             <iframe class="w-full h-full" src="https://www.youtube.com/embed/videoseries?list=PL5CNM_INhrKZ0RMlGB2HAEyTGO7fIzG-j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                         </div>
-                         <div class="aspect-video">
-                             <iframe class="w-full h-full" src="https://www.youtube.com/embed/videoseries?list=PLOrCnNLDAql-PxckdFG4gZSRCPppA8Sbn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                         </div>
                     </div>
                 `
             },
@@ -517,7 +864,29 @@
                 html: `
                     <p class="text-sm -mt-1 mb-4 text-gray-500">From Wikipedia, the free encyclopedia</p>
                     <h2 class="section-title">A Visual Archive</h2>
-                    <p>This is a placeholder for your image gallery.</p>
+                    <div class="scroll-gallery my-4">
+                        <div class="gallery-item"><img src="https://github.com/365otg/PicturesandVids/blob/main/Charles%20OTG%20Paris%20365OTG%202017.jpg?raw=true" alt="Charles Paris Music - Over Time Grind 2017"><p class="image-caption">OTG, 2017</p></div>
+                        <div class="gallery-item"><img src="https://github.com/365otg/PicturesandVids/blob/main/CharlesParisMusicSuit.png?raw=true" alt="Charles Paris Music 2015"><p class="image-caption">Charles Paris Music, 2015</p></div>
+                        <div class="gallery-item"><img src="https://github.com/365otg/PicturesandVids/blob/main/CharlesParisMusicImpalass.jpg?raw=true" alt="Charles Paris Music 2019"><p class="image-caption">Charles Paris Music, 2019</p></div>
+                        <div class="gallery-item"><img src="https://github.com/365otg/PicturesandVids/blob/main/205864200_10219396254757627_2935330599415007964_n.jpg?raw=true" alt="Charles Paris Music 2023"><p class="image-caption">Charles Paris Music, 2023</p></div>
+                        <div class="gallery-item"><img src="https://github.com/365otg/PicturesandVids/blob/main/CharlesParisMusicGraffitiPier.jpg?raw=true" alt="Charles Paris Music at Graffiti Pier 2023"><p class="image-caption">At Graffiti Pier, 2023</p></div>
+                    </div>
+                    <h2 class="section-title">A Network of Legends</h2>
+                    <div class="scroll-gallery my-4">
+                        <div class="gallery-item"><img src="https://github.com/365otg/CharlesParisWiki/blob/main/Charles%20Paris%20and%20Bernard%20Hopkins.webp?raw=true" alt="Charles 'Brother OTG' Paris with boxing legend Bernard Hopkins"><p class="image-caption">With Bernard Hopkins</p></div>
+                        <div class="gallery-item"><img src="https://github.com/365otg/CharlesParisWiki/blob/main/Charles%20Paris%20and%20Dj%20Damage.webp?raw=true" alt="Charles 'Brother OTG' Paris with DJ Damage"><p class="image-caption">With DJ Damage</p></div>
+                        <div class="gallery-item"><img src="https://github.com/365otg/CharlesParisWiki/blob/main/Over%20Time%20Grind%20and%20Jahlil%20Beats.webp?raw=true" alt="Charles 'Brother OTG' Paris with Jahlil Beats"><p class="image-caption">With Jahlil Beats</p></div>
+                        <div class="gallery-item"><img src="https://github.com/365otg/CharlesParisWiki/blob/main/Over%20Time%20Grind%20and%20ENess.webp?raw=true" alt="Charles 'Brother OTG' Paris with Eness"><p class="image-caption">With Eness</p></div>
+                        <div class="gallery-item"><img src="https://github.com/365otg/CharlesParisWiki/blob/main/Charles%20Paris%20and%20Chris%20Schwartz.webp?raw=true" alt="Charles 'Brother OTG' Paris with Chris Schwartz"><p class="image-caption">With Chris Schwartz</p></div>
+                        <div class="gallery-item"><img src="https://github.com/365otg/CharlesParisWiki/blob/main/Charles%20Paris%20%20and%20Stalley.webp?raw=true" alt="Charles 'Brother OTG' Paris with Stalley"><p class="image-caption">With Stalley</p></div>
+                    </div>
+                    <h2 class="section-title">Activism</h2>
+                    <div class="scroll-gallery my-4">
+                        <div class="gallery-item"><img src="https://github.com/365otg/CharlesParisWiki/blob/main/Charles%20Paris%20and%20Freeway.webp?raw=true" alt="Charles 'Brother OTG' Paris with Freeway at the Kidney Walk"><p class="image-caption">With Freeway, Kidney Walk</p></div>
+                        <div class="gallery-item"><img src="https://github.com/365otg/PicturesandVids/blob/main/101387032_10216999035668648_7824818101299445760_n.jpg?raw=true" alt="2020 Philadelphia Protest at the Frank Rizzo statue"><p class="image-caption">2020 Protest, Frank Rizzo Statue</p></div>
+                        <div class="gallery-item"><img src="https://github.com/365otg/PicturesandVids/blob/main/FrontLines%20CenterCitymay312020.jpg?raw=true" alt="On the front lines of the 2020 Philadelphia Protests"><p class="image-caption">On the Front Lines, 2020</p></div>
+                        <div class="gallery-item"><img src="https://github.com/365otg/PicturesandVids/blob/main/VinesStreetMay30.jpg?raw=true" alt="Vine Street Parkway during the 2020 Philadelphia Riots"><p class="image-caption">Vine Street Parkway, 2020</p></div>
+                    </div>
                 `
             },
             linkhub: {
@@ -533,10 +902,134 @@
                         <li><a href="https://www.youtube.com/@365charlesparis/releases" target="_blank" rel="noopener noreferrer" class="link-blue">YouTube Releases</a></li>
                         <li><a href="http://x.com/365charlesparis" target="_blank" rel="noopener noreferrer" class="link-blue">Twitter/X</a></li>
                         <li><a href="http://tiktok.com/@365otg" target="_blank" rel="noopener noreferrer" class="link-blue">TikTok</a></li>
+                        <li><a href="https://www.reddit.com/user/supplythework/" target="_blank" rel="noopener noreferrer" class="link-blue">Reddit Profile</a></li>
+                        <li><a href="https://otgresearch.info" target="_blank" rel="noopener noreferrer" class="link-blue">OTG Research Wiki</a></li>
+                    </ul>
+
+                    <h2 class="section-title">Producer Stores & All-Access Passes</h2>
+                    <ul class="list-disc list-inside space-y-2 mt-4">
+                        <li><a href="https://brotherotg.gumroad.com/" target="_blank" rel="noopener noreferrer" class="link-blue">Main Gumroad Store (All Products)</a></li>
+                        <li><a href="https://brotherotg.gumroad.com/l/gtfzpq" target="_blank" rel="noopener noreferrer" class="link-blue">Producer All-Access Pass</a></li>
+                    </ul>
+
+                    <h2 class="section-title">Masterclasses & Guides</h2>
+                    <ul class="list-disc list-inside space-y-2 mt-4">
+                        <li><a href="https://brotherotg.gumroad.com/l/igtio" target="_blank" rel="noopener noreferrer" class="link-blue">Masterclass of all Masterclasses</a></li>
+                        <li><a href="https://brotherotg.gumroad.com/l/MPCMasterclass" target="_blank" rel="noopener noreferrer" class="link-blue">$5 Akai MPC ONE & Live 2 Masterclass</a></li>
+                        <li><a href="https://brotherotg.gumroad.com/l/iuglqh" target="_blank" rel="noopener noreferrer" class="link-blue">The Akai Force Masterclass</a></li>
+                        <li><a href="https://brotherotg.gumroad.com/l/oayds" target="_blank" rel="noopener noreferrer" class="link-blue">$5 Roland SP-404 MK2 Masterclass</a></li>
+                        <li><a href="https://brotherotg.gumroad.com/l/xsxltf" target="_blank" rel="noopener noreferrer" class="link-blue">Roland SP-404 MK2 CheatSheet</a></li>
+                        <li><a href="https://365otg.github.io/AkaiMPCGuide/" target="_blank" rel="noopener noreferrer" class="link-blue">Charles Paris Akai MPC Guide</a></li>
+                        <li><a href="https://365otg.github.io/seqtrak/" target="_blank" rel="noopener noreferrer" class="link-blue">Charles Paris Yamaha SeqTrak Guide</a></li>
+                        <li><a href="https://365otg.github.io/sp404-mk2-guide/" target="_blank" rel="noopener noreferrer" class="link-blue">Charles Paris SP-404 MK2 Guide</a></li>
+                        <li><a href="https://365otg.github.io/RolandVerselabMV1/" target="_blank" rel="noopener noreferrer" class="link-blue">Charles Paris Roland Verselab MV-1 Guide</a></li>
+                    </ul>
+                    
+                    <h2 class="section-title">Sound Packs & Drum Kits</h2>
+                    <ul class="list-disc list-inside space-y-2 mt-4">
+                        <li><a href="https://brotherotg.gumroad.com/l/jkvtk" target="_blank" rel="noopener noreferrer" class="link-blue">O.T.G MPC Stimulus Pack</a></li>
+                        <li><a href="https://brotherotg.gumroad.com/l/cxozj" target="_blank" rel="noopener noreferrer" class="link-blue">O.T.G Roland Stimulus Pack</a></li>
+                        <li><a href="https://brotherotg.gumroad.com/l/fayaz" target="_blank" rel="noopener noreferrer" class="link-blue">O.T.G Smackers DrumKit</a></li>
+                        <li><a href="https://brotherotg.gumroad.com/l/deemn" target="_blank" rel="noopener noreferrer" class="link-blue">Akai Arsenal</a></li>
+                        <li><a href="https://brotherotg.gumroad.com/l/ximwy" target="_blank" rel="noopener noreferrer" class="link-blue">The Akai MPC Genesis</a></li>
+                        <li><a href="https://brotherotg.gumroad.com/l/ssropf" target="_blank" rel="noopener noreferrer" class="link-blue">The O.T.G Akai MPC Files</a></li>
+                        <li><a href="https://brotherotg.gumroad.com/l/ijmxwl" target="_blank" rel="noopener noreferrer" class="link-blue">Producer Sample Kit</a></li>
+                        <li><a href="https://brotherotg.gumroad.com/l/rcuccq" target="_blank" rel="noopener noreferrer" class="link-blue">The Lofi Vibe Kit</a></li>
+                        <li><a href="https://brotherotg.gumroad.com/l/dooleb" target="_blank" rel="noopener noreferrer" class="link-blue">The Universal Drum Fortress</a></li>
+                        <li><a href="https://brotherotg.gumroad.com/l/tiebp" target="_blank" rel="noopener noreferrer" class="link-blue">SP404 Field Manual & Ammo Kit</a></li>
+                        <li><a href="https://brotherotg.gumroad.com/l/yqbzdh" target="_blank" rel="noopener noreferrer" class="link-blue">The Westcoast Started Kit</a></li>
+                        <li><a href="https://brotherotg.gumroad.com/l/uupjn" target="_blank" rel="noopener noreferrer" class="link-blue">The Boom Bap Ignition Kit</a></li>
+                        <li><a href="https://brotherotg.gumroad.com/l/duadj" target="_blank" rel="noopener noreferrer" class="link-blue">The Dynamic Duo</a></li>
+                        <li><a href="https://brotherotg.gumroad.com/l/dchte" target="_blank" rel="noopener noreferrer" class="link-blue">15GB - 45 Expansions</a></li>
+                        <li><a href="https://brotherotg.gumroad.com/l/cjkeak" target="_blank" rel="noopener noreferrer" class="link-blue">400+ MPC Chord Progressions</a></li>
+                        <li><a href="https://brotherotg.gumroad.com/l/zrhjl" target="_blank" rel="noopener noreferrer" class="link-blue">Roland SP-404 MK2 Soundbank</a></li>
+                    </ul>
+
+                    <h2 class="section-title">Free Producer Tools & Apps</h2>
+                    <ul class="list-disc list-inside space-y-2 mt-4">
+                        <li><a href="https://brotherotg.gumroad.com/l/siojbx" target="_blank" rel="noopener noreferrer" class="link-blue">Charles Paris Producer Tools</a></li>
+                        <li><a href="https://brotherotg.gumroad.com/l/yovcy" target="_blank" rel="noopener noreferrer" class="link-blue">Charles Paris Drum App</a></li>
+                        <li><a href="https://brotherotg.gumroad.com/l/crvbw" target="_blank" rel="noopener noreferrer" class="link-blue">Roland SP-404 MK2 Free Screensaver</a></li>
+                    </ul>
+                    
+                    <h2 class="section-title">Support & Financial</h2>
+                    <ul class="list-disc list-inside space-y-2 mt-4">
+                        <li><a href="https://chime.com/r/charlesparis19" target="_blank" rel="noopener noreferrer" class="link-blue">Build Credit with Chime (Referral)</a></li>
+                        <li><a href="https://paypal.me/shopotg" target="_blank" rel="noopener noreferrer" class="link-blue">PayPal</a></li>
+                        <li><a href="https://cash.app/$pfprinting" target="_blank" rel="noopener noreferrer" class="link-blue">Cash App</a></li>
+                    </ul>
+                `
+            },
+            contact: {
+                title: "Services & Contact",
+                html: `
+                    <p class="text-sm -mt-1 mb-4 text-gray-500">From Wikipedia, the free encyclopedia</p>
+                    <h2 class="section-title">Professional Services</h2>
+                    <div class="space-y-4 mt-6">
+                        <p><b>Web Development:</b> Paris provides web development services for artists and brands. Information is available at <a href="http://charlesparis.online/" class="link-blue" target="_blank" rel="noopener noreferrer">charlesparis.online</a>.</p>
+                        <p><b>Brand Consulting:</b> He offers brand consulting services for creative professionals. Information is available at <a href="http://charlesparismusic.online/" class="link-blue" target="_blank" rel="noopener noreferrer">charlesparismusic.online</a>.</p>
+                        <p><b>Producer Mentorship:</b> A one-on-one mentorship program is available for music producers. Information is available at <a href="http://charlesparismusic.online/" class="link-blue" target="_blank" rel="noopener noreferrer">charlesparismusic.online</a>.</p>
+                    </div>
+                    <h2 class="section-title">Contact & Social Media</h2>
+                    <p>For professional inquiries and to follow official updates:</p>
+                    <ul class="list-disc list-inside mt-4 space-y-2">
+                        <li><b>Official Links:</b> <a href="https://365otg.github.io/CharlesParisLinks/" class="link-blue" target="_blank" rel="noopener noreferrer">Digital Business Card (All Links)</a></li>
+                        <li><b>Instagram:</b> <a href="https://www.instagram.com/charlesparismusic" class="link-blue" target="_blank" rel="noopener noreferrer">@charlesparismusic</a></li>
+                        <li><b>TikTok:</b> <a href="https://www.tiktok.com/@365otg" class="link-blue" target="_blank" rel="noopener noreferrer">@365otg</a></li>
+                        <li><b>Substack:</b> <a href="https://brotherotg.substack.com/" class="link-blue" target="_blank" rel="noopener noreferrer">Brother OTG's Newsletter</a></li>
                     </ul>
                 `
             }
         };
+
+        // --- PORTFOLIO DATA ---
+        const portfolioData = [
+            { title: "Charles Paris Producer Tools (Main Hub)", desc: "A central hub aggregating various web-based tools designed to assist music producers in their workflow. This project demonstrates strong organizational skills and the ability to create a cohesive user experience across multiple applications.", cost: "$12,000 - $25,000", tech: "HTML, CSS, JavaScript, Responsive Design", url: "https://365otg.github.io/CPU/" },
+            { title: "Producer Tools (Audio/Image/Creative)", desc: "A suite of web-based tools for audio and image manipulation, tailored for creative professionals. Showcases proficiency in handling media assets.", cost: "$25,000 - $50,000", tech: "HTML, CSS, JavaScript, File API", url: "https://365otg.github.io/ProducerTools/" },
+            { title: "Akai MPC Guide", desc: "An interactive guide for Akai MPC users, providing clear instructions and resources. Demonstrates expertise in creating structured, educational web content and intuitive navigation.", cost: "$8,000 - $15,000", tech: "HTML, CSS, JavaScript, Content Management", url: "https://365otg.github.io/AkaiMPCGuide/" },
+            { title: "Yamaha SeqTrak Guide", desc: "A comprehensive online guide for the Yamaha SeqTrak, designed for easy learning and reference. Highlights the ability to present complex information in an accessible web format.", cost: "$8,000 - $15,000", tech: "HTML, CSS, JavaScript, Responsive Design", url: "https://365otg.github.io/seqtrak/" },
+            { title: "SP-404 MK2 Guide", desc: "An interactive resource for Roland SP-404 MK2 users, simplifying complex features and workflows. Showcases strong UI/UX for specialized hardware guides.", cost: "$8,000 - $15,000", tech: "HTML, CSS, JavaScript, User Guides", url: "https://365otg.github.io/sp404-mk2-guide/" },
+            { title: "Roland Verselab MV-1 Guide", desc: "A dedicated web guide for the Roland Verselab MV-1, offering clear instructions and tips. Demonstrates the creation of detailed, user-friendly documentation online.", cost: "$8,000 - $15,000", tech: "HTML, CSS, JavaScript, Educational Content", url: "https://365otg.github.io/RolandVerselabMV1/" },
+            { title: "Drum App", desc: "A web-based drum machine for practicing rhythms and beat-making. Highlights interactive audio elements and real-time user input processing.", cost: "$18,000 - $35,000", tech: "HTML, CSS, JavaScript, Web Audio API", url: "https://365otg.github.io/drumapp/" },
+            { title: "Akai Force App", desc: "An application designed to enhance the Akai Force workflow. Demonstrates understanding of specific hardware integration concepts and user utility.", cost: "$15,000 - $28,000", tech: "HTML, CSS, JavaScript, Utility Tool", url: "https://365otg.github.io/akaiforceapp/" },
+            { title: "Aetherflow App", desc: "A creative web application for generating unique visual or audio patterns. Showcases innovative design and complex JavaScript logic for dynamic content generation.", cost: "$40,000 - $80,000", tech: "HTML, CSS, JavaScript, Generative Art/Audio", url: "https://365otg.github.io/aetherflow-app/" },
+            { title: "Quote Maker", desc: "A simple tool for generating and customizing quotes for various purposes. Highlights text manipulation, UI controls, and content generation.", cost: "$7,000 - $12,000", tech: "HTML, CSS, JavaScript, Text Utility", url: "https://365otg.github.io/OTGQuotes/" },
+            { title: "CPU Knife", desc: "A utility application designed to help users manage or understand CPU-related processes. Demonstrates system interaction concepts within a web environment.", cost: "$7,000 - $12,000", tech: "HTML, CSS, JavaScript, System Utility", url: "https://365otg.github.io/CPUKnife/" },
+            { title: "Metronome", desc: "A precise web-based metronome tool for musicians. Showcases timing accuracy, audio feedback, and simple, effective UI design.", cost: "$8,000 - $15,000", tech: "HTML, CSS, JavaScript, Web Audio API", url: "https://365otg.github.io/metronome/" },
+            { title: "Chord Explorer", desc: "An interactive tool for exploring musical chords and their structures. Demonstrates data visualization, user input interpretation, and educational utility.", cost: "$15,000 - $30,000", tech: "HTML, CSS, JavaScript, Music Theory", url: "https://365otg.github.io/ChordExplorer/" },
+            { title: "Sample Organizer", desc: "A web application designed to help producers manage and categorize their audio samples. Highlights data organization, search functionality, and file management concepts.", cost: "$30,000 - $55,000", tech: "HTML, CSS, JavaScript, Data Management", url: "https://365otg.github.io/SampleOrganizer/" },
+            { title: "Producer Tutorials (Main Hub)", desc: "A comprehensive portal for video tutorials on music production techniques and software. Showcases content aggregation, video embedding, and educational platform design.", cost: "$12,000 - $25,000", tech: "HTML, CSS, JavaScript, Video Embedding", url: "https://365otg.github.io/producertutorials/" },
+            { title: "Charles Paris Links Hub", desc: "A comprehensive digital hub consolidating all online presence and resources for Charles Paris. Demonstrates effective information architecture and user navigation for a personal brand.", cost: "$3,000 - $7,000", tech: "HTML, CSS, JavaScript, Responsive Design", url: "https://365otg.github.io/CharlesParisLinks/" },
+            { title: "Charles Paris Music Site", desc: "A dedicated website showcasing Charles Paris's music, discography, and artistic endeavors. Highlights professional online presence for artists and content creators.", cost: "$5,000 - $15,000", tech: "HTML, CSS, JavaScript, Content Presentation", url: "https://365otg.github.io/CharlesParisMusic/" },
+            { title: "365CP - Personal Bio & Brand Site", desc: "A personal brand and bio website for Charles Paris (Brother OTG), detailing his multi-faceted career as a producer, developer, and author. Focuses on personal branding and content presentation.", cost: "$5,000 - $12,000", tech: "HTML, CSS, JavaScript, Personal Branding", url: "https://365otg.github.io/365CP/" },
+            { title: "History", desc: "A web application designed to present historical information or personal timelines in an engaging and accessible format.", cost: "$8,000 - $15,000", tech: "HTML, CSS, JavaScript, Content Presentation", url: "https://365otg.github.io/History/" },
+            { title: "RC-202 Guide", desc: "An interactive guide for the Roland RC-202 Loop Station, offering clear instructions and creative tips for musicians.", cost: "$8,000 - $15,000", tech: "HTML, CSS, JavaScript, User Guides", url: "https://365otg.github.io/RC202/" },
+            { title: "Video Converter", desc: "A web-based utility for converting video formats, demonstrating proficiency in handling media processing within a browser environment.", cost: "$25,000 - $50,000", tech: "HTML, CSS, JavaScript, File API, Media Processing", url: "https://365otg.github.io/VideoConverter/" },
+            { title: "AAE (Advanced Audio Editor)", desc: "An advanced web-based audio editing tool with new features, showcasing sophisticated audio manipulation and a user-friendly interface.", cost: "$35,000 - $75,000", tech: "HTML, CSS, JavaScript, Web Audio API", url: "https://365otg.github.io/AAE/" },
+            { title: "Continuum", desc: "A creative web application exploring continuous visual or interactive experiences, demonstrating innovative design and dynamic content generation.", cost: "$30,000 - $60,000", tech: "HTML, CSS, JavaScript, Interactive Design, Generative Content", url: "https://365otg.github.io/Continuum/" },
+            { title: "WebDev - Web Development Services", desc: "A dedicated web presence showcasing comprehensive web development services, from custom applications to responsive website design. This project serves as a direct portfolio piece for potential clients.", cost: "$5,000 - $15,000", tech: "HTML, CSS, JavaScript, Responsive Design, Portfolio", url: "https://365otg.github.io/WebDev/" },
+        ];
+        
+        // --- DISCOGRAPHY DATA ---
+        const discographyData = [
+            { year: "2024", artist: "Charles Paris Music", title: "Everyday", youtubePlaylistId: "OLAK5uy_mW0i-NiUNzZr86QNVoJgNfwisidyoCREA" },
+            { year: "2023", artist: "Charles Paris Music", title: "365OTG", youtubePlaylistId: "OLAK5uy_nXon7LkbB0jBsrL2POGQTHZhuSVeOL9A4" },
+            { year: "2023", artist: "Charles Paris Music", title: "AlHambra", youtubePlaylistId: "OLAK5uy_m4NFIzHxkFdUX6lNn5qpub5XMijLd8SPE" },
+            { year: "2022", artist: "Charles Paris Music", title: "Transitions", youtubePlaylistId: "OLAK5uy_mXNnyIKsHxmjNrDiw4mHjL6K-jmr-pNqo" },
+            { year: "2022", artist: "Charles Paris Music", title: "Adventures in Lo-Fi", youtubePlaylistId: "OLAK5uy_mAxKGuCQrdAZSnRz3DBLXTOMh1iomn82I" },
+            { year: "2022", artist: "Charles Paris Music", title: "Your Brother.", youtubePlaylistId: "OLAK5uy_kM31Wwh4oIUgFz8JhzLRnWGAgpONCUWxo" },
+            { year: "2019", artist: "Charles Paris Music", title: "O.T.G Beat Tape 2019", youtubePlaylistId: "OLAK5uy_l860ha3GO3Ll0zEePOl5zVyy2R_lUQAYY" },
+            { year: "2015", artist: "Charles Paris Music", title: "Hustle Season. 5", youtubePlaylistId: "OLAK5uy_mPqgcHV4Dw7ytYPGmYEftQ_Bv9DhA77sE" },
+        ];
+
+        // --- CONSPIRACY WIKI DATA ---
+        const conspiracyEpisodes = [
+            { spotifyId: "4PpcWXT0zKw8bLubMt5CxK", title: "Ep. 1: O.T.G SAFE SPACE | Vol: Build or Destroy 1", desc: "Did Quarantine expose a lack of hustle and discipline? Live from our clubhouse room on FRIDAY Nights.", date: "Feb 20, 2021", duration: "4 hr 4 min" },
+            { spotifyId: "5wPeglhZD9WdC2OfhUHwA6", title: "Ep. 2: O.T.G PODCAST EP.1 - WELCOME", desc: "WELCOME TO THE COMMUNITY.", date: "Feb 21, 2021", duration: "9 min 41 sec" },
+            { spotifyId: "7IFfKQEKDpNXcIYLlDnU69", title: "Ep. 3: Conspiracy Theories - Real or Fake w/ Facts ep 44", desc: "Live recording of our clubhouse room held Tuesday, Thursday, and Saturday!! This the second half of the show 3am to 7am.", date: "Mar 1, 2021", duration: "4 hr 15 min" },
+            { spotifyId: "2RWpdXjRc7LYsXdGDwiuYA", title: "Ep. 4: Conspiracy Theories Real or Fake W/ Facts Ep: 45", desc: "Episode 45 in it's full entirety, March 2nd 2021. Recorded from 12AM until 7AM clubhouse OTGSafeSpaces", date: "Mar 3, 2021", duration: "6 hr 53 min" },
+            // ... (rest of the episodes)
+        ];
 
         // --- NAVIGATION & PAGE LOGIC ---
         document.addEventListener('DOMContentLoaded', function() {
@@ -547,9 +1040,45 @@
             const closeMenuButton = document.getElementById('close-menu-button');
             const mobileNavContainer = document.getElementById('mobile-nav');
             const desktopNavContainer = document.getElementById('desktop-nav');
+            const body = document.body;
 
+            // Clone desktop nav to mobile nav
             mobileNavContainer.innerHTML = desktopNavContainer.innerHTML;
             
+            // --- Modal functionality ---
+            const modal = document.getElementById('imageModal');
+            const modalImage = document.getElementById('modalImage');
+            const modalCaption = document.getElementById('modalCaption');
+            const closeModalBtn = document.getElementById('closeModal');
+
+            function attachModalListeners() {
+                const galleries = mainContent.querySelectorAll('.scroll-gallery');
+                if (galleries.length > 0 && modal) {
+                    galleries.forEach(gallery => {
+                        const galleryItems = gallery.querySelectorAll('.gallery-item');
+                        galleryItems.forEach(item => {
+                            item.addEventListener('click', (e) => {
+                                if (e.target.closest('a')) return;
+                                const img = item.querySelector('img');
+                                modalImage.src = img.src;
+                                modalImage.alt = img.alt;
+                                modalCaption.textContent = img.alt;
+                                modal.classList.remove('hidden');
+                            });
+                        });
+                    });
+                }
+            }
+            
+            if (modal) {
+                const close = () => modal.classList.add('hidden');
+                closeModalBtn.addEventListener('click', close);
+                modal.addEventListener('click', (e) => {
+                    if (e.target === modal) close();
+                });
+            }
+
+            // --- Age Calculation ---
             function calculateAge() {
                 const bornCell = document.getElementById('born-cell');
                 if (bornCell) {
@@ -557,29 +1086,230 @@
                     const ageDifMs = Date.now() - birthDate.getTime();
                     const ageDate = new Date(ageDifMs);
                     const age = Math.abs(ageDate.getUTCFullYear() - 1970);
-                    bornCell.innerHTML = 'Charles Anthony Paris<br>April 30, 1980 (age ' + age + ')<br>Urbana, Illinois, U.S.';
+                    bornCell.innerHTML = `Charles Anthony Paris<br>April 30, 1980 (age ${age})<br>Urbana, Illinois, U.S.`;
                 }
             }
 
-            function showPage(pageId) {
-                if (!pageContent[pageId]) {
-                    console.error('Page not found:', pageId);
-                    return;
-                }
-                
-                const content = pageContent[pageId];
-                mainContent.innerHTML = '<h1 class="page-title">' + content.title + '</h1>' + content.html;
+            // --- Populate Web Dev Portfolio ---
+            function populatePortfolio() {
+                const grid = document.getElementById('portfolio-grid');
+                if (!grid) return;
 
+                let portfolioHTML = '';
+                portfolioData.forEach(project => {
+                    portfolioHTML += `
+                        <div class="portfolio-card">
+                            <h3>${project.title}</h3>
+                            <p>${project.desc}</p>
+                            <p class="cost">Typical Cost: ${project.cost}</p>
+                            <div class="tech-stack">
+                                <strong>Tech:</strong> ${project.tech}
+                            </div>
+                            <div class="mt-4">
+                                <a href="${project.url}" target="_blank" rel="noopener noreferrer" class="link-blue">Live Demo →</a>
+                            </div>
+                        </div>
+                    `;
+                });
+                grid.innerHTML = portfolioHTML;
+            }
+            
+            // --- Populate Discography ---
+            function populateDiscography() {
+                const container = document.getElementById('discography-list');
+                if (!container) return;
+                let discographyHTML = '';
+                discographyData.forEach(album => {
+                    discographyHTML += `
+                        <div class="border-t border-gray-300 pt-4">
+                            <h3 class="text-xl font-bold sans-serif">${album.year} - ${album.title}</h3>
+                            <div class="aspect-video my-2">
+                               <iframe class="w-full h-full" src="https://www.youtube.com/embed/videoseries?list=${album.youtubePlaylistId}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    `;
+                });
+                container.innerHTML = discographyHTML;
+            }
+
+            // --- Conspiracy Page Logic ---
+            function populateConspiracyEpisodes() {
+                const container = document.getElementById('episode-list');
+                if (!container) return;
+                
+                let episodesHTML = '';
+                conspiracyEpisodes.forEach(ep => {
+                    episodesHTML += `
+                        <div class="border-t border-gray-300 pt-4">
+                            <iframe style="border-radius:12px; width: 100%; max-width: 350px; margin-bottom: 1rem;" src="https://open.spotify.com/embed/episode/${ep.spotifyId}?utm_source=generator&theme=0" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h3 class="text-xl font-bold sans-serif">${ep.title}</h3>
+                            <p class="text-sm text-gray-600 mt-2">${ep.desc}</p>
+                            <p class="text-xs text-gray-500 mt-2">${ep.date} • ${ep.duration}</p>
+                        </div>
+                    `;
+                });
+                container.innerHTML = episodesHTML;
+            }
+
+            function calculateDaysSince() {
+                const counterElement = document.getElementById('day-counter');
+                if (counterElement) {
+                    const startDate = new Date('2021-02-20T00:00:00');
+                    const today = new Date();
+                    const timeDiff = today.getTime() - startDate.getTime();
+                    const dayDiff = Math.floor(timeDiff / (1000 * 3600 * 24));
+                    counterElement.textContent = dayDiff;
+                }
+            }
+            
+            // --- Blog/Updates Logic ---
+            function fetchYoutubeFeed() {
+                const feedContainer = document.getElementById('youtube-feed');
+                if (!feedContainer) return;
+
+                const rssUrl = 'https://www.youtube.com/feeds/videos.xml?channel_id=UCz4GDiCOWci-3ihX5ZyiXlA';
+                fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssUrl)}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.status === 'ok' && data.items) {
+                            let feedHTML = '';
+                            data.items.slice(0, 5).forEach(item => { // Display latest 5 videos
+                                const videoId = item.link.split('v=')[1];
+                                // Create a short description
+                                const tempDiv = document.createElement('div');
+                                tempDiv.innerHTML = item.description;
+                                const plainText = tempDiv.textContent || "";
+                                const shortDesc = plainText.substring(0, 200) + '...';
+
+                                feedHTML += `
+                                    <div class="border-t border-gray-300 pt-4">
+                                        <h3 class="text-xl font-bold sans-serif"><a href="${item.link}" target="_blank" rel="noopener noreferrer" class="link-blue">${item.title}</a></h3>
+                                        <div class="aspect-video my-4">
+                                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/${videoId}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        </div>
+                                        <p class="text-sm text-gray-700 mt-2">${shortDesc}</p>
+                                        <p class="text-xs text-gray-500 mt-2">Published on: ${new Date(item.pubDate).toLocaleDateString()}</p>
+                                    </div>
+                                `;
+                            });
+                            feedContainer.innerHTML = feedHTML;
+                        } else {
+                            feedContainer.innerHTML = '<p>Could not load video feed.</p>';
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error fetching YouTube feed:', error);
+                        feedContainer.innerHTML = '<p>Error loading video feed.</p>';
+                    });
+            }
+
+            // --- Page Display Function ---
+            function showPage(pageId) {
                 const allNavLinks = document.querySelectorAll('nav a[data-page]');
                 allNavLinks.forEach(link => {
                     link.classList.toggle('active', link.dataset.page === pageId);
                 });
+
+                if (pageContent[pageId]) {
+                    const content = pageContent[pageId];
+                    mainContent.innerHTML = `<h1 class="page-title">${content.title}</h1>${content.html}`;
+                } else if (conspiracySiteData[pageId]) {
+                    const content = conspiracySiteData[pageId];
+                    let infoboxHtml = Object.entries(content.infobox).map(([key, value]) => `<tr class="border-t border-gray-300"><th scope="row">${key}</th><td>${value}</td></tr>`).join('');
+                    const pageHtml = `
+                        <div class="flex flex-col md:flex-row-reverse gap-8">
+                            <div class="w-full md:w-1/3"><table class="infobox w-full sans-serif"><tbody><tr><th colspan="2" class="text-center text-lg font-bold bg-gray-200 p-2">${content.title}</th></tr>${infoboxHtml}</tbody></table></div>
+                            <div class="w-full md:w-2/3">${content.html}</div>
+                        </div>
+                    `;
+                    mainContent.innerHTML = `<h1 class="page-title">${content.title}</h1>${pageHtml}`;
+                } else {
+                    console.error('Page not found:', pageId);
+                    return;
+                }
                 
+                // Run page-specific logic
                 if (pageId === 'main') { calculateAge(); }
+                if (pageId === 'webdev') { populatePortfolio(); }
+                if (pageId === 'discography') { populateDiscography(); }
+                if (pageId === 'conspiracy') { calculateDaysSince(); populateConspiracyEpisodes(); }
+                if (pageId === 'blog') { fetchYoutubeFeed(); }
                 
+                attachModalListeners(); // Re-attach listeners for galleries on new page
+                
+                // Scroll to top
                 mainContent.scrollTop = 0; 
             }
 
+            // --- Dynamic Wiki Content Handler ---
+            async function fetchWikiContent(term, origin) {
+                const hasEsotericContent = conspiracySiteData[term] && conspiracySiteData[term].html;
+                const hasWikipediaContent = !hasEsotericContent;
+                
+                mainContent.innerHTML = `<h1 class="page-title">Loading...</h1><p>Fetching content for <b>${term}</b>...</p>`;
+                
+                if (hasEsotericContent) {
+                    const content = conspiracySiteData[term];
+                    let infoboxHtml = Object.entries(content.infobox).map(([key, value]) => `<tr class="border-t border-gray-300"><th scope="row">${key}</th><td>${value}</td></tr>`).join('');
+                    const pageHtml = `
+                        <div class="flex flex-col md:flex-row-reverse gap-8">
+                            <div class="w-full md:w-1/3"><table class="infobox w-full sans-serif"><tbody><tr><th colspan="2" class="text-center text-lg font-bold bg-gray-200 p-2">${content.title}</th></tr>${infoboxHtml}</tbody></table></div>
+                            <div class="w-full md:w-2/3">${content.html}</div>
+                        </div>
+                    `;
+                    mainContent.innerHTML = `<h1 class="page-title">${content.title}</h1>${pageHtml}`;
+                } else {
+                    const API_URL = `https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts|pageimages|info&exintro&explaintext&redirects=1&origin=*&inprop=url&pithumbsize=400&titles=${encodeURIComponent(term)}`;
+                    try {
+                        const response = await fetch(API_URL);
+                        const data = await response.json();
+                        const pages = data.query.pages;
+                        const pageId = Object.keys(pages)[0];
+                        const page = pages[pageId];
+                        
+                        let summary = page.extract ? page.extract.split('\n').map(p => `<p>${p}</p>`).join('') : '<p>No summary found on Wikipedia.</p>';
+                        const imageUrl = page.thumbnail && page.thumbnail.source ? page.thumbnail.source : null;
+                        const fullUrl = page.fullurl;
+                        const title = page.title;
+
+                        let imageHtml = '';
+                        if (imageUrl) {
+                            imageHtml = `<img src="${imageUrl}" alt="Image of ${title}" class="mx-auto border border-gray-300" onerror="this.parentElement.parentElement.style.display='none'">`;
+                        } else {
+                            imageHtml = '';
+                        }
+                        
+                        const articleHtml = `
+                            <h1 class="page-title">${title}</h1>
+                            <p class="text-sm -mt-1 mb-4 text-gray-500">Summary from Wikipedia</p>
+                            <div class="flex flex-col md:flex-row-reverse gap-8">
+                                <div class="w-full md:w-1/3">
+                                    <table class="infobox w-full sans-serif" ${!imageUrl ? 'style="display:none;"' : ''}>
+                                        <tbody>
+                                            <tr><td colspan="2" class="text-center p-2">
+                                                ${imageHtml}
+                                                <div class="text-xs p-1 font-bold">${title}</div>
+                                            </td></tr>
+                                            <tr class="border-t border-gray-300"><th scope="row">Origin</th><td>${origin}</td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="w-full md:w-2/3">
+                                    <h2 class="section-title">Summary</h2>
+                                    ${summary}
+                                    <p class="mt-6"><a href="${fullUrl}" target="_blank" rel="noopener noreferrer" class="link-blue">Read the full article on Wikipedia &rarr;</a></p>
+                                </div>
+                            </div>
+                        `;
+                        mainContent.innerHTML = articleHtml;
+                    } catch (error) {
+                        console.error("Error fetching Wikipedia data:", error);
+                        mainContent.innerHTML = `<h1 class="page-title">Error</h1><p>Failed to fetch data from Wikipedia. Please check your internet connection and try again.</p>`;
+                    }
+                }
+            }
+
+            // --- Mobile Menu Toggle ---
             function toggleMenu() {
                 mobileMenu.classList.toggle('is-open');
             }
@@ -601,9 +1331,22 @@
                 }
             });
 
+            // Event delegation for wiki-links
+            mainContent.addEventListener('click', function(e) {
+                if (e.target.classList.contains('wiki-link')) {
+                    const term = e.target.dataset.term;
+                    const origin = e.target.dataset.origin;
+                    fetchWikiContent(term, origin);
+                    const allNavLinks = document.querySelectorAll('nav a[data-page]');
+                    allNavLinks.forEach(link => {
+                        link.classList.remove('active');
+                    });
+                }
+            });
+
+            // Show the main page by default
             showPage('main');
         });
     </script>
 </body>
 </html>
-
