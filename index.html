@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- SEO OPTIMIZATION -->
     <title>Charles Paris Music | The International Teemsterrs Union</title>
     <meta name="description" content="The official hub for Charles A. Paris (Brother OTG), The International Teemsterrs Union, and OTG Research. Explore the music, producer tools, mission to empower independent workers, and a wiki of forbidden knowledge.">
@@ -17,7 +17,7 @@
     <meta property="og:image" content="https://raw.githubusercontent.com/365otg/teemsterrspics/main/teemstersUSA.jpg">
     <meta property="og:url" content="http://charlesparismusic.com/">
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Charles Paris Music | The Teemsterrs Union">
+    <meta property="og:og:site_name" content="Charles Paris Music | The Teemsterrs Union">
 
     <!-- Twitter Card Tags -->
     <meta name="twitter:card" content="summary_large_image">
@@ -61,6 +61,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Linux+Libertine:wght@400;700&family=Arimo:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Gumroad Embed Script -->
+    <script src="https://gumroad.com/js/gumroad-embed.js"></script>
 
     <style>
         /* Custom Wikipedia Styles */
@@ -146,6 +149,17 @@
             font-size: 0.9em;
             color: #54595d;
         }
+        
+        /* Gumroad Follow Form Styles */
+        #gumroad-follow-form-embed{margin: 0px; padding: 0px; box-sizing: border-box; min-width: 0px; max-width: 100%; vertical-align: bottom; background-origin: padding-box; border-style: solid; border-width: 0px; display: grid; grid-auto-flow: column; gap: 0.75rem; grid-template-columns: 1fr; grid-auto-columns: max-content; align-items: center;}
+        #gumroad-follow-form-embed:root{color-scheme: light dark; }
+        #gumroad-follow-form-embed-button{margin: 0px; padding: 0.75rem 1rem; box-sizing: border-box; min-width: 0px; max-width: 100%; vertical-align: bottom; background: rgba(0, 0, 0, 0); font-size: 1rem; line-height: 1.4; border: solid .0625rem rgb(0 0 0/1); color: currentcolor; border-radius: 0.25rem; font-family: "ABC Favorit", Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro, sans-serif; display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; cursor: pointer; text-decoration: none; transition: transform 0.14s ease-out; background-color: rgb(0 0 0); color: rgb(255 255 255); }
+        #gumroad-follow-form-embed-button:hover{transform: translate(-0.25rem, -0.25rem); box-shadow: .25rem .25rem 0rem rgb(255 255 255 / 0.2);background-color: rgb(255 144 232); color: rgb(255 255 255); }
+        #gumroad-follow-form-embed-input{margin: 0px; box-sizing: border-box; min-width: 0px; max-width: 100%; vertical-align: bottom; background-origin: padding-box; border-style: solid; font-family: "ABC Favorit", Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro, sans-serif; padding: 0.75rem 1rem; font-size: 1rem; line-height: 1.4; border: solid .0625rem rgb(0 0 0/1); border-radius: 0.25rem; display: block; width: 100%; background-color: rgb(255 255 255); color: rgb(0 0 0); }
+        #gumroad-follow-form-embed-input:disabled{cursor: not-allowed; opacity: 0.3;}
+        #gumroad-follow-form-embed-input::placeholder{color: rgb(0 0 0/0.5);}
+        #gumroad-follow-form-embed-input:focus-within{outline: .125rem solid rgb(255 144 232);}
+        #gumroad-follow-form-embed-input:read-only{background-color: #f4f4f0;}
     </style>
 </head>
 <body class="bg-gray-100 pb-16 md:pb-0">
@@ -155,7 +169,7 @@
         <button id="close-menu-button" class="absolute top-4 right-4 text-2xl">&times;</button>
         <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/1200px-Wikipedia-logo-v2.svg.png" alt="The International Teemsterrs Union" class="w-24 mx-auto mb-4 mt-8">
         <h2 class="font-bold text-center mb-2 sans-serif">Brother O.T.G</h2>
-        <h2 class="font-bold mb-2 sans-serif">Navigation</h2>
+        <h3 class="font-bold mb-2 sans-serif">The Founder & Work</h3>
         <nav id="mobile-nav">
             <!-- Mobile nav links will be cloned here by JS -->
         </nav>
@@ -166,26 +180,31 @@
         <aside id="left-sidebar" class="hidden md:block w-full md:w-48 bg-[#f8f9fa] border-r border-gray-300 p-4 text-sm">
             <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/1200px-Wikipedia-logo-v2.svg.png" alt="The International Teemsterrs Union" class="w-24 mx-auto mb-4">
             <h2 class="font-bold text-center mb-2 sans-serif">Brother O.T.G</h2>
-            <h2 class="font-bold mb-2 sans-serif">Navigation</h2>
+            <h3 class="font-bold mb-2 sans-serif">The Founder & Work</h3>
             <nav id="desktop-nav">
                 <ul>
-                    <li class="mb-1"><a href="#" class="link-blue hover:underline active" data-page="main">About the Founder</a></li>
+                    <li class="mb-1"><a href="#" class="link-blue hover:underline" data-page="main">About the Founder</a></li>
                     <li class="mb-1"><a href="#" class="link-blue hover:underline" data-page="book">The Books</a></li>
                     <li class="mb-1"><a href="#" class="link-blue hover:underline" data-page="revelations">The 91 Revelations</a></li>
+                    <li class="mb-1"><a href="#" class="link-blue hover:underline" data-page="webdev">Web Development</a></li>
+                    <li class="mb-1"><a href="#" class="link-blue hover:underline" data-page="masterclass">Masterclass</a></li>
+                    <li class="mb-1"><a href="#" class="link-blue hover:underline" data-page="discography">Discography</a></li>
+                    <li class="mb-1"><a href="#" class="link-blue hover:underline" data-page="apps">Producer Tools</a></li>
+                    <li class="mb-1"><a href="#" class="link-blue hover:underline" data-page="gallery">Gallery</a></li>
                     <hr class="my-2">
-                    <li class="mb-1"><a href="#" class="link-blue hover:underline" data-page="union">The Teemsterrs Union</a></li>
+                    <h3 class="font-bold mb-2 sans-serif">The Teemsterrs Union</h3>
+                    <li class="mb-1"><a href="#" class="link-blue hover:underline" data-page="union">About the Union</a></li>
+                    <li class="mb-1"><a href="#" class="link-blue hover:underline" data-page="join-movement">Join the Movement</a></li>
                     <li class="mb-1"><a href="#" class="link-blue hover:underline" data-page="roadmap">Local #1 Roadmap</a></li>
                     <li class="mb-1"><a href="#" class="link-blue hover:underline" data-page="teem">The Teem (Community)</a></li>
                     <li class="mb-1"><a href="#" class="link-blue hover:underline" data-page="contributors">Contributor Wall</a></li>
                     <li class="mb-1"><a href="#" class="link-blue hover:underline" data-page="directory">Business Directory</a></li>
                     <hr class="my-2">
-                    <li class="mb-1"><a href="#" class="link-blue hover:underline" data-page="webdev">Web Development</a></li>
-                    <li class="mb-1"><a href="#" class="link-blue hover:underline" data-page="masterclass">Masterclass</a></li>
-                    <li class="mb-1"><a href="#" class="link-blue hover:underline" data-page="discography">Discography</a></li>
-                    <li class="mb-1"><a href="#" class="link-blue hover:underline" data-page="apps">Producer Tools</a></li>
+                    <h3 class="font-bold mb-2 sans-serif">OTG Research & Media</h3>
+                    <li class="mb-1"><a href="#" class="link-blue hover:underline" data-page="conspiracy">OTG Research Wiki</a></li>
                     <li class="mb-1"><a href="#" class="link-blue hover:underline" data-page="blog">Blog / Updates</a></li>
-                    <li class="mb-1"><a href="#" class="link-blue hover:underline" data-page="conspiracy">Conspiracy</a></li>
-                    <li class="mb-1"><a href="#" class="link-blue hover:underline" data-page="gallery">Gallery</a></li>
+                    <hr class="my-2">
+                    <h3 class="font-bold mb-2 sans-serif">Links & Contact</h3>
                     <li class="mb-1"><a href="#" class="link-blue hover:underline" data-page="linkhub">Link Hub</a></li>
                     <li class="mb-1"><a href="#" class="link-blue hover:underline" data-page="contact">Services & Contact</a></li>
                 </ul>
@@ -218,6 +237,13 @@
 
             <!-- Footer -->
             <footer class="p-4 border-t border-gray-300 text-xs text-gray-600 bg-[#f8f9fa]">
+                <div class="max-w-md mx-auto my-4">
+                     <form class="input-with-button" action="https://gumroad.com/follow_from_embed_form" method="post" id="gumroad-follow-form-embed">
+                        <input type="hidden" name="seller_id" value="3131715104950"/>
+                        <input id="gumroad-follow-form-embed-input" type="email" placeholder="Your email address" name="email" value=""/>
+                        <button class="button primary" type="submit" id="gumroad-follow-form-embed-button">Follow</button>
+                    </form>
+                </div>
                 <p>This page was last edited on 21 August 2025, at 02:30 (EDT).</p>
                 <p>Text is available under the <a href="#" class="link-blue hover:underline">Creative Commons Attribution-ShareAlike License 4.0</a>; additional terms may apply. By using this site, you agree to the <a href="#" class="link-blue hover:underline">Terms of Use</a> and <a href="#" class="link-blue hover:underline">Privacy Policy</a>.</p>
             </footer>
@@ -264,7 +290,7 @@
                         <div class="w-full md:w-2/3">
                             <p><b>Charles Anthony Paris</b> (born April 30, 1980), known professionally as <b>Brother OTG</b>, is an American <a href="https://en.wikipedia.org/wiki/Record_producer" class="link-blue">record producer</a>, software developer, author, and founder of <b>The International Teemsterrs Union</b>. He is also the founder of <a href="https://365otg.github.io/CharlesParisMusic/" class="link-blue" target="_blank" rel="noopener noreferrer">CHARLES PARIS MUSIC</a> and developed the <b>Over Time Grind</b> business philosophy. His work includes production for <a href="https://en.wikipedia.org/wiki/Beanie_Sigel" class="link-blue">Beanie Sigel</a>, the theme song for the BET series "<a href="https://en.wikipedia.org/wiki/Tiny_and_Toya" class="link-blue" target="_blank" rel="noopener noreferrer">Tiny and Toya 2</a>," and tracks that have accumulated over 6.3 million plays on TikTok.</p>
                             <h2 class="section-title">The "Over Time Grind" Philosophy</h2>
-                            <p>The "Over Time Grind" (OTG) brand is more than a name; it's a philosophy forged in the fire of American blue-collar labor. It comes from working in the annealing plants of Indiana for companies like Atmosphere Annealing and Gerdau Macsteel, learning the trade of a journeyman maintenance mechanic on furnaces. It's the toughness gained from suffering third-degree burns and working with wrists that don't bend, all while teaching himself music on the side. This philosophy was carried through management roles at AutoZone, into his first studio at Jazz U Up in South Philly, and even into managing a barbershop at 18th and Reed. This is the grit he brought to his own career, to the artists he managed, and it's the foundation of <a href="#" data-page="union">The International Teemsterrs Union</a>—a movement to ensure the next generation of workers doesn't have to endure the same hardships to succeed.</p>
+                            <p>The "Over Time Grind" (OTG) brand is more than a name; it's a philosophy forged in the fire of American blue-collar labor. It comes from working in the annealing plants of Indiana for companies like Atmosphere Annealing and Gerdau Macsteel, learning the trade of a journeyman maintenance mechanic on furnaces. It's the toughness gained from suffering third-degree burns and working with wrists that don't bend, all while teaching himself music on the side. This philosophy was carried through management roles at AutoZone, into his first studio at Jazz U up in South Philly, and even into managing a barbershop at 18th and Reed. This is the grit he brought to his own career, to the artists he managed, and it's the foundation of <a href="#" data-page="union">The International Teemsterrs Union</a>—a movement to ensure the next generation of workers doesn't have to endure the same hardships to succeed.</p>
                             <h2 class="section-title">Career Journey</h2>
                             <p>Born in <a href="https://en.wikipedia.org/wiki/Urbana,_Illinois" class="link-blue" target="_blank" rel="noopener noreferrer">Urbana, Illinois</a>, Paris began his career from 2002 to 2009 under the name "I Double L," founding the <a href="https://www.ascap.com/repertory#/ace/works/publisher/2685089/MIDWEST%20ILL%20MUZIK%20GROUP" class="link-blue" target="_blank" rel="noopener noreferrer"><b>Midwest Muzik Group</b></a>. After winning local music contests, he signed a contract that did not advance his career. Following advice from <a href="https://en.wikipedia.org/wiki/Black_Hand_Entertainment" class="link-blue" target="_blank" rel="noopener noreferrer"><b>Chaz Williams</b></a> of Black Hand Entertainment, Paris secured a publishing deal in 2009 with <a href="https://en.wikipedia.org/wiki/MC_Lyte" class="link-blue" target="_blank" rel="noopener noreferrer"><b>MC Lyte's</b></a> <a href="https://dubosemusic.com/" class="link-blue" target="_blank" rel="noopener noreferrer"><b>DuBose Music Group</b></a>. Between 2009 and 2011, he developed a business plan and created music in preparation for a move to Philadelphia.</p>
                             <p>In 2011, Paris relocated to South Philadelphia and established <b>Over Time Grind Productions, LLC</b>. From his first office in a barbershop at the "5 Spot" (formerly Zakkiyah's), he met DJ Damage, sparking a collaboration that led to a viral campaign, a performance at the first Made in America festival, and Damage's hiring at Revolt TV. During this period, Paris was hired at Phillybassd Records, where he was mentored by songwriter <a href="https://www.soulexpress.net/brucehawes.htm" class="link-blue" target="_blank" rel="noopener noreferrer"><b>Bruce Hawes</b></a> ("Sadie," "Dear Mama") and rose to an A&R position.</p>
@@ -332,7 +358,11 @@
                         <div class="w-full md:w-2/3">
                             <p>Have you ever felt that the history you were taught is a lie? That there's a deeper, hidden story of our world waiting to be uncovered?</p>
                             <p>The 91 Revelations is more than a book—it's the key to unlocking a forgotten history. Forged from five years of relentless research, this manuscript is the life's work of a craftsman, a hip-hop producer, and a chronicler of truth who uncovered a story so powerful it demanded to be told.</p>
-                            <p>This isn't just another conspiracy book. This is a journey through time, from the dawn of creation to the shadows of the modern age. We will explore the Forbidden History of our world, from the cosmic wars of the Anunnaki to the sunken continents of Atlantis and Lemuria. We will decode the secrets of the Emerald Tablets, the Gnostic mysteries, and the truth behind the Ancient Apocalypse that reset civilization.</p>
+                            
+                            <div class="bg-[#f8f9fa] border border-[#a2a9b1] p-6 rounded-md my-6 text-center">
+                                <div class="gumroad-product-embed"><a href="https://brotherotg.gumroad.com/l/wdznrx">Loading...</a></div>
+                                <p class="text-sm mt-4 text-gray-700">The Gumroad embed above links to the official audiobook.</p>
+                            </div>
                             
                             <h2 class="section-title">Inside, you will discover:</h2>
                             <ul class="list-disc pl-5 mb-6 space-y-2">
@@ -357,7 +387,6 @@
                                     <li>The true nature of UFOs as Adamic Drones or craft from Agartha.</li>
                                     <li>The Brotherhoods of Light and higher-dimensional intelligences.</li>
                                     <li>The Great Solar Minimum and the coming Solar Flash.</li>
-                                    <li>The Tunguska Event as a deliberate act of celestial intervention.</li>
                                     <li>The Lunar Matrix and the theft of the true solar calendar.</li>
                                     <li>The Lizard People (corrupted Jinn) are infiltrating human power structures.</li>
                                 </ul>
@@ -412,274 +441,39 @@
                     </div>
                 `
             },
-            union: {
-                title: "The International Teemsterrs Union",
-                html: `
-                    <p class="text-sm -mt-1 mb-4 text-gray-500">A New Guild for the Modern Independent Worker</p>
-                    <div class="flex flex-col md:flex-row-reverse gap-8">
-                        <div class="w-full md:w-1/3">
-                            <table class="infobox w-full sans-serif">
-                                <tbody>
-                                    <tr><th colspan="2" class="text-center text-lg font-bold bg-gray-200 p-2">The International Teemsterrs Union</th></tr>
-                                    <tr><td colspan="2" class="text-center p-2"><img src="https://raw.githubusercontent.com/365otg/teemsterrspics/main/teemstersUSA.jpg" alt="The Teemsterrs Committee Logo" class="mx-auto"><div class="text-xs p-1">Official Emblem</div></td></tr>
-                                    <tr class="border-t border-gray-300"><th scope="row" class="p-2">Founded</th><td class="p-2">August 20, 2025</td></tr>
-                                    <tr class="border-t border-gray-300"><th scope="row" class="p-2">Founder</th><td class="p-2">Charles Paris</td></tr>
-                                    <tr class="border-t border-gray-300"><th scope="row" class="p-2">Founding Chapter</th><td class="p-2">Local #1, Philadelphia</td></tr>
-                                    <tr class="border-t border-gray-300"><th scope="row" class="p-2">Roots</th><td class="p-2">Over Time Grind (est. 2011)</td></tr>
-                                    <tr class="border-t border-gray-300"><th scope="row" class="p-2">Sectors</th><td class="p-2">Creative, Digital, Automotive, Skilled Trades, Gig Economy</td></tr>
-                                </tbody>
-                            </table>
-                            <div class="bg-gray-100 border-t-4 border-gray-400 rounded-b text-gray-900 px-4 py-3 shadow-md mt-4 text-center" role="alert">
-                                <p class="font-bold">Join the Movement</p>
-                                <p class="text-sm my-2">Support our mission by getting your free Founding Member Kit or contributing a "coffee" today.</p>
-                                <a href="https://brotherotg.gumroad.com/coffee" class="font-bold link-blue" target="_blank" rel="noopener noreferrer">Click Here to Contribute &rarr;</a>
-                            </div>
-                        </div>
-                        <div class="w-full md:w-2/3">
-                            <p><b>The International Teemsterrs Union</b> is an American professional guild and developing labor union founded by creative entrepreneur Charles Paris. It is the culmination of a 20-year journey through the heart of American labor—from union halls and highway paving crews to the recording studio and the digital frontier. It was created for the new wave of multi-skilled, independent workers who are the backbone of the modern economy.</p>
-                            <h2 class="section-title">Who We Represent</h2>
-                            <p>Membership is based on a portfolio of skills. If you are a creator, technician, entrepreneur, or artist working independently, you have a home here. Our vision includes:</p>
-                            <ul class="list-disc pl-5 mb-6">
-                                <li><b>Content Creators:</b> Podcasters, Influencers, YouTubers, Self-Publishing Authors.</li>
-                                <li><b>Music & Audio:</b> Musicians, Sound Engineers, Producers, DJs, Audio Technicians.</li>
-                                <li><b>Visual & Digital Arts:</b> Videographers, Photographers, Graphic Designers, Web Developers.</li>
-                                <li><b>Automotive & Sales:</b> Car Salespeople, Sales Managers, Auto Shop Entrepreneurs, Installers.</li>
-                                <li><b>Skilled Labor:</b> General Maintenance, Event Setup and Logistics.</li>
-                            </ul>
-                            <h2 class="section-title">Our Philosophy: "Over Time Grind"</h2>
-                            <p>"Over Time Grind" is the work it takes to be successful. It's the long nights, the double shifts. It's being the secretary, the trashman, and the rocket scientist all in one day. The International Teemsterrs Union is built on this ethos. We want our members to feel that sense of camaraderie found on a job site or in a real team. We want you to feel like you are a part of something, because you are. We want you to know that OTG has your back.</p>
-                            <p class="font-bold">We are the union for everyone who has had to do it all by themselves. Now, we do it together.</p>
-                        </div>
-                    </div>
-                `
-            },
-            roadmap: {
-                title: "The International Teemsterrs Union Local #1 Itinerary & Official Roadmap",
-                html: `
-                    <p class="text-sm -mt-1 mb-4 text-gray-500">From Wikipedia, the free encyclopedia</p>
-                    <p>Welcome to the movement. You are a Founding Member of Local #1. This document outlines our plan of action. This is the grind.</p>
-                    <h2 class="section-title">Mission Statement</h2>
-                    <p>Our mission is to build a future where no independent worker has to grind alone. We are a union for the new economy—the producers, the creators, the drivers, the designers, and the multi-skilled hustlers who wear every hat to build their dream. We were founded on the "Over Time Grind" philosophy: we know the work it takes because we've lived it. We provide the resources to ensure you're paid what you're worth, the network to build real camaraderie, and the collective voice to demand the respect you've earned. We are The International Teemsterrs Union. Now, we do it together.</p>
-                    <h2 class="section-title">Leadership</h2>
-                    <p>The International Teemsterrs Union was founded by Charles A. Paris (Brother OTG). As the founder of Local #1, he is responsible for guiding the vision, managing the resources, and building the foundation of the union.</p>
-                    <h2 class="section-title">Community Guidelines & Code of Conduct</h2>
-                    <p>This is a professional guild built on respect. All members are expected to:</p>
-                    <ul class="list-disc pl-5 mb-6">
-                        <li><b>Support Each Other:</b> We are a network, not a competition. Share knowledge, offer help, and hire fellow members when possible.</li>
-                        <li><b>Engage Respectfully:</b> Disagreements are normal, but disrespect is not. All communication in our spaces will be professional and constructive.</li>
-                        <li><b>Uphold the Grind:</b> Represent the union with the same integrity and work ethic that you bring to your own craft.</li>
-                    </ul>
-                    <h2 class="section-title">Financial Transparency</h2>
-                    <p>The International Teemsterrs Union is a grassroots movement. All contributions, from the smallest donation to the largest, are considered investments into the mission. These funds will be used to cover the operational costs of building this union, including equipment, software, marketing, and the resources needed to advocate for our members. We are committed to being transparent with our members as we grow. Please check with your accountant or tax professional to see if your contribution is a business write-off.</p>
-                    <p>All contributions are processed securely via Gumroad. <a href="https://brotherotg.gumroad.com/coffee" class="link-blue" target="_blank" rel="noopener noreferrer"><b>Click Here to Donate &rarr;</b></a></p>
-                    <h2 class="section-title">The Goal</h2>
-                    <p>Our goal is simple: to build a future where every independent worker has the numbers, the muscle, and the leverage to get what they've earned. We are building a real-world network and a digital fortress of resources that will shift the balance of power back to the people doing the work.</p>
-                    <h2 class="section-title">The Itinerary: Our Long-Term Plan</h2>
-                    <p>This is how we get it done. This is a marathon, not a sprint.</p>
-                    <h3 class="font-bold sans-serif text-lg mb-2">Phase 1: Build the Foundation (The First Year: Months 1-12)</h3>
-                    <p><b>Objective:</b> Gather the numbers. Our power comes from our community.</p>
-                    <ul class="list-disc pl-5 mb-6">
-                        <li><b>Grow Local #1:</b> Drive membership through the free Founding Member Kit.</li>
-                        <li><b>Build the Digital Hall:</b> Solidify our presence on all social platforms (Twitter, Instagram, etc.).</li>
-                        <li><b>Launch the Contributor Wall & Business Directory:</b> Immediately provide value and visibility to our first supporters.</li>
-                        <li><b>Gather Intel:</b> Use our platforms to collect the stories and data we need to understand the biggest challenges facing our members.</li>
-                    </ul>
-                    <h3 class="font-bold sans-serif text-lg mb-2">Phase 2: Build the Resources (The Second Year: Months 13-24)</h3>
-                    <p><b>Objective:</b> Build the muscle. Turn our numbers into tangible benefits.</p>
-                    <ul class="list-disc pl-5 mb-6">
-                        <li><b>Launch the "OTG Helps" Initiative:</b> Formalize the coaching and mentorship program, offering member-exclusive workshops on branding, business, and AI.</li>
-                        <li><b>Develop Resource Guides:</b> Create and distribute free guides on topics like "How to Set Your Rates," "Understanding 1099 Contracts," and "Finding Healthcare as a Freelancer."</li>
-                        <li><b>Host Member-Only Events:</b> Hold live audio rooms and virtual events for members to network and share knowledge.</li>
-                    </ul>
-                    <h3 class="font-bold sans-serif text-lg mb-2">Phase 3: Build the Power (Year 3 and Beyond)</h3>
-                    <p><b>Objective:</b> Build the leverage. Use our numbers and muscle to create real change.</p>
-                    <ul class="list-disc pl-5 mb-6">
-                        <li><b>Formalize Chapters:</b> Explore establishing official chapters in new cities based on member concentration.</li>
-                        <li><b>Targeted Advocacy:</b> Launch campaigns to address specific issues our members face (e.g., unfair platform fees, late payments).</li>
-                        <li><b>Explore Collective Bargaining:</b> Identify groups of members working for the same clients and explore the path to becoming a legally recognized bargaining unit.</li>
-                    </ul>
-                    <h2 class="section-title">Your Role in the Grind: The Member's Pledge</h2>
-                    <p>This movement is powered by you. Your contribution is more than just money—it's your engagement, your voice, and your belief in the mission. By joining, you pledge to:</p>
-                    <ul class="list-disc pl-5 mb-6">
-                        <li><b>Fuel the Engine:</b> The content is our engine. I will support the movement by engaging with the music, the podcasts, and the videos that power our platform. I will subscribe, share, and add to playlists to help grow our numbers.</li>
-                        <li><b>Be the Network:</b> I will spread the word to other independent workers and share the link to the free Founding Member Kit. My word-of-mouth is our most powerful tool.</li>
-                        <li><b>Rep The Union:</b> I will add "Founding Member of The International Teemsterrs Union, Local #1" to my social media bios to let the world know I'm part of the foundation.</li>
-                        <li><b>Share My Story:</b> I will participate in our community discussions and polls, because my experiences are the data that will fuel our fight.</li>
-                    </ul>
-                    <p class="font-bold">This isn't just about one person. It's about building a force that outlives all of us. This is the work. This is the Over Time Grind. Welcome to the union.</p>
-                    <p class="mt-4 text-center">Support the Mission: <a href="https://brotherotg.gumroad.com/coffee" class="link-blue" target="_blank" rel="noopener noreferrer">Buy Me a Coffee &rarr;</a></p>
-                `
-            },
-            teem: {
-                title: "The Teem (Community & Fans)",
-                html: `
-                    <p class="text-sm -mt-1 mb-4 text-gray-500">The Community. The Fans. The Foundation.</p>
-                    <div class="flex flex-col md:flex-row-reverse gap-8">
-                        <div class="w-full md:w-1/3">
-                            <table class="infobox w-full sans-serif">
-                                <tbody>
-                                    <tr><th colspan="2" class="text-center text-lg font-bold bg-gray-200 p-2">The International Teemsterrs Union</th></tr>
-                                    <tr><td colspan="2" class="text-center p-2"><img src="https://raw.githubusercontent.com/365otg/teemsterrspics/main/Teemsterrswork.jpg" alt="Logo for The Teem Community" class="mx-auto"><div class="text-xs p-1">The Teemsterrs: Established 2025</div></td></tr>
-                                    <tr class="border-t border-gray-300"><th scope="row" class="p-2">Founded By</th><td class="p-2">Charles Paris</td></tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="w-full md:w-2/3">
-                            <h2 class="section-title">History of The Teem</h2>
-                            <p>The Teem is more than a fanbase; it's a family built over years of shared experiences. It began with fans of different brands—<b><a href="#" data-page="main">Charles Paris Music</a></b>, <b>The Rich Rising Movement</b>, the <b>365 Brand</b>—and grew in the <b>OTG Safe Spaces</b> of Clubhouse. It includes people I sold cars to, content fans, and supporters of the <b>Supply The Work</b> philosophy. Everyone who dedicated their time, shared their stories, and offered their support created the vision for The Teemsterrs.</p>
-                            <h2 class="section-title">Join the Movement</h2>
-                            <p>Whether you're a fan of the music, a worker in the gig economy, or someone who believes in the Over Time Grind philosophy, you are part of The Teem. The best way to get involved is to get your free Founding Member Kit and support the mission by buying a "coffee."</p>
-                            <p><a href="https://brotherotg.gumroad.com/coffee" class="font-bold link-blue" target="_blank" rel="noopener noreferrer">Click here to get your free Founding Member Kit.</a></p>
-                            <h2 class="section-title">Music & Media</h2>
-                            <p><b>Latest Album:</b></p>
-                            <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1781558929/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://charlesparismusic.bandcamp.com/album/charles-paris-music">Charles Paris Music by Charles Paris Music</a></iframe>
-                            <p class="mt-4">For all music, media, and entertainment, visit the official <a href="http://charlesparismusic.com" class="link-blue" target="_blank" rel="noopener noreferrer"><b>CharlesParisMusic.com</b></a> hub.</p>
-                            <h2 class="section-title">Community Spotlight: The Audiobook</h2>
-                            <p>From our community space "Conspiracy Theories Real Or Fake with the Facts," here is the official audiobook, AI-read and produced by <a href="#" data-page="main">Charles Paris</a>.</p>
-                            <div class="aspect-video my-4">
-                                <iframe class="w-full h-full" src="https://www.youtube.com/embed/srzPTZulDTE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                    </div>
-                `
-            },
-            contributors: {
-                title: "Founding Contributors Wall",
-                html: `
-                    <p class="text-sm -mt-1 mb-4 text-gray-500">From Wikipedia, the free encyclopedia</p>
-                    <p>This page honors and recognizes the founding contributors who have generously supported the mission of <a href="#" data-page="union">The International Teemsterrs Union</a>. Their belief in this movement helps us build resources, advocate for independent workers, and grow Local #1.</p>
-                    <p>To have your name and link added to the wall, <a href="https://brotherotg.gumroad.com/coffee" class="link-blue" target="_blank" rel="noopener noreferrer"><b>please make a contribution here</b></a>. Thank you for your support.</p>
-                    
-                    <h2 class="section-title">Executive Council ($100+)</h2>
-                    <p>Contributors at this level receive a permanent spot on the wall with their name, a link to their website or social media, and a short description of their business or craft.</p>
-                    <table class="wikitable">
-                        <thead>
-                            <tr>
-                                <th>Contributor Name</th>
-                                <th>Link</th>
-                                <th>Description</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Jane Doe</td>
-                                <td><a href="#" class="link-blue">@JaneDoeCreates</a></td>
-                                <td>Independent Graphic Designer & Illustrator</td>
-                            </tr>
-                            <!-- Add more Executive Council contributors here -->
-                        </tbody>
-                    </table>
-
-                    <h2 class="section-title">Advocates ($25 - $99)</h2>
-                    <p>Contributors at this level receive a spot on the wall with their name and a link to their website or social media.</p>
-                    <table class="wikitable">
-                        <thead>
-                            <tr>
-                                <th>Contributor Name</th>
-                                <th>Link</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>John Smith</td>
-                                <td><a href="#" class="link-blue">JohnSmithMusic.com</a></td>
-                            </tr>
-                            <!-- Add more Advocates here -->
-                        </tbody>
-                    </table>
-
-                    <h2 class="section-title">Founding Members & Supporters (Up to $24)</h2>
-                    <p>Every person who joins the movement by downloading the free member kit or making a contribution will have their name listed here. Supporters who contribute $5 or more will have a star (★) next to their name.</p>
-                    <table class="wikitable">
-                        <thead>
-                            <tr>
-                                <th>Member Name</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr><td>Maria Garcia ★</td></tr>
-                            <tr><td>David Chen</td></tr>
-                            <!-- Add more Founding Members here -->
-                        </tbody>
-                    </table>
-                `
-            },
-            directory: {
-                title: "Teemsterrs Business Directory",
-                html: `
-                    <p class="text-sm -mt-1 mb-4 text-gray-500">From Wikipedia, the free encyclopedia</p>
-                    <p>This is the official business directory for members of <a href="#" data-page="union">The International Teemsterrs Union</a>. This is a network built to encourage members to hire and support each other. All contributors at the Advocate level ($25+) are eligible for a listing.</p>
-                    <h2 class="section-title">Directory</h2>
-                    <table class="wikitable">
-                        <thead>
-                            <tr>
-                                <th>Business / Service</th>
-                                <th>Contact / Website</th>
-                                <th>Description</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Jane Doe Graphics</td>
-                                <td><a href="#" class="link-blue">@JaneDoeCreates</a></td>
-                                <td>Independent Graphic Designer & Illustrator</td>
-                            </tr>
-                             <tr>
-                                <td>John Smith Music</td>
-                                <td><a href="#" class="link-blue">JohnSmithMusic.com</a></td>
-                                <td>Composer for Film & Video Games</td>
-                            </tr>
-                            <!-- Add more directory listings here -->
-                        </tbody>
-                    </table>
-                `
-            },
             webdev: {
                 title: "Web Development Portfolio",
                 html: `
                     <p class="text-sm -mt-1 mb-4 text-gray-500">From Wikipedia, the free encyclopedia</p>
-                    <p>As a developer, <a href="#" data-page="main">Charles Paris</a> specializes in crafting robust, intuitive, and high-performance web applications that solve real-world problems, particularly for creative professionals. Below is a selection of projects demonstrating this expertise.</p>
-                    
-                    <h2 class="section-title">Portfolio of Applications</h2>
+                    <p>A selection of web development projects, including interactive guides for music hardware, utility apps for producers, and comprehensive brand websites. Each project demonstrates a commitment to creating user-friendly, responsive, and functional web experiences.</p>
                     <div id="portfolio-grid" class="portfolio-grid mt-6">
-                        <!-- Projects will be dynamically inserted here from the portfolioData object -->
+                        <!-- Portfolio items will be injected here by JS -->
                     </div>
                 `
             },
             masterclass: {
-                title: "Producer Business Blueprint (1-on-1 Session)",
+                title: "Producer Masterclasses",
                 html: `
                     <p class="text-sm -mt-1 mb-4 text-gray-500">From Wikipedia, the free encyclopedia</p>
-                    <div class="bg-[#f8f9fa] border border-[#a2a9b1] p-4 rounded-md mb-6 text-center">
-                        <h2 class="text-2xl font-bold sans-serif mb-2">A 2-Hour Live 1-on-1 Zoom Session</h2>
-                        <p class="text-lg">Your Music is Your Craft. Your Career is Your Business.</p>
-                    </div>
-
-                    <h2 class="section-title">The Cost of Not Knowing Your Business</h2>
-                    <blockquote class="border-l-4 border-gray-300 pl-4 italic my-4">
-                        <p>"In 2020, I changed my producer name, struggling with the technical side of music distribution and business. Five years later, in 2025, I rebranded to '<a href="#" data-page="main">Charles Paris Music</a>' and focused on getting my business in order. Almost immediately, I saw a jump in my income. When I contacted my distributor, I discovered a beat I made 16 years ago had been going viral on TikTok since 2020, accumulating over 6.3 million plays!"</p>
-                        <p>"Here's the hard truth: if I had known what I'm about to teach you, I could have capitalized on that moment with social media packages, Content ID, and more. My music has now reached 18 million plays, but it will take another six months to generate accurate data. The biggest regret? In that time, I had taken down some of my music, unknowingly losing out on those 'viral' moments."</p>
-                        <p>"Don't make the same mistake. Let me help you."</p>
-                    </blockquote>
-
-                    <h2 class="section-title">What You Will Learn</h2>
-                    <ul class="list-disc list-inside space-y-2 mt-4">
-                        <li><strong>Financial & Legal Foundation:</strong> Master the process of submitting to ASCAP, ensuring you get every dollar you've earned in royalties.</li>
-                        <li><strong>Distribution Strategy:</strong> Walk through the faceless setup of music distribution to get your beats on all major platforms.</li>
-                        <li><strong>Social Media Domination:</strong> Learn advanced strategies for Facebook, Instagram, TikTok, and YouTube to build an engaged following.</li>
-                        <li><strong>Getting Placements:</strong> Discover proven tactics for getting your music heard by the right people, from artists to music supervisors.</li>
-                        <li><strong>Build Your Brand:</strong> Develop a brand identity that stands out in a crowded market and builds trust with clients and collaborators.</li>
-                        <li><strong>E-Commerce Power:</strong> Set up and automate a professional beat store and online storefront that sells your products 24/7.</li>
-                        <li><strong>Contracts & Licensing:</strong> Demystify the world of music contracts and licensing to protect your work and secure fair deals.</li>
-                        <li><strong>Networking for Placements:</strong> Learn how to build a robust network of artists, managers, and A&R to land high-value placements.</li>
-                        <li><strong>Live Q&A Session:</strong> Get your specific questions answered in real-time during your dedicated 1-on-1 session.</li>
-                    </ul>
+                    <p>Comprehensive masterclasses and guides designed to accelerate the learning curve for music producers using popular hardware like the Akai MPC, Roland SP-404 MK2, and more. These courses are packed with practical knowledge, workflow tips, and exclusive resources.</p>
                     
-                    <h2 class="section-title">Enrollment</h2>
-                    <div class="bg-[#f8f9fa] border border-[#a2a9b1] p-4 rounded-md my-6 text-center">
-                        <p class="text-lg mb-2"><strong>Book your 1-on-1 session for $100.</strong> This is an investment in your future.</p>
-                        <a href="https://paypal.me/overtimegrind/100" target="_blank" rel="noopener noreferrer" class="link-blue text-lg font-bold">Pay $100 to Reserve Your Spot →</a>
-                        <p class="text-xs text-gray-600 mt-2">*A link to schedule your session will be sent to the email verified on payment within 24 hours of purchase. All sales are final; there are no refunds.</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                        <div class="bg-[#f8f9fa] border border-[#a2a9b1] p-4 rounded-md text-center">
+                            <h3 class="text-xl font-bold sans-serif mb-4">Masterclass of all Masterclasses</h3>
+                            <div class="gumroad-product-embed"><a href="https://brotherotg.gumroad.com/l/igtio">Loading...</a></div>
+                        </div>
+                        <div class="bg-[#f8f9fa] border border-[#a2a9b1] p-4 rounded-md text-center">
+                            <h3 class="text-xl font-bold sans-serif mb-4">$5 Akai MPC ONE & Live 2 Masterclass</h3>
+                            <div class="gumroad-product-embed"><a href="https://brotherotg.gumroad.com/l/MPCMasterclass">Loading...</a></div>
+                        </div>
+                        <div class="bg-[#f8f9fa] border border-[#a2a9b1] p-4 rounded-md text-center">
+                            <h3 class="text-xl font-bold sans-serif mb-4">The Akai Force Masterclass</h3>
+                           <div class="gumroad-product-embed"><a href="https://brotherotg.gumroad.com/l/iuglqh">Loading...</a></div>
+                        </div>
+                        <div class="bg-[#f8f9fa] border border-[#a2a9b1] p-4 rounded-md text-center">
+                            <h3 class="text-xl font-bold sans-serif mb-4">$5 Roland SP-404 MK2 Masterclass</h3>
+                            <div class="gumroad-product-embed"><a href="https://brotherotg.gumroad.com/l/oayds">Loading...</a></div>
+                        </div>
                     </div>
                 `
             },
@@ -687,176 +481,26 @@
                 title: "Discography",
                 html: `
                     <p class="text-sm -mt-1 mb-4 text-gray-500">From Wikipedia, the free encyclopedia</p>
-                    <h2 class="section-title">Latest Album (Bandcamp)</h2>
-                    <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1781558929/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://charlesparismusic.bandcamp.com/album/charles-paris-music">Charles Paris Music by Charles Paris Music</a></iframe>
-                    <h2 class="section-title">Streaming Discography (YouTube)</h2>
-                    <div id="discography-list" class="space-y-6">
-                        <!-- Discography will be populated by JavaScript -->
+                    <p>A curated selection of official releases by Charles Paris Music. The discography showcases a range of styles and production techniques, from lo-fi and boom-bap to more experimental soundscapes.</p>
+                    <div id="discography-list" class="space-y-8 mt-6">
+                        <!-- Discography will be injected here by JS -->
                     </div>
                 `
             },
             apps: {
-                title: "Producer Tools & Web Applications",
+                title: "Producer Tools & Apps",
                 html: `
                     <p class="text-sm -mt-1 mb-4 text-gray-500">From Wikipedia, the free encyclopedia</p>
-                    <p>As a self-taught developer, <a href="#" data-page="main">Paris</a> created the <a href="https://365otg.github.io/CPU/" class="link-blue" target="_blank" rel="noopener noreferrer"><b>Charles Paris Producer Tools</b></a>, a suite of over 15 web applications designed to assist music creators with the business and technical aspects of production. The tools are available for free.</p>
-                    <div class="my-4 p-4 border border-gray-300 bg-gray-50 rounded">
-                        <h3 class="font-bold text-lg sans-serif">Featured Tools:</h3>
-                        <ul class="list-disc list-inside mt-2 space-y-1">
-                            <li>BPM & Note Calculators</li>
-                            <li>Music Licensing Fee Estimator</li>
-                            <li>Sample Chop Generator</li>
-                            <li>Royalty Split Sheet Creator</li>
-                        </ul>
-                        <a href="http://charlesparis.online/" class="inline-block bg-blue-600 text-white font-bold py-2 px-4 rounded hover:bg-blue-700 mt-4 sans-serif" target="_blank" rel="noopener noreferrer">Access All Producer Tools</a>
-                    </div>
-                `
-            },
-            blog: {
-                title: "Blog & Updates",
-                html: `
-                    <p class="text-sm -mt-1 mb-4 text-gray-500">From Wikipedia, the free encyclopedia</p>
-                    <p>This section contains the latest video updates from the official <a href="#" data-page="main">Charles Paris Music</a> YouTube channel.</p>
-                    <div id="youtube-feed" class="space-y-8 mt-6">
-                        <p>Loading latest videos...</p>
-                    </div>
-                `
-            },
-            conspiracy: {
-                title: "OTG Research",
-                html: `
-                    <p class="text-sm -mt-1 mb-4 text-gray-500">The Official Hub for "Conspiracy Theories: Real or Fake w/ Facts"</p>
-                    <div class="flex flex-col md:flex-row-reverse gap-8">
-                        <!-- Right Sidebar (Infobox) -->
-                        <div class="w-full md:w-1/3">
-                            <table class="infobox w-full sans-serif">
-                                <tbody>
-                                    <tr><th colspan="2" class="text-center text-lg font-bold bg-gray-200 p-2">OTG Research</th></tr>
-                                    <tr><td colspan="2" class="text-center p-2">
-                                        <img src="https://github.com/365otg/PicturesandVids/blob/main/COnspiracyRealorFake.png?raw=true" alt="OTG Research Podcast Logo" class="mx-auto" onerror="this.onerror=null;this.src='https://placehold.co/300x200/1a202c/ffffff?text=Logo+Not+Found';">
-                                        <div class="text-xs p-1">Real or Fake with the Facts</div>
-                                    </td></tr>
-                                    <tr class="border-t border-gray-300"><th scope="row" class="p-2">Genre</th><td class="p-2">Alternative Media, History, Mythology, Pop Culture</td></tr>
-                                    <tr class="border-t border-gray-300"><th scope="row" class="p-2">Hosted by</th><td class="p-2"><a href="#" data-page="main" class="link-blue">Brother O.T.G</a></td></tr>
-                                    <tr class="border-t border-gray-300"><th scope="row" class="p-2">Original Run</th><td class="p-2">2021–present</td></tr>
-                                    <tr class="border-t border-gray-300"><th scope="row" class="p-2">Website</th><td class="p-2"><a href="https://otgresearch.info" class="link-blue" target="_blank" rel="noopener noreferrer">OTGresearch.info</a></td></tr>
-                                </tbody>
-                            </table>
-                            <div class="bg-gray-100 border-t-4 border-gray-400 rounded-b text-gray-900 px-4 py-3 shadow-md mt-4 text-center" role="alert">
-                                <p class="font-bold">Connect to the Source</p>
-                                <p class="text-sm my-2">Get the full experience with a purchase of the books or audio archives.</p>
-                                <a href="https://brotherotg.gumroad.com/l/theunforgettablechronicle" class="font-bold link-blue" target="_blank" rel="noopener noreferrer">Buy The Unforgettable Chronicle &rarr;</a>
-                            </div>
-                        </div>
-                        <!-- Main Content Column -->
-                        <div class="w-full md:w-2/3">
-                            <p>
-                                <b>OTG Research</b> is the official digital archive for the podcast and radio show <b>"Conspiracy Theories: Real or Fake w/ Facts,"</b> hosted by <a href="#" data-page="main">Brother O.T.G</a>. This site serves as a centralized, navigable resource for exploring the topics, evidence, and discussions from the show's extensive library. Our mission is to examine the world's most enduring mysteries, from ancient mythology to modern comic book lore, with a critical eye.
-                            </p>
-                            <div id="toc" class="toc my-4 sans-serif mt-6">
-                                <h2 class="text-lg font-bold text-center border-b-0 m-0 p-0 mb-2">Contents</h2>
-                                <ul>
-                                    <li class="toclevel-1"><a href="#anunnaki-lore"><span>1</span> Anunnaki & Sumerian Lore</a></li>
-                                    <li class="toclevel-1"><a href="#lost-civilizations"><span>2</span> Lost Civilizations & Inner Earth</a></li>
-                                    <li class="toclevel-1"><a href="#tartarian-empire"><span>3</span> Tartarian Empire & Resets</a></li>
-                                    <li class="toclevel-1"><a href="#cosmology-creation"><span>4</span> Cosmology & Creation Myths</a></li>
-                                    <li class="toclevel-1"><a href="#secret-histories"><span>5</span> Secret Histories & Suppressed Knowledge</a></li>
-                                    <li class="toclevel-1"><a href="#esoteric-traditions"><span>6</span> Esoteric Traditions & Movements</a></li>
-                                    <li class="toclevel-1"><a href="#creatures-cryptids"><span>7</span> Mythological Creatures & Cryptids</a></li>
-                                    <li class="toclevel-1"><a href="#greek-mythology"><span>8</span> Greek Mythology</a></li>
-                                    <li class="toclevel-1"><a href="#egyptian-mythology"><span>9</span> Egyptian Mythology</a></li>
-                                    <li class="toclevel-1"><a href="#marvel-universe"><span>10</span> Marvel Universe</a></li>
-                                    <li class="toclevel-1"><a href="#dc-universe"><span>11</span> DC Universe</a></li>
-                                </ul>
-                            </div>
-                            <h2 id="anunnaki-lore" class="section-title">Anunnaki & Sumerian Lore</h2>
-                            <p>This section explores the history and lore of the Anunnaki and ancient Sumer. The information is a collection of esoteric theories and traditional academia.</p>
-                            <ul class="list-disc pl-5 mb-6">
-                                <li><a href="#" class="wiki-link" data-term="Anunnaki" data-origin="Anunnaki & Sumerian Lore">Anunnaki</a></li>
-                                <li><a href="#" class="wiki-link" data-term="Adamu" data-origin="Anunnaki & Sumerian Lore">Adamu</a></li>
-                                <li><a href="#" class="wiki-link" data-term="Abzu" data-origin="Anunnaki & Sumerian Lore">Abzu</a></li>
-                                <li><a href="#" class="wiki-link" data-term="Lilith" data-origin="Anunnaki & Sumerian Lore">Lilith</a></li>
-                                <li><a href="#" class="wiki-link" data-term="Nibiru" data-origin="Anunnaki & Sumerian Lore">Nibiru</a></li>
-                            </ul>
-                            <h2 id="lost-civilizations" class="section-title">Lost Civilizations & Inner Earth</h2>
-                            <p>Dive into the mysteries of lost continents and the concept of an inner-earth civilization.</p>
-                            <ul class="list-disc pl-5 mb-6">
-                                <li><a href="#" class="wiki-link" data-term="Atlantis" data-origin="Lost Civilizations & Inner Earth">Atlantis</a></li>
-                                <li><a href="#" class="wiki-link" data-term="Lemuria" data-origin="Lost Civilizations & Inner Earth">Lemuria (Mu)</a></li>
-                                <li><a href="#" class="wiki-link" data-term="Agartha" data-origin="Lost Civilizations & Inner Earth">Agartha</a></li>
-                                <li><a href="#" class="wiki-link" data-term="Hollow Earth" data-origin="Lost Civilizations & Inner Earth">Hollow Earth</a></li>
-                                <li><a href="#" class="wiki-link" data-term="The Great Pyramid" data-origin="Lost Civilizations & Inner Earth">The Great Pyramid</a></li>
-                            </ul>
-                            <h2 id="tartarian-empire" class="section-title">Tartarian Empire & Resets</h2>
-                            <p>An exploration of a hidden global empire and the theories of a historical reset.</p>
-                            <ul class="list-disc pl-5 mb-6">
-                                <li><a href="#" class="wiki-link" data-term="Tartarian Empire" data-origin="Tartarian Empire & Resets">Tartarian Empire</a></li>
-                                <li><a href="#" class="wiki-link" data-term="Mud Flood" data-origin="Tartarian Empire & Resets">Mud Flood</a></li>
-                                <li><a href="#" class="wiki-link" data-term="Great Deception" data-origin="Tartarian Empire & Resets">The Great Deception</a></li>
-                            </ul>
-                            <h2 id="cosmology-creation" class="section-title">Cosmology & Creation Myths</h2>
-                            <p>A look at different models of creation and the true nature of the universe.</p>
-                            <ul class="list-disc pl-5 mb-6">
-                                <li><a href="#" class="wiki-link" data-term="Urantia" data-origin="Cosmology & Creation Myths">Urantia (The Earth)</a></li>
-                                <li><a href="#" class="wiki-link" data-term="Firmament" data-origin="Cosmology & Creation Myths">The Firmament</a></li>
-                                <li><a href="#" class="wiki-link" data-term="Council of 24 Scientists" data-origin="Cosmology & Creation Myths">The Council of 24 Scientists</a></li>
-                                <li><a href="#" class="wiki-link" data-term="Original Black Man" data-origin="Cosmology & Creation Myths">The Original Black Man</a></li>
-                            </ul>
-                            <h2 id="secret-histories" class="section-title">Secret Histories & Suppressed Knowledge</h2>
-                            <p>Topics and figures that have been allegedly hidden or erased from mainstream history.</p>
-                            <ul class="list-disc pl-5 mb-6">
-                                <li><a href="#" class="wiki-link" data-term="Lucifer Rebellion" data-origin="Secret Histories & Suppressed Knowledge">The Lucifer Rebellion</a></li>
-                                <li><a href="#" class="wiki-link" data-term="Great Flood" data-origin="Secret Histories & Suppressed Knowledge">The Great Flood</a></li>
-                                <li><a href="#" class="wiki-link" data-term="Nephilim" data-origin="Secret Histories & Suppressed Knowledge">The Nephilim</a></li>
-                                <li><a href="#" class="wiki-link" data-term="The Emerald Tablets of Thoth" data-origin="Secret Histories & Suppressed Knowledge">The Emerald Tablets of Thoth</a></li>
-                            </ul>
-                            <h2 id="esoteric-traditions" class="section-title">Esoteric Traditions & Movements</h2>
-                            <p>Exploring the world of secret societies, spiritual movements, and their core doctrines.</p>
-                            <ul class="list-disc pl-5 mb-6">
-                                <li><a href="#" class="wiki-link" data-term="Great White Brotherhood" data-origin="Esoteric Traditions & Movements">The Great White Brotherhood</a></li>
-                                <li><a href="#" class="wiki-link" data-term="The Keys of Enoch" data-origin="Esoteric Traditions & Movements">The Keys of Enoch</a></li>
-                                <li><a href="#" class="wiki-link" data-term="The Urantia Book" data-origin="Esoteric Traditions & Movements">The Urantia Book</a></li>
-                                <li><a href="#" class="wiki-link" data-term="Yakub's History" data-origin="Esoteric Traditions & Movements">Yakub's History</a></li>
-                            </ul>
-                            <h2 id="creatures-cryptids" class="section-title">Mythological Creatures & Cryptids</h2>
-                            <p>A deep dive into the real-world connections and origins behind mythical beings.</p>
-                            <ul class="list-disc pl-5 mb-6">
-                                <li><a href="#" class="wiki-link" data-term="Dogman" data-origin="Mythological Creatures & Cryptids">Dogman</a></li>
-                                <li><a href="#" class="wiki-link" data-term="Mothman" data-origin="Mythological Creatures & Cryptids">Mothman</a></li>
-                            </ul>
-                            <h2 id="greek-mythology" class="section-title">Greek Mythology</h2>
-                            <p>A wiki of gods, titans, and monsters from the world of ancient Greece.</p>
-                            <ul class="list-disc pl-5 mb-6">
-                                <li><a href="#" class="wiki-link" data-term="Zeus" data-origin="Greek Mythology">Zeus</a></li>
-                                <li><a href="#" class="wiki-link" data-term="Hades" data-origin="Greek Mythology">Hades</a></li>
-                                <li><a href="#" class="wiki-link" data-term="Minotaur" data-origin="Greek Mythology">Minotaur</a></li>
-                                <li><a href="#" class="wiki-link" data-term="Medusa" data-origin="Greek Mythology">Medusa</a></li>
-                            </ul>
-                            <h2 id="egyptian-mythology" class="section-title">Egyptian Mythology</h2>
-                            <p>An archive of the deities and beings from ancient Egypt.</p>
-                            <ul class="list-disc pl-5 mb-6">
-                                <li><a href="#" class="wiki-link" data-term="Ra" data-origin="Egyptian Mythology">Ra</a></li>
-                                <li><a href="#" class="wiki-link" data-term="Osiris" data-origin="Egyptian Mythology">Osiris</a></li>
-                                <li><a href="#" class="wiki-link" data-term="Thoth" data-origin="Egyptian Mythology">Thoth</a></li>
-                                <li><a href="#" class="wiki-link" data-term="Anubis" data-origin="Egyptian Mythology">Anubis</a></li>
-                            </ul>
-                            <h2 id="marvel-universe" class="section-title">Marvel Universe</h2>
-                            <p>Theories and breakdowns of Marvel characters and storylines from an esoteric perspective.</p>
-                            <ul class="list-disc pl-5 mb-6">
-                                <li><a href="#" class="wiki-link" data-term="Galactus" data-origin="Marvel Universe">Galactus</a></li>
-                                <li><a href="#" class="wiki-link" data-term="Doctor Doom" data-origin="Marvel Universe">Doctor Doom</a></li>
-                                <li><a href="#" class="wiki-link" data-term="Loki" data-origin="Marvel Universe">Loki</a></li>
-                            </ul>
-                            <h2 id="dc-universe" class="section-title">DC Universe</h2>
-                            <p>Theories and breakdowns of DC characters and storylines from an esoteric perspective.</p>
-                            <ul class="list-disc pl-5 mb-6">
-                                <li><a href="#" class="wiki-link" data-term="Darkseid" data-origin="DC Universe">Darkseid</a></li>
-                                <li><a href="#" class="wiki-link" data-term="Brainiac" data-origin="DC Universe">Brainiac</a></li>
-                                <li><a href="#" class="wiki-link" data-term="Superman" data-origin="DC Universe">Superman</a></li>
-                                <li><a href="#" class="wiki-link" data-term="Batman" data-origin="DC Universe">Batman</a></li>
-                            </ul>
-                        </div>
-                    </div>
+                    <p>A collection of free, web-based applications developed by Charles Paris to aid music producers and creatives. These tools are designed to streamline workflows, spark creativity, and provide essential utilities directly in the browser.</p>
+                    <h2 class="section-title">Free Web Applications</h2>
+                    <ul class="list-disc list-inside space-y-2 mt-4">
+                        <li><a href="https://365otg.github.io/CPU/" target="_blank" rel="noopener noreferrer" class="link-blue">Charles Paris Producer Universe (Main Hub)</a></li>
+                        <li><a href="https://365otg.github.io/drumapp/" target="_blank" rel="noopener noreferrer" class="link-blue">Drum App</a></li>
+                        <li><a href="https://365otg.github.io/metronome/" target="_blank" rel="noopener noreferrer" class="link-blue">Metronome</a></li>
+                        <li><a href="https://365otg.github.io/ChordExplorer/" target="_blank" rel="noopener noreferrer" class="link-blue">Chord Explorer</a></li>
+                        <li><a href="https://365otg.github.io/ProducerTools/" target="_blank" rel="noopener noreferrer" class="link-blue">Audio, Image & Creative Tools</a></li>
+                        <li><a href="https://365otg.github.io/OTGQuotes/" target="_blank" rel="noopener noreferrer" class="link-blue">Quote Maker</a></li>
+                    </ul>
                 `
             },
             gallery: {
@@ -886,6 +530,159 @@
                         <div class="gallery-item"><img src="https://github.com/365otg/PicturesandVids/blob/main/101387032_10216999035668648_7824818101299445760_n.jpg?raw=true" alt="2020 Philadelphia Protest at the Frank Rizzo statue"><p class="image-caption">2020 Protest, Frank Rizzo Statue</p></div>
                         <div class="gallery-item"><img src="https://github.com/365otg/PicturesandVids/blob/main/FrontLines%20CenterCitymay312020.jpg?raw=true" alt="On the front lines of the 2020 Philadelphia Protests"><p class="image-caption">On the Front Lines, 2020</p></div>
                         <div class="gallery-item"><img src="https://github.com/365otg/PicturesandVids/blob/main/VinesStreetMay30.jpg?raw=true" alt="Vine Street Parkway during the 2020 Philadelphia Riots"><p class="image-caption">Vine Street Parkway, 2020</p></div>
+                    </div>
+                `
+            },
+            union: {
+                title: "The International Teemsterrs Union",
+                html: `
+                    <p class="text-sm -mt-1 mb-4 text-gray-500">From Wikipedia, the free encyclopedia</p>
+                    <div class="flex flex-col md:flex-row-reverse gap-8">
+                        <div class="w-full md:w-1/3">
+                            <table class="infobox w-full sans-serif">
+                                <tbody>
+                                    <tr><th colspan="2" class="text-center text-lg font-bold bg-gray-200 p-2">The International Teemsterrs Union</th></tr>
+                                    <tr><td colspan="2" class="text-center p-2"><img src="https://raw.githubusercontent.com/365otg/teemsterrspics/main/teemstersUSA.jpg" alt="The International Teemsterrs Union Logo" class="mx-auto"><div class="text-xs p-1">Official Emblem</div></td></tr>
+                                    <tr class="border-t border-gray-300"><th scope="row" class="p-2">Founded</th><td class="p-2">August 20, 2025</td></tr>
+                                    <tr class="border-t border-gray-300"><th scope="row" class="p-2">Founder</th><td class="p-2"><a href="#" data-page="main" class="link-blue">Charles A. Paris</a></td></tr>
+                                    <tr class="border-t border-gray-300"><th scope="row" class="p-2">Focus</th><td class="p-2">Empowering independent workers, freelancers, and creatives</td></tr>
+                                    <tr class="border-t border-gray-300"><th scope="row" class="p-2">Motto</th><td class="p-2">"Supply The Work"</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="w-full md:w-2/3">
+                            <p><b>The International Teemsterrs Union</b> is a modern guild and advocacy group founded by Charles A. Paris for the new-age independent workforce. It is designed to serve the needs of 1099 workers, freelancers, gig economy participants, artists, producers, and other self-employed individuals who lack the traditional protections and collective bargaining power of legacy unions.</p>
+                            <h2 class="section-title">Mission and Vision</h2>
+                            <p>The core mission of the Teemsterrs Union is to provide its members with the resources, community, and leverage needed to thrive in the independent economy. This includes advocating for fair contracts, providing access to shared resources and benefits, fostering a strong community network, and offering educational tools to help members grow their businesses and careers.</p>
+                            <p>The vision is to create a powerful collective that can negotiate on behalf of its members, establish industry standards for freelance work, and build a sustainable ecosystem where independent workers are valued and protected. The union is built on the "Over Time Grind" philosophy, emphasizing resilience, skill, and collective action.</p>
+                        </div>
+                    </div>
+                `
+            },
+            'join-movement': {
+                title: "Join the Movement",
+                html: `
+                    <p class="text-sm -mt-1 mb-4 text-gray-500">From Wikipedia, the free encyclopedia</p>
+                    <p>Becoming a member of The International Teemsterrs Union means joining a community of like-minded independent workers dedicated to mutual support and collective empowerment. Membership provides access to exclusive resources, networking opportunities, and a voice in the movement to redefine the future of work.</p>
+                    <div class="bg-[#f8f9fa] border border-[#a2a9b1] p-6 rounded-md my-6 text-center">
+                        <h3 class="text-xl font-bold sans-serif mb-4">Become an Official Member</h3>
+                        <p class="mb-4">Your membership helps fund our advocacy efforts and build a stronger network for all independent workers. Join today to get your official membership card and access to our private community channels.</p>
+                        <div class="gumroad-product-embed"><a href="https://brotherotg.gumroad.com/l/teemsterrs">Loading...</a></div>
+                    </div>
+                `
+            },
+            roadmap: {
+                title: "Local #1 Roadmap",
+                html: `
+                    <p class="text-sm -mt-1 mb-4 text-gray-500">From Wikipedia, the free encyclopedia</p>
+                    <p>The following roadmap outlines the key objectives and milestones for the foundational chapter, Local #1, of The International Teemsterrs Union.</p>
+                    <h2 class="section-title">Phase 1: Foundation & Community Building (2025)</h2>
+                    <ul class="list-disc list-inside space-y-2 mt-4">
+                        <li><b>Official Launch:</b> Establish the union's digital presence and foundational legal structure.</li>
+                        <li><b>Membership Drive:</b> Recruit the first 1,000 founding members to build a strong initial community.</li>
+                        <li><b>Community Platform:</b> Launch a private Discord or similar platform for member communication, collaboration, and support.</li>
+                        <li><b>Resource Hub:</b> Develop an online repository of contract templates, negotiation guides, and financial resources for freelancers.</li>
+                    </ul>
+                    <h2 class="section-title">Phase 2: Advocacy & Partnerships (2026)</h2>
+                    <ul class="list-disc list-inside space-y-2 mt-4">
+                        <li><b>Establish Best Practices:</b> Publish a "Fair Freelancing" guide outlining standards for rates, contracts, and working conditions.</li>
+                        <li><b>Corporate Outreach:</b> Begin dialogue with major platforms in the gig economy to advocate for better terms for our members.</li>
+                        <li><b>Health & Insurance Partnerships:</b> Explore group options for health insurance, liability insurance, and other benefits for members.</li>
+                        <li><b>First Annual Summit:</b> Host a virtual or in-person summit for members featuring workshops, networking, and strategy sessions.</li>
+                    </ul>
+                     <h2 class="section-title">Phase 3: Expansion & Influence (2027 and Beyond)</h2>
+                    <ul class="list-disc list-inside space-y-2 mt-4">
+                        <li><b>Local Chapter Expansion:</b> Establish guidelines and support for creating new local chapters in different regions or industries.</li>
+                        <li><b>Political Advocacy:</b> Develop a lobbying arm to advocate for legislation that protects and benefits independent workers.</li>
+                        <li><b>Teemsterrs Job Board:</b> Create a curated job board featuring opportunities that meet the union's standards for fair compensation and terms.</li>
+                    </ul>
+                `
+            },
+            teem: {
+                title: "The Teem (Community)",
+                html: `
+                    <p class="text-sm -mt-1 mb-4 text-gray-500">From Wikipedia, the free encyclopedia</p>
+                    <p>At the heart of the Teemsterrs Union is "The Teem"—the vibrant, active community of its members. The Teem is more than a network; it's a collective of professionals who share knowledge, collaborate on projects, and provide mutual support in an often isolating independent work landscape.</p>
+                    <h2 class="section-title">Community Platforms</h2>
+                    <p>Our primary community hub is a private Discord server, accessible to all official members. This is where daily conversations happen, advice is shared, and collaborations are born. The server includes dedicated channels for:</p>
+                    <ul class="list-disc list-inside space-y-2 mt-4">
+                        <li><b>General Discussion:</b> For everyday chat and networking.</li>
+                        <li><b>Industry-Specific Channels:</b> For musicians, developers, writers, designers, etc., to discuss their craft.</li>
+                        <li><b>Job & Gig Postings:</b> A place for members to share opportunities.</li>
+                        <li><b>Resource Sharing:</b> Where members post useful tools, articles, and guides.</li>
+                        <li><b>Vent & Support:</b> A safe space to discuss the challenges of freelance life.</li>
+                    </ul>
+                `
+            },
+            contributors: {
+                title: "Contributor Wall",
+                html: `
+                    <p class="text-sm -mt-1 mb-4 text-gray-500">From Wikipedia, the free encyclopedia</p>
+                    <p>The International Teemsterrs Union is built by the community, for the community. We extend our deepest gratitude to the founding members and key contributors who have dedicated their time, resources, and expertise to building this movement.</p>
+                    <h2 class="section-title">Founding Members</h2>
+                    <p><i>This section will be updated as our founding membership grows.</i></p>
+                    <ul class="list-disc list-inside space-y-2 mt-4">
+                        <li>Founding Member #1</li>
+                        <li>Founding Member #2</li>
+                        <li>Founding Member #3</li>
+                    </ul>
+                `
+            },
+            directory: {
+                title: "Business Directory",
+                html: `
+                    <p class="text-sm -mt-1 mb-4 text-gray-500">From Wikipedia, the free encyclopedia</p>
+                    <p>A directory of businesses and services offered by members of The International Teemsterrs Union. Support your fellow Teemsterrs by hiring within the community.</p>
+                    <table class="wikitable">
+                        <thead>
+                            <tr>
+                                <th>Name / Business</th>
+                                <th>Service</th>
+                                <th>Contact / Link</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Charles Paris Music</td>
+                                <td>Music Production & Composition</td>
+                                <td><a href="#" data-page="contact" class="link-blue">Contact Page</a></td>
+                            </tr>
+                            <tr>
+                                <td>OTG Web Development</td>
+                                <td>Web Design & Development</td>
+                                <td><a href="#" data-page="webdev" class="link-blue">Portfolio</a></td>
+                            </tr>
+                            <tr>
+                                <td>(Member Business Example)</td>
+                                <td>(Service Example)</td>
+                                <td>(Link Example)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                `
+            },
+            conspiracy: {
+                title: "OTG Research Wiki",
+                html: `
+                    <p class="text-sm -mt-1 mb-4 text-gray-500">From Wikipedia, the free encyclopedia</p>
+                    <div class="bg-[#f8f9fa] border border-[#a2a9b1] p-4 rounded-md my-4">
+                        <p><b>Disclaimer:</b> This section explores esoteric topics, alternative history, and conspiracy theories for the purpose of research and discussion. The views and theories presented are not endorsements of fact but are compiled as part of the OTG Research project into forbidden knowledge. Reader discretion is advised.</p>
+                    </div>
+                    <p>The OTG Research Wiki is an archive of the long-form discussions and deep dives into esoteric knowledge that began on Clubhouse on February 20, 2021. For <b id="day-counter"></b> consecutive days, these sessions have explored the hidden corners of history, science, and spirituality. This page serves as an archive for those discussions and a gateway to the topics covered in <a href="#" data-page="revelations" class="link-blue">The 91 Revelations</a>.</p>
+                    <h2 class="section-title">Podcast Archive</h2>
+                    <p>The following are recordings from the "Conspiracy Theories - Real or Fake w/ Facts" sessions.</p>
+                    <div id="episode-list" class="space-y-8 mt-6">
+                        <!-- Episodes will be injected here -->
+                    </div>
+                `
+            },
+            blog: {
+                title: "Blog / Updates",
+                html: `
+                    <p class="text-sm -mt-1 mb-4 text-gray-500">From Wikipedia, the free encyclopedia</p>
+                    <p>The latest video updates, tutorials, and announcements from the Charles Paris Music & Brother OTG YouTube channel.</p>
+                    <div id="youtube-feed" class="space-y-8 mt-6">
+                        <p>Loading latest videos...</p>
                     </div>
                 `
             },
@@ -1027,9 +824,278 @@
             { spotifyId: "4PpcWXT0zKw8bLubMt5CxK", title: "Ep. 1: O.T.G SAFE SPACE | Vol: Build or Destroy 1", desc: "Did Quarantine expose a lack of hustle and discipline? Live from our clubhouse room on FRIDAY Nights.", date: "Feb 20, 2021", duration: "4 hr 4 min" },
             { spotifyId: "5wPeglhZD9WdC2OfhUHwA6", title: "Ep. 2: O.T.G PODCAST EP.1 - WELCOME", desc: "WELCOME TO THE COMMUNITY.", date: "Feb 21, 2021", duration: "9 min 41 sec" },
             { spotifyId: "7IFfKQEKDpNXcIYLlDnU69", title: "Ep. 3: Conspiracy Theories - Real or Fake w/ Facts ep 44", desc: "Live recording of our clubhouse room held Tuesday, Thursday, and Saturday!! This the second half of the show 3am to 7am.", date: "Mar 1, 2021", duration: "4 hr 15 min" },
-            { spotifyId: "2RWpdXjRc7LYsXdGDwiuYA", title: "Ep. 4: Conspiracy Theories Real or Fake W/ Facts Ep: 45", desc: "Episode 45 in it's full entirety, March 2nd 2021. Recorded from 12AM until 7AM clubhouse OTGSafeSpaces", date: "Mar 3, 2021", duration: "6 hr 53 min" },
+            { spotifyId: "2RWpdXjRc7LYsXdGDwiuYA", "title": "Ep. 4: Conspiracy Theories Real or Fake W/ Facts Ep: 45", desc: "Episode 45 in it's full entirety, March 2nd 2021. Recorded from 12AM until 7AM clubhouse OTGSafeSpaces", date: "Mar 3, 2021", duration: "6 hr 53 min" },
             // ... (rest of the episodes)
         ];
+
+        // --- CONSPIRACY WIKI DYNAMIC CONTENT ---
+        const conspiracySiteData = {
+            "Anunnaki": {
+                title: "Anunnaki",
+                infobox: {
+                    "Origin": "Sumerian Mythology",
+                    "Alignment": "Neutral / Benevolent (originally), Corrupted (later)"
+                },
+                html: `
+                    <p>The Anunnaki are a group of deities from ancient Mesopotamian mythology, particularly Sumerian and Akkadian traditions. In esoteric and conspiratorial theories, popularized by authors like Zecharia Sitchin, they are reinterpreted as a highly advanced extraterrestrial race from the planet <a href="#" class="wiki-link" data-term="Nibiru" data-origin="Cosmic & Extraterrestrial">Nibiru</a>. These theories suggest the Anunnaki came to Earth thousands of years ago in search of gold, a crucial element for their planet's atmosphere.</p>
+                    <p>According to this alternative narrative, the Anunnaki genetically engineered early humanity, creating the <a href="#" class="wiki-link" data-term="Adamu" data-origin="Biblical & Theological Conspiracies">Adamu</a> as a slave race to mine the gold. This act is often presented as the "forbidden knowledge" or "original sin" of mankind, as it intertwined our DNA with that of our creators and set the stage for a cosmic civil war between the factions of the Anunnaki themselves, particularly between Enlil and Enki.</p>
+                `
+            },
+            "Adamu": {
+                title: "Adamu",
+                infobox: {
+                    "Origin": "Sumerian Mythology",
+                    "Translation": "Original Man",
+                    "Creation": "Genetically engineered by the Anunnaki"
+                },
+                html: `
+                    <p>In the context of esoteric interpretations of Sumerian texts, the <b>Adamu</b> refers to the first genetically engineered human. The name is often linked to the biblical Adam, suggesting a direct link between the mythological creation story and the narrative of a slave race. The Adamu were created by the Anunnaki using their own DNA combined with the DNA of a hominid species (<i>Homo Erectus</i>) already existing on Earth. Their primary purpose was to be a physically strong but intellectually limited species to serve as laborers in the gold mines of the Anunnaki.</p>
+                    <p>The creation of the Adamu is often depicted as a project led by the Anunnaki god Enki, who held a more benevolent view of humanity, in opposition to his brother Enlil, who sought to keep humanity as a subservient race. This conflict is a central theme in many of the conspiracy theories surrounding the Anunnaki.</p>
+                `
+            },
+            "Nibiru": {
+                title: "Nibiru",
+                infobox: {
+                    "Origin": "Sumerian Mythology",
+                    "Translation": "Planet of the crossing",
+                    "Orbit": "3,600 years"
+                },
+                html: `
+                    <p><b>Nibiru</b>, also known as Planet X, is a hypothetical planet in the outer Solar System. The idea was first put forward by Zecharia Sitchin in his book "The 12th Planet" (1976), which claimed that ancient Sumerian texts describe a planet with a 3,600-year orbit. Sitchin alleged that the Anunnaki were from Nibiru, and their visits to Earth coincided with its close passes.</p>
+                    <p>This theory has been widely discredited by astronomers and academics, but it remains a popular subject within esoteric circles. In the narrative, the planet is said to be populated by the Anunnaki, and its impending return is a key element of many modern-day apocalypse theories.</p>
+                `
+            },
+            "Lilith": {
+                title: "Lilith",
+                infobox: {
+                    "Origin": "Ancient Mesopotamian / Jewish folklore",
+                    "Title": "First wife of Adam",
+                    "Symbolism": "Rebellious matriarch"
+                },
+                html: `
+                    <p>In Jewish folklore, <b>Lilith</b> is portrayed as the first wife of Adam. Unlike Eve, who was created from Adam's rib, Lilith was created from the same clay as Adam. She demanded equality and refused to be subservient to him, leading her to leave the Garden of Eden. Lilith is a powerful feminist and demonic figure in folklore, symbolizing female independence and rebellion against patriarchal authority.</p>
+                    <p>In modern esoteric theories, Lilith is a symbol of the divine feminine energy that was suppressed by the patriarchal forces of control. She is often linked to other mythological figures who defied authority and is a central figure in the narrative of a lost matriarchal history.</p>
+                `
+            },
+            "Atlantis": {
+                title: "Atlantis",
+                infobox: {
+                    "Origin": "Plato's dialogues Timaeus and Critias",
+                    "Alleged Location": "Somewhere in the Atlantic Ocean"
+                },
+                html: `
+                    <p><b>Atlantis</b> is a legendary island first mentioned in Plato's dialogues <i>Timaeus</i> and <i>Critias</i>. In the story, Atlantis was a powerful naval empire that conquered much of the world before a cataclysmic earthquake and flood caused it to sink into the sea. In esoteric literature, Atlantis is described as an advanced civilization with superior technology and spiritual knowledge, including the use of Vril energy, sonic levitation, and giant crystal power plants.</p>
+                    <p>The myth of Atlantis is central to many "ancient apocalypse" theories, which posit that the world's most advanced civilizations were destroyed by a global cataclysm, leading to a "great reset" of human history. The theory of the "Mud Flood" is often linked to the fall of Atlantis, as proponents claim the flood buried the ancient world in mud and sediment.</p>
+                `
+            },
+            "Lemuria": {
+                title: "Lemuria (Mu)",
+                infobox: {
+                    "Origin": "19th century hypothesis",
+                    "Alleged Location": "Indian or Pacific Oceans"
+                },
+                html: `
+                    <p><b>Lemuria</b>, also also known as the continent of Mu, is a hypothetical landmass believed to have existed in either the Indian or Pacific Oceans. The theory was first proposed by the zoologist Philip Sclater in 1864 to explain the presence of lemur fossils in Madagascar and India but not in Africa or the Middle East. It was later popularized by the occultist Helena Blavatsky in her book <i>The Secret Doctrine</i>, where she described Lemurians as an early "root race" of humanity.</p>
+                    <p>Modern-day esoteric theories portray Lemuria as a spiritually and technologically advanced civilization that existed before Atlantis. Like Atlantis, it was supposedly destroyed by a global cataclysm. The idea of Lemuria is often used to explain mysterious ruins and ancient technologies found in the Pacific and Indian oceans.</p>
+                `
+            },
+            "Agartha": {
+                title: "Agartha",
+                infobox: {
+                    "Origin": "Esoteric tradition",
+                    "Alleged Location": "Within the Earth's core",
+                    "Related Concepts": "Hollow Earth, Shambhala"
+                },
+                html: `
+                    <p><b>Agartha</b> is a legendary kingdom said to be located in the Earth's core. The concept is central to the Hollow Earth theory, which posits that the planet is not solid but contains a vast, habitable inner world. Agartha is often described as a utopian city or a network of cities, populated by a wise, technologically advanced civilization that exists in harmony with nature.
+                </p>
+                <p>The inhabitants of Agartha are sometimes portrayed as the descendants of a lost human race or as an alien race that came to Earth in antiquity. The theory of a Hollow Earth and Agartha is often used to explain UFO sightings, with proponents suggesting that these crafts are not from outer space but from the inner earth. Admiral Richard E. Byrd, a renowned American naval officer, is often cited as a key figure in the theory, with his alleged diaries describing a journey to the inner earth.</p>
+                `
+            },
+            "Hollow Earth": {
+                title: "Hollow Earth Theory",
+                infobox: {
+                    "Origin": "17th century speculation",
+                    "Central Idea": "The Earth is hollow and contains a habitable inner surface"
+                },
+                html: `
+                    <p>The <b>Hollow Earth theory</b> is a historical and pseudoscientific idea that the planet Earth is a hollow sphere with a habitable interior. It has roots in the 17th century with the theories of Edmond Halley, but it gained popularity in the 19th and 20th centuries as a staple of science fiction and esoteric literature. Some versions of the theory include the existence of an inner sun, and others posit that the interior is home to advanced civilizations, such as <a href="#" class="wiki-link" data-term="Agartha" data-origin="Lost Civilizations & Inner Earth">Agartha</a>. The theory is often linked to the myth of the Nazi expedition to the South Pole, with some believers alleging that Hitler escaped to a secret base within the Hollow Earth.</p>
+                    <p>The theory is widely rejected by modern science, as seismic data confirms that the Earth is a solid, layered sphere with a molten outer core and a solid inner core.</p>
+                `
+            },
+            "Tartarian Empire": {
+                title: "Tartarian Empire",
+                infobox: {
+                    "Origin": "19th century pseudohistory",
+                    "Central Idea": "A hidden global empire that created the world's grand architecture"
+                },
+                html: `
+                    <p>The <b>Tartarian Empire</b> is a modern pseudohistorical theory that claims that a vast, lost civilization called Tartaria was responsible for building a significant portion of the world's grand architecture in the 18th and 19th centuries. The theory's proponents argue that this civilization was erased from the history books after being destroyed in a "Mud Flood" or a similar global cataclysm. The evidence cited includes the ornate, classical-style buildings and infrastructure found around the world, which are attributed to a single, advanced civilization rather than to diverse cultures.</p>
+                    <p>The theory is a key component of the "Great Deception" narrative, which claims that humanity's true history has been suppressed by a global elite. Mainstream historians and archaeologists reject the theory, pointing out that the term "Tartary" referred to a historical region of Asia, not a unified empire, and that the architecture in question was built by various cultures over centuries.</p>
+                `
+            },
+            "Mud Flood": {
+                title: "Mud Flood",
+                infobox: {
+                    "Origin": "Modern conspiracy theory",
+                    "Central Idea": "A global cataclysm that buried the world in mud"
+                },
+                html: `
+                    <p>The <b>Mud Flood</b> is a conspiracy theory that claims a global cataclysmic event occurred in the 19th century, resulting in a large-scale flood of mud that buried the world's most impressive architecture. The theory's proponents point to buildings with basements or lower floors that appear to be partially submerged as evidence of this event. The theory is often used to support the idea of a lost "Tartarian Empire" that was wiped out and whose history was subsequently erased from official records.</p>
+                    <p>Mainstream geologists and historians reject the theory, as there is no scientific or historical evidence of a recent global mud flood. The submerged basements and lower floors of buildings can be explained by a variety of factors, including shifts in ground levels, changes in street grades over time, and different construction methods.</p>
+                `
+            },
+            "Great Deception": {
+                title: "The Great Deception",
+                infobox: {
+                    "Origin": "Modern conspiracy theory",
+                    "Central Idea": "A global conspiracy to hide humanity's true history"
+                },
+                html: `
+                    <p>The <b>Great Deception</b> is a broad conspiracy theory that claims that a global elite has orchestrated a centuries-long plan to hide humanity's true history and spiritual potential. The theory incorporates elements from a variety of other conspiracies, including the "Mud Flood" and the "Tartarian Empire," to suggest that the world's true rulers have suppressed knowledge of ancient civilizations and advanced technologies to keep humanity in a state of ignorance and control. The theory is a foundational belief for many who are skeptical of mainstream history and science.</p>
+                `
+            },
+            "Urantia": {
+                title: "Urantia",
+                infobox: {
+                    "Origin": "The Urantia Book",
+                    "Concept": "The name of Earth"
+                },
+                html: `
+                    <p>In the context of <i>The Urantia Book</i>, <b>Urantia</b> is the name given to the Earth. <i>The Urantia Book</i> is a spiritual and philosophical text that claims to have been written by celestial beings. It presents a detailed cosmology, including a history of the universe and the human race. The book's followers believe that it is a new revelation of truth that supersedes all other spiritual and religious texts.
+                `
+            },
+            "Firmament": {
+                title: "Firmament",
+                infobox: {
+                    "Origin": "Biblical cosmology",
+                    "Concept": "A solid dome over the Earth"
+                },
+                html: `
+                    <p>In the context of Biblical cosmology, the <b>Firmament</b> is a solid dome or vault separating the "waters above" from the "waters below." This concept, based on a literal interpretation of the Book of Genesis, is used by flat-earth theorists and some esoteric groups to argue against modern astronomy. They propose that the stars, moon, and sun are simply lights within this dome, and that the Earth is a flat, enclosed system.</p>
+                `
+            },
+            "Council of 24 Scientists": {
+                title: "The Council of 24 Scientists",
+                infobox: {
+                    "Origin": "Nation of Islam / Black Hebrew Israelites",
+                    "Concept": "A council of scientists who work for God"
+                },
+                html: `
+                    <p>In the cosmology of the Nation of Islam and other related Black Hebrew Israelite movements, the <b>Council of 24 Scientists</b> is a group of wise men who work directly for Allah. They are responsible for guiding humanity and maintaining cosmic order. The concept is part of a larger esoteric tradition that reinterprets biblical and mythological events from an Afrocentric perspective.</p>
+                `
+            },
+            "Original Black Man": {
+                title: "The Original Black Man",
+                infobox: {
+                    "Origin": "Nation of Islam",
+                    "Concept": "The first human"
+                },
+                html: `
+                    <p>In the teachings of the Nation of Islam, the <b>Original Black Man</b> is the first human. He is considered the true ruler of the Earth and the source of all civilization and knowledge. The concept is central to the movement's racial theology and its teachings on the history of humanity.</p>
+                `
+            },
+            "Lucifer Rebellion": {
+                title: "The Lucifer Rebellion",
+                infobox: {
+                    "Origin": "Christian theology / Esoteric tradition",
+                    "Concept": "A cosmic civil war"
+                },
+                html: `
+                    <p>The <b>Lucifer Rebellion</b> is a concept found in various spiritual and esoteric traditions. It is an expansion on the biblical story of the fall of Lucifer, often reinterpreted as a cosmic civil war between the forces of creation and control. In this narrative, Lucifer is not a malevolent figure but a rebellious force that sought to bring knowledge and freedom to humanity, which was being held in a state of ignorance by the "gods" of the old world.</p>
+                `
+            },
+            "Great Flood": {
+                title: "The Great Flood",
+                infobox: {
+                    "Origin": "Biblical / Mesopotamian mythology",
+                    "Concept": "A global cataclysm"
+                },
+                html: `
+                    <p>The <b>Great Flood</b> is a myth found in numerous cultures and religions around the world, most famously in the biblical story of Noah's Ark. In esoteric and conspiracy theories, the flood is often reinterpreted not as a divine punishment but as a natural or celestial event that caused a global cataclysm, leading to the destruction of advanced civilizations like Atlantis. The various flood myths from different cultures are cited as evidence of a real, historical event.</p>
+                `
+            },
+            "Nephilim": {
+                title: "Nephilim",
+                infobox: {
+                    "Origin": "Biblical tradition",
+                    "Concept": "Hybrid giants from a union of angels and human women"
+                },
+                html: `
+                    <p>The <b>Nephilim</b> are mysterious beings mentioned in the Book of Genesis, typically translated as "giants." In esoteric literature, they are often seen as the hybrid offspring of the "sons of God" (often interpreted as fallen angels or extraterrestrials) and the "daughters of men." The story of the Nephilim is used to explain the presence of giant skeletons and other anomalies, which are presented as evidence of a suppressed pre-human history.</p>
+                `
+            },
+            "The Emerald Tablets of Thoth": {
+                title: "The Emerald Tablets of Thoth",
+                infobox: {
+                    "Origin": "Occult literature",
+                    "Authorship": "Thoth the Atlantean"
+                },
+                html: `
+                    <p>The <b>Emerald Tablets of Thoth</b> are a set of pseudepigraphical texts that claim to be the writings of Thoth, the Egyptian god of wisdom, who is described as a priest-king from Atlantis. The texts, which were first published in the 20th century, contain a mix of esoteric philosophy, history, and cosmology. They are revered by many spiritual and New Age movements as a source of ancient wisdom and hidden knowledge. The tablets are often used to support theories of lost civilizations and extraterrestrial influence on human history.</p>
+                `
+            },
+            "Great White Brotherhood": {
+                title: "The Great White Brotherhood",
+                infobox: {
+                    "Origin": "Theosophy",
+                    "Concept": "A spiritual hierarchy of ascended masters"
+                },
+                html: `
+                    <p>The <b>Great White Brotherhood</b> is a concept from Theosophy and other esoteric traditions. It is a spiritual hierarchy of "ascended masters" and spiritual beings who guide and protect the evolution of humanity. These masters, which include figures like Jesus, Buddha, and the Count of St. Germain, are believed to have attained a high level of spiritual enlightenment and to be working for the good of all of humanity. The concept is central to many New Age and spiritual movements, which see the Brotherhood as a benevolent force working to bring about a new golden age.</p>
+                `
+            },
+            "The Keys of Enoch": {
+                title: "The Keys of Enoch",
+                infobox: {
+                    "Origin": "Occult literature",
+                    "Authorship": "J.J. Hurtak"
+                },
+                html: `
+                    <p><i><b>The Keys of Enoch</b></i> is a New Age spiritual text that claims to be a guide to the mysteries of the universe. The book, which was first published in 1973, is said to contain the secret knowledge of the ancient prophet Enoch. It is a complex text that describes a multi-dimensional cosmology, a spiritual hierarchy of "ascended masters," and a plan for humanity's spiritual evolution. The book is often cited by those who believe in a hidden, celestial history of humanity and the Earth.</p>
+                `
+            },
+            "The Urantia Book": {
+                title: "The Urantia Book",
+                infobox: {
+                    "Origin": "Spiritual/philosophical text",
+                    "Authorship": "Unknown"
+                },
+                html: `
+                    <p><i><b>The Urantia Book</b></i> is a spiritual and philosophical text that was first published in 1955 by an anonymous group of individuals in Chicago, Illinois. The book, which is over 2,000 pages long, contains a detailed cosmology, including a history of the universe and the human race. It is a complex and often dense text that has a devoted following among those who believe in its divine or celestial origin. The book's teachings are often used to support esoteric and conspiratorial theories, particularly those related to a hidden history of the Earth.</p>
+                `
+            },
+            "Yakub's History": {
+                title: "Yakub's History",
+                infobox: {
+                    "Origin": "Nation of Islam",
+                    "Concept": "A black scientist who created the white race"
+                },
+                html: `
+                    <p>In the teachings of the Nation of Islam, <b>Yakub</b> is a black scientist who lived 6,600 years ago. He is credited with creating the white race through a process of "grafting" or selective breeding. The story is a central tenet of the Nation of Islam's racial theology and its teachings on the history of humanity. The story of Yakub is often used to explain the existence of different races and to provide a spiritual and historical foundation for the movement's beliefs.</p>
+                `
+            },
+            "COINTELPRO": {
+                title: "COINTELPRO",
+                infobox: {
+                    "Origin": "FBI counterintelligence program",
+                    "Targeted Groups": "Civil rights, anti-war, and political movements"
+                },
+                html: `
+                    <p><b>COINTELPRO</b> (COunter INTELligence PROgram) was a series of covert and often illegal projects conducted by the United States Federal Bureau of Investigation (FBI) from 1956 to 1971. The program's purpose was to surveil, infiltrate, discredit, and disrupt domestic political organizations. In the context of conspiracy theories, COINTELPRO is often seen as a spiritual and political war against the Black Panthers and the Nation of Islam. Proponents of this theory argue that the program was not just about suppressing political dissent but about a spiritual war to suppress black spiritual and political power.</p>
+                `
+            },
+            "Admiral Byrd": {
+                title: "Admiral Richard E. Byrd",
+                infobox: {
+                    "Origin": "Historical figure / conspiracy theory",
+                    "Claim to Fame": "Explorer of the Arctic and Antarctic"
+                },
+                html: `
+                    <p><b>Admiral Richard E. Byrd</b> was a renowned American naval officer who specialized in polar exploration. He led several expeditions to the Arctic and Antarctic, and his diaries and journals are often cited by Hollow Earth theorists. Proponents of this theory allege that Byrd discovered a secret entrance to the Earth's core during his expeditions and that his diaries contain an account of his journey to the inner earth. This theory is widely rejected by modern science and historical scholarship.</p>
+                `
+            }
+        };
 
         // --- NAVIGATION & PAGE LOGIC ---
         document.addEventListener('DOMContentLoaded', function() {
@@ -1043,7 +1109,9 @@
             const body = document.body;
 
             // Clone desktop nav to mobile nav
-            mobileNavContainer.innerHTML = desktopNavContainer.innerHTML;
+            if (desktopNavContainer && mobileNavContainer) {
+                mobileNavContainer.innerHTML = desktopNavContainer.innerHTML;
+            }
             
             // --- Modal functionality ---
             const modal = document.getElementById('imageModal');
@@ -1168,6 +1236,7 @@
                 if (!feedContainer) return;
 
                 const rssUrl = 'https://www.youtube.com/feeds/videos.xml?channel_id=UCz4GDiCOWci-3ihX5ZyiXlA';
+                // Using a CORS proxy for client-side fetching
                 fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssUrl)}`)
                     .then(response => response.json())
                     .then(data => {
@@ -1209,11 +1278,13 @@
                 allNavLinks.forEach(link => {
                     link.classList.toggle('active', link.dataset.page === pageId);
                 });
-
-                if (pageContent[pageId]) {
+                
+                let contentExists = false;
+                if (pageContent.hasOwnProperty(pageId)) {
                     const content = pageContent[pageId];
                     mainContent.innerHTML = `<h1 class="page-title">${content.title}</h1>${content.html}`;
-                } else if (conspiracySiteData[pageId]) {
+                    contentExists = true;
+                } else if (conspiracySiteData.hasOwnProperty(pageId)) {
                     const content = conspiracySiteData[pageId];
                     let infoboxHtml = Object.entries(content.infobox).map(([key, value]) => `<tr class="border-t border-gray-300"><th scope="row">${key}</th><td>${value}</td></tr>`).join('');
                     const pageHtml = `
@@ -1223,7 +1294,11 @@
                         </div>
                     `;
                     mainContent.innerHTML = `<h1 class="page-title">${content.title}</h1>${pageHtml}`;
-                } else {
+                    contentExists = true;
+                } 
+
+                if (!contentExists) {
+                    mainContent.innerHTML = `<h1 class="page-title">Page Not Found</h1><p>Sorry, the page you requested could not be found.</p>`;
                     console.error('Page not found:', pageId);
                     return;
                 }
@@ -1243,8 +1318,7 @@
 
             // --- Dynamic Wiki Content Handler ---
             async function fetchWikiContent(term, origin) {
-                const hasEsotericContent = conspiracySiteData[term] && conspiracySiteData[term].html;
-                const hasWikipediaContent = !hasEsotericContent;
+                const hasEsotericContent = conspiracySiteData.hasOwnProperty(term);
                 
                 mainContent.innerHTML = `<h1 class="page-title">Loading...</h1><p>Fetching content for <b>${term}</b>...</p>`;
                 
@@ -1333,13 +1407,15 @@
 
             // Event delegation for wiki-links
             mainContent.addEventListener('click', function(e) {
-                if (e.target.classList.contains('wiki-link')) {
-                    const term = e.target.dataset.term;
-                    const origin = e.target.dataset.origin;
+                const link = e.target.closest('.wiki-link');
+                if (link) {
+                    e.preventDefault();
+                    const term = link.dataset.term;
+                    const origin = link.dataset.origin;
                     fetchWikiContent(term, origin);
                     const allNavLinks = document.querySelectorAll('nav a[data-page]');
-                    allNavLinks.forEach(link => {
-                        link.classList.remove('active');
+                    allNavLinks.forEach(navLink => {
+                        navLink.classList.remove('active');
                     });
                 }
             });
