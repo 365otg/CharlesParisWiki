@@ -180,9 +180,11 @@
         <aside id="left-sidebar" class="hidden md:block w-full md:w-48 bg-[#f8f9fa] border-r border-gray-300 p-4 text-sm">
             <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/1200px-Wikipedia-logo-v2.svg.png" alt="The International Teemsterrs Union" class="w-24 mx-auto mb-4">
             <h2 class="font-bold text-center mb-2 sans-serif">Brother O.T.G</h2>
-            <h3 class="font-bold mb-2 sans-serif">The Founder & Work</h3>
             <nav id="desktop-nav">
                 <ul>
+                    <li class="mb-1"><a href="#" class="link-blue hover:underline" data-page="landing">Home</a></li>
+                    <hr class="my-2">
+                    <h3 class="font-bold mb-2 sans-serif">The Founder & Work</h3>
                     <li class="mb-1"><a href="#" class="link-blue hover:underline" data-page="main">About the Founder</a></li>
                     <li class="mb-1"><a href="#" class="link-blue hover:underline" data-page="book">The Books</a></li>
                     <li class="mb-1"><a href="#" class="link-blue hover:underline" data-page="revelations">The 91 Revelations</a></li>
@@ -267,6 +269,43 @@
     <script>
         // --- CONTENT FOR EACH PAGE ---
         const pageContent = {
+            landing: {
+                title: "Welcome to the Hub",
+                html: `
+                    <p class="text-sm -mt-1 mb-4 text-gray-500">From Wikipedia, the free encyclopedia</p>
+                    <p>This is the central hub for the work and philosophy of <b>Charles A. Paris (Brother OTG)</b>, the founder of <b>The International Teemsterrs Union</b>. This project is the intersection of music, technology, community activism, and deep research into the hidden knowledge of our world. Whether you're a music producer, an independent worker, or a seeker of truth, you'll find valuable resources here.</p>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+                        <div class="bg-[#f8f9fa] border border-[#a2a9b1] p-4 rounded-md flex flex-col">
+                            <img src="https://github.com/365otg/365CP/blob/main/Charles_Paris_bio.jpg?raw=true" alt="Charles A. Paris" class="w-full h-32 object-cover rounded-md mb-4">
+                            <h3 class="text-xl font-bold sans-serif mb-2">The Founder</h3>
+                            <p class="text-sm">Learn about the journey of Charles A. Paris, from blue-collar labor to producing for hip-hop legends and developing the "Over Time Grind" philosophy.</p>
+                            <a href="#" data-page="main" class="link-blue font-bold mt-auto pt-2 inline-block">Read the Bio &rarr;</a>
+                        </div>
+                        <div class="bg-[#f8f9fa] border border-[#a2a9b1] p-4 rounded-md flex flex-col">
+                             <img src="https://github.com/365otg/PicturesandVids/blob/main/Charles%20OTG%20Paris%20365OTG%202017.jpg?raw=true" alt="Music Production Tools" class="w-full h-32 object-cover rounded-md mb-4">
+                            <h3 class="text-xl font-bold sans-serif mb-2">The Music & Tools</h3>
+                            <p class="text-sm">Explore a discography of instrumental projects and access a suite of powerful, free web-based tools designed for music producers.</p>
+                            <a href="#" data-page="discography" class="link-blue font-bold mt-auto pt-2 inline-block">Hear the Music &rarr;</a>
+                        </div>
+                        <div class="bg-[#f8f9fa] border border-[#a2a9b1] p-4 rounded-md flex flex-col">
+                             <img src="https://raw.githubusercontent.com/365otg/teemsterrspics/main/teemstersUSA.jpg" alt="The International Teemsterrs Union" class="w-full h-32 object-cover rounded-md mb-4">
+                            <h3 class="text-xl font-bold sans-serif mb-2">The Teemsterrs Union</h3>
+                            <p class="text-sm">Discover the mission of The International Teemsterrs Union, a modern guild for freelancers and independent workers seeking collective power.</p>
+                            <a href="#" data-page="union" class="link-blue font-bold mt-auto pt-2 inline-block">About the Union &rarr;</a>
+                        </div>
+                        <div class="bg-[#f8f9fa] border border-[#a2a9b1] p-4 rounded-md flex flex-col">
+                             <img src="https://public-files.gumroad.com/rmdlhpawwaacwk2gkqltr5rxewyd" alt="OTG Research Wiki" class="w-full h-32 object-cover rounded-md mb-4">
+                            <h3 class="text-xl font-bold sans-serif mb-2">The Research</h3>
+                            <p class="text-sm">Dive into the OTG Research Wiki, an archive of esoteric knowledge, alternative history, and conspiracy theories explored in "The 91 Revelations."</p>
+                            <a href="#" data-page="conspiracy" class="link-blue font-bold mt-auto pt-2 inline-block">Explore the Wiki &rarr;</a>
+                        </div>
+                    </div>
+
+                    <h2 class="section-title">Get Started</h2>
+                    <p>Use the navigation on the left to explore the different facets of this project. Start with the <a href="#" data-page="main" class="link-blue">founder's biography</a> to understand the philosophy, dive into the <a href="#" data-page="apps" class="link-blue">producer tools</a> to enhance your workflow, or join the movement by learning about <a href="#" data-page="union" class="link-blue">The Teemsterrs Union</a>.</p>
+                `
+            },
             main: {
                 title: "Charles A. Paris (Brother OTG)",
                 html: `
@@ -1420,8 +1459,8 @@
                 }
             });
 
-            // Show the main page by default
-            showPage('main');
+            // Show the landing page by default
+            showPage('landing');
         });
     </script>
 </body>
