@@ -204,7 +204,7 @@
                     <hr class="my-2">
                     <h3 class="font-bold mb-2 sans-serif">OTG Research & Media</h3>
                     <li class="mb-1"><a href="#" class="link-blue hover:underline" data-page="conspiracy">OTG Research Wiki</a></li>
-                    <li class="mb-1"><a href="#" class="link-blue hover:underline" data-page="blog">Blog / Updates</a></li>
+                    <li class="mb-1"><a href="#" class="link-blue hover:underline" data-page="blog">The Teemsterrs Blog</a></li>
                     <hr class="my-2">
                     <h3 class="font-bold mb-2 sans-serif">Links & Contact</h3>
                     <li class="mb-1"><a href="#" class="link-blue hover:underline" data-page="linkhub">Link Hub</a></li>
@@ -239,7 +239,7 @@
 
             <!-- Footer -->
             <footer class="p-4 border-t border-gray-300 text-xs text-gray-600 bg-[#f8f9fa]">
-                <div class="max-w-md mx-auto my-4">
+                 <div class="max-w-md mx-auto my-4">
                      <form class="input-with-button" action="https://gumroad.com/follow_from_embed_form" method="post" id="gumroad-follow-form-embed">
                         <input type="hidden" name="seller_id" value="3131715104950"/>
                         <input id="gumroad-follow-form-embed-input" type="email" placeholder="Your email address" name="email" value=""/>
@@ -270,14 +270,14 @@
         // --- CONTENT FOR EACH PAGE ---
         const pageContent = {
             landing: {
-                title: "Welcome to the Hub",
+                title: "Charles A. Paris",
                 html: `
-                    <p class="text-sm -mt-1 mb-4 text-gray-500">From Wikipedia, the free encyclopedia</p>
+                    <p class="text-sm -mt-1 mb-4 text-gray-500">Your Brother Over Time Grind</p>
                     <p>This is the central hub for the work and philosophy of <b>Charles A. Paris (Brother OTG)</b>, the founder of <b>The International Teemsterrs Union</b>. This project is the intersection of music, technology, community activism, and deep research into the hidden knowledge of our world. Whether you're a music producer, an independent worker, or a seeker of truth, you'll find valuable resources here.</p>
 
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
                         <div class="bg-[#f8f9fa] border border-[#a2a9b1] p-4 rounded-md flex flex-col">
-                            <img src="https://github.com/365otg/365CP/blob/main/Charles_Paris_bio.jpg?raw=true" alt="Charles A. Paris" class="w-full h-32 object-cover rounded-md mb-4">
+                            <img src="https://github.com/365otg/PicturesandVids/blob/main/CharlesParisMusicSuit.png?raw=true" alt="Charles A. Paris" class="w-full h-32 object-cover object-top rounded-md mb-4">
                             <h3 class="text-xl font-bold sans-serif mb-2">The Founder</h3>
                             <p class="text-sm">Learn about the journey of Charles A. Paris, from blue-collar labor to producing for hip-hop legends and developing the "Over Time Grind" philosophy.</p>
                             <a href="#" data-page="main" class="link-blue font-bold mt-auto pt-2 inline-block">Read the Bio &rarr;</a>
@@ -304,6 +304,16 @@
 
                     <h2 class="section-title">Get Started</h2>
                     <p>Use the navigation on the left to explore the different facets of this project. Start with the <a href="#" data-page="main" class="link-blue">founder's biography</a> to understand the philosophy, dive into the <a href="#" data-page="apps" class="link-blue">producer tools</a> to enhance your workflow, or join the movement by learning about <a href="#" data-page="union" class="link-blue">The Teemsterrs Union</a>.</p>
+                    
+                    <h2 class="section-title">Latest Video</h2>
+                    <div id="latest-video-embed" class="my-4">
+                        <p>Loading latest video...</p>
+                    </div>
+
+                    <h2 class="section-title">Featured Album</h2>
+                    <div class="my-4">
+                        <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1781558929/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://charlesparismusic.bandcamp.com/album/charles-paris-music">Charles Paris Music by Charles Paris Music</a></iframe>
+                    </div>
                 `
             },
             main: {
@@ -707,6 +717,7 @@
                     <div class="bg-[#f8f9fa] border border-[#a2a9b1] p-4 rounded-md my-4">
                         <p><b>Disclaimer:</b> This section explores esoteric topics, alternative history, and conspiracy theories for the purpose of research and discussion. The views and theories presented are not endorsements of fact but are compiled as part of the OTG Research project into forbidden knowledge. Reader discretion is advised.</p>
                     </div>
+                     <div class="gumroad-product-embed my-6"><a href="https://brotherotg.gumroad.com/l/bexuo">Loading...</a></div>
                     <p>The OTG Research Wiki is an archive of the long-form discussions and deep dives into esoteric knowledge that began on Clubhouse on February 20, 2021. For <b id="day-counter"></b> consecutive days, these sessions have explored the hidden corners of history, science, and spirituality. This page serves as an archive for those discussions and a gateway to the topics covered in <a href="#" data-page="revelations" class="link-blue">The 91 Revelations</a>.</p>
                     <h2 class="section-title">Podcast Archive</h2>
                     <p>The following are recordings from the "Conspiracy Theories - Real or Fake w/ Facts" sessions.</p>
@@ -716,12 +727,12 @@
                 `
             },
             blog: {
-                title: "Blog / Updates",
+                title: "The Teemsterrs Blog",
                 html: `
                     <p class="text-sm -mt-1 mb-4 text-gray-500">From Wikipedia, the free encyclopedia</p>
-                    <p>The latest video updates, tutorials, and announcements from the Charles Paris Music & Brother OTG YouTube channel.</p>
-                    <div id="youtube-feed" class="space-y-8 mt-6">
-                        <p>Loading latest videos...</p>
+                    <p>The official blog for The International Teemsterrs Union, featuring updates, articles, and insights for the independent worker.</p>
+                    <div id="blog-feed" class="space-y-8 mt-6">
+                        <p>Loading latest blog posts...</p>
                     </div>
                 `
             },
@@ -1269,38 +1280,27 @@
                 }
             }
             
-            // --- Blog/Updates Logic ---
-            function fetchYoutubeFeed() {
-                const feedContainer = document.getElementById('youtube-feed');
+            // --- Latest Video for Landing Page ---
+            function fetchLatestVideo() {
+                const feedContainer = document.getElementById('latest-video-embed');
                 if (!feedContainer) return;
 
                 const rssUrl = 'https://www.youtube.com/feeds/videos.xml?channel_id=UCz4GDiCOWci-3ihX5ZyiXlA';
-                // Using a CORS proxy for client-side fetching
                 fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssUrl)}`)
                     .then(response => response.json())
                     .then(data => {
-                        if (data.status === 'ok' && data.items) {
-                            let feedHTML = '';
-                            data.items.slice(0, 5).forEach(item => { // Display latest 5 videos
-                                const videoId = item.link.split('v=')[1];
-                                // Create a short description
-                                const tempDiv = document.createElement('div');
-                                tempDiv.innerHTML = item.description;
-                                const plainText = tempDiv.textContent || "";
-                                const shortDesc = plainText.substring(0, 200) + '...';
-
-                                feedHTML += `
-                                    <div class="border-t border-gray-300 pt-4">
-                                        <h3 class="text-xl font-bold sans-serif"><a href="${item.link}" target="_blank" rel="noopener noreferrer" class="link-blue">${item.title}</a></h3>
-                                        <div class="aspect-video my-4">
-                                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/${videoId}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                        </div>
-                                        <p class="text-sm text-gray-700 mt-2">${shortDesc}</p>
-                                        <p class="text-xs text-gray-500 mt-2">Published on: ${new Date(item.pubDate).toLocaleDateString()}</p>
+                        if (data.status === 'ok' && data.items && data.items.length > 0) {
+                            const latestVideo = data.items[0];
+                            const videoId = latestVideo.link.split('v=')[1];
+                            feedContainer.innerHTML = `
+                                <div class="border-t border-gray-300 pt-4">
+                                    <h3 class="text-xl font-bold sans-serif"><a href="${latestVideo.link}" target="_blank" rel="noopener noreferrer" class="link-blue">${latestVideo.title}</a></h3>
+                                    <div class="aspect-video my-4">
+                                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/${videoId}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     </div>
-                                `;
-                            });
-                            feedContainer.innerHTML = feedHTML;
+                                    <p class="text-xs text-gray-500 mt-2">Published on: ${new Date(latestVideo.pubDate).toLocaleDateString()}</p>
+                                </div>
+                            `;
                         } else {
                             feedContainer.innerHTML = '<p>Could not load video feed.</p>';
                         }
@@ -1308,6 +1308,45 @@
                     .catch(error => {
                         console.error('Error fetching YouTube feed:', error);
                         feedContainer.innerHTML = '<p>Error loading video feed.</p>';
+                    });
+            }
+
+            // --- Blog Feed Logic ---
+            function fetchBlogFeed() {
+                const feedContainer = document.getElementById('blog-feed');
+                if (!feedContainer) return;
+
+                const rssUrl = 'https://teemsterrs.blogspot.com/feeds/posts/default?alt=rss';
+                fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssUrl)}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.status === 'ok' && data.items) {
+                            let feedHTML = '';
+                            data.items.forEach(item => {
+                                const tempDiv = document.createElement('div');
+                                tempDiv.innerHTML = item.content;
+                                const plainText = tempDiv.textContent || "";
+                                const shortDesc = plainText.substring(0, 300) + '...';
+                                const imageUrl = item.thumbnail || '';
+
+                                feedHTML += `
+                                    <div class="border-t border-gray-300 pt-4">
+                                        ${imageUrl ? `<img src="${imageUrl}" alt="${item.title}" class="w-full h-48 object-cover rounded-md mb-4">` : ''}
+                                        <h3 class="text-xl font-bold sans-serif"><a href="${item.link}" target="_blank" rel="noopener noreferrer" class="link-blue">${item.title}</a></h3>
+                                        <p class="text-xs text-gray-500 my-2">Published on: ${new Date(item.pubDate).toLocaleDateString()}</p>
+                                        <p class="text-sm text-gray-700">${shortDesc}</p>
+                                        <a href="${item.link}" target="_blank" rel="noopener noreferrer" class="link-blue font-bold mt-2 inline-block">Read More &rarr;</a>
+                                    </div>
+                                `;
+                            });
+                            feedContainer.innerHTML = feedHTML;
+                        } else {
+                            feedContainer.innerHTML = '<p>Could not load blog feed.</p>';
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error fetching blog feed:', error);
+                        feedContainer.innerHTML = '<p>Error loading blog feed.</p>';
                     });
             }
 
@@ -1343,11 +1382,12 @@
                 }
                 
                 // Run page-specific logic
+                if (pageId === 'landing') { fetchLatestVideo(); }
                 if (pageId === 'main') { calculateAge(); }
                 if (pageId === 'webdev') { populatePortfolio(); }
                 if (pageId === 'discography') { populateDiscography(); }
                 if (pageId === 'conspiracy') { calculateDaysSince(); populateConspiracyEpisodes(); }
-                if (pageId === 'blog') { fetchYoutubeFeed(); }
+                if (pageId === 'blog') { fetchBlogFeed(); }
                 
                 attachModalListeners(); // Re-attach listeners for galleries on new page
                 
